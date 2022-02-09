@@ -14,13 +14,13 @@ class Wing:
         self.density_data = density_data
 
         # Input states
-        self.ground_position = np.array([0, 0, 0], dtype=np.float_)
-        self.ground_velocity = np.array([0, 0, 0], dtype=np.float_)
-        self.air_velocity = np.array([0, 0, 0], dtype=np.float_)
-        self.body_rotation = np.array([0, 0, 0], dtype=np.float_)
+        self.ground_position = np.zeros((3, 1), dtype=np.float_)
+        self.ground_velocity = np.zeros((3, 1), dtype=np.float_)
+        self.air_velocity = np.zeros((3, 1), dtype=np.float_)
+        self.body_rotation = np.zeros((3, 1), dtype=np.float_)
 
         # Output state
-        self.force = np.array([0, 0, 0], dtype=np.float_)
+        self.force = np.zeros((3, 1), dtype=np.float_)
 
         self.density = 0
         self.climb_angle = 0
@@ -33,8 +33,8 @@ class Wing:
         self.interpolate_polar()
         self.interpolate_density()
 
-        lift = 0.5 * self.density * self.area * self.cl * self.air_velocity.dot(self.air_velocity)
-        drag = 0.5 * self.density * self.area * self.cd * self.air_velocity.dot(self.air_velocity)
+        lift = 0.5 * self.density * self.area * self.cl * sqrt(np.matmul(self.air_velocity.T, self.air_velocity))
+        drag = 0.5 * self.density * self.area * self.cd * sqrt(np.matmul(self.air_velocity.T, self.air_velocity))
 
         self.force[1] = -drag
         self.force[2] = lift
