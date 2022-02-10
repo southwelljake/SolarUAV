@@ -1,5 +1,5 @@
 import numpy as np
-from math import atan, sqrt, degrees
+from math import atan, sqrt, degrees, pi
 
 
 class Wing:
@@ -24,12 +24,14 @@ class Wing:
 
         self.density = 0
         self.climb_angle = 0
+        self.yaw_angle = 0
+        self.roll_angle = 0
         self.angle_of_attack = 0
         self.cl = 0
         self.cd = 0
 
     def update(self):
-        self.calculate_aoa()
+        self.calculate_angles()
         self.interpolate_polar()
         self.interpolate_density()
 
@@ -39,12 +41,19 @@ class Wing:
         self.force[1] = -drag
         self.force[2] = lift
 
-    def calculate_aoa(self):
+    def calculate_angles(self):
         if self.air_velocity[2] > 0:
             self.climb_angle = atan(self.air_velocity[2] / sqrt(self.air_velocity[0] ** 2 + self.air_velocity[1] ** 2))
         else:
             self.climb_angle = 0
-        self.angle_of_attack = degrees(self.body_rotation[0] - self.climb_angle)
+        self.body_rotation[0] = self.angle_of_attack + self.climb_angle
+
+        if self.air_velocity[1] == 0 and self.air_velocity[0] == 0:
+            self.yaw_angle = 0
+        elif self.air_velocity[1] == 0 and self.air_velocity[0] > 0:
+            self.yaw_angle = pi / 2 * (-1) * np.sign(self.air_velocity[0])
+        else:
+            self.yaw_angle = atan(self.air_velocity[0] / self.air_velocity[1]) * (-1)
 
     def interpolate_polar(self):
         count = 1
