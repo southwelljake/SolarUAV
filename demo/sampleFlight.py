@@ -1,16 +1,6 @@
 import timeit
 import numpy as np
-from src.flightModel import FlightModel
-from src.aircraft import Aircraft
-from src.altitude import AltitudeController
-from src.battery import Battery
-from src.propeller import Propeller
-from src.solarPanel import SolarPanel
-from src.solarModel import SolarModel
-from src.wing import Wing
-from src.yaw import YawController
-from src.cloudCover import CloudCover
-from src.weather import Weather
+from src.simulation import Simulation
 import matplotlib.pyplot as plt
 
 start_time = timeit.default_timer()
@@ -20,98 +10,27 @@ start_time = timeit.default_timer()
 # longitude = -100
 # time_zone = 'America/Winnipeg'
 
+# Miami
+# latitude = 25.7617
+# longitude = 80.1918
+# time_zone = 'EST'
+
 # London
 latitude = 51.5072
 longitude = 0.1276
 time_zone = 'GMT'
+start_hour = 24
+duration = 2
 
-solar_model = SolarModel(
-    longitude=longitude,
+sim = Simulation(
     latitude=latitude,
-    time_zone=time_zone,
-    days=3,
-)
-
-solar_model.generate_data()
-
-# Cloud Cover Model
-cloud_cover = CloudCover(
     longitude=longitude,
-    latitude=latitude,
     time_zone=time_zone,
-    days=3,
-)
-cloud_cover.generate_data()
-
-# Weather Data
-weather = Weather(
-    solar_model=solar_model,
-    cloud_cover=cloud_cover,
+    start_hour=start_hour,
+    duration=duration,
 )
 
-weather.generate_data()
-
-# Aircraft Properties
-aircraft = Aircraft(
-    mass=18.2,
-    power_other=10,
-)
-
-# Altitude Controller Properties
-altitude = AltitudeController(
-    store_PE=False,
-    cruise_alt=500,
-    max_cruise_alt=8000,
-    aoa_init=8,
-    aoa_desc=2,
-    asc_rate=1.6,
-    dsc_rate=0.5,
-)
-
-# Battery Properties
-battery = Battery(
-    initial_level=4590000,
-    capacity=4590000,
-)
-
-# Propeller Properties
-propeller = Propeller(
-    efficiency=0.72,
-)
-
-# Solar Panel Properties
-solar_panel = SolarPanel(
-    efficiency=0.2,
-    area=2.857,
-)
-
-# Wing Properties
-wing = Wing(
-    area=2.857,
-)
-
-# Yaw Controller Properties
-yaw = YawController(
-    kp=0.1,
-    points=np.array(([300000, 450000], [0, 650000], [-300000, 450000], [0, 0])),
-    radius=100,
-)
-
-# Create Flight Model
-flight_model = FlightModel(
-    start_time=6,
-    duration=72,
-    dt=0.01,
-    launch_velocity=[0, 15, 0],
-    aircraft=aircraft,
-    altitude=altitude,
-    battery=battery,
-    propeller=propeller,
-    weather=weather,
-    solar_panel=solar_panel,
-    wing=wing,
-    yaw=yaw
-)
+flight_model = sim.generate()
 
 # Define flight mission
 flight_model.collect_power_data = True  # Collect power data of simulation
@@ -140,7 +59,7 @@ ax1[2].set_ylabel('Altitude (m)')
 ax1[2].set_xlabel('Time (hrs)')
 ax1[2].grid()
 
-ax1[3].plot(flight_model.sol_t, flight_model.state_var[6, :] * 100 / battery.capacity, label=r'$SoC$')
+ax1[3].plot(flight_model.sol_t, flight_model.state_var[6, :] * 100 / flight_model.battery.capacity, label=r'$SoC$')
 ax1[3].set_ylabel('State of Charge (%)')
 ax1[3].set_ylim(0, 110)
 ax1[3].grid()
@@ -157,10 +76,11 @@ t_pslr = np.arange(int(flight_model.start_time), t_max)
 P_slr = np.zeros(0)
 P_slr_cc = np.zeros(0)
 for ttt in t_pslr:
-    P_slr = np.append(P_slr, solar_model.calculate_solar_power(
-        ttt, solar_panel.area, 0) * solar_panel.efficiency)
-    P_slr_cc = np.append(P_slr_cc, solar_model.calculate_solar_power(
-        ttt, solar_panel.area, cloud_cover.cloud_cover[ttt, 1]) * solar_panel.efficiency)
+    P_slr = np.append(P_slr, flight_model.weather.solar_model.calculate_solar_power(
+        ttt, flight_model.solar_panel.area, 0) * flight_model.solar_panel.efficiency)
+    P_slr_cc = np.append(P_slr_cc, flight_model.weather.solar_model.calculate_solar_power(
+        ttt, flight_model.solar_panel.area, flight_model.weather.cloud_cover.cloud_cover[ttt, 1]) *
+                         flight_model.solar_panel.efficiency)
 ax1[4].plot(t_pslr, P_slr, '--', label=r'$P_{solar}$')
 ax1[4].plot(t_pslr, P_slr_cc, '--', label=r'$P_{solar} w/CC$')
 ax1[4].legend(loc='upper left')
@@ -168,16 +88,14 @@ ax1[4].legend(loc='upper left')
 fig2, ax2 = plt.subplots()
 
 ax2.plot(flight_model.state_var[0, :] / 1000, flight_model.state_var[1, :] / 1000)
+ax2.plot(flight_model.yaw.points[:, 0] / 1000, flight_model.yaw.points[:, 1] / 1000, 'xr')
 ax2.set_xlabel('X Distance (km)')
 ax2.set_ylabel('Y Distance (km)')
 
 fig3, ax3 = plt.subplots()
 
-cloud_vars = ['total_clouds', 'low_clouds', 'mid_clouds', 'high_clouds']
-ax3.plot(cloud_cover.data[cloud_vars])
-ax3.set_ylabel('Cloud cover %')
-ax3.set_xlabel('Forecast Time ({})'.format(cloud_cover.time_zone))
-ax3.set_title('GFS 0.5 deg forecast for lat={}, lon={}'.format(cloud_cover.latitude, cloud_cover.longitude))
-ax3.legend(cloud_vars)
+ax3.plot(flight_model.weather.cloud_cover.cloud_cover[:, 0], flight_model.weather.cloud_cover.cloud_cover[:, 1])
+ax3.set_ylabel('Cloud cover (%)')
+ax3.set_xlabel('Time (hrs)')
 
 plt.show()
