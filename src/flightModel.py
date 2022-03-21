@@ -9,11 +9,17 @@ from src.propeller import Propeller
 from src.solarPanel import SolarPanel
 from src.wing import Wing
 from src.yaw import YawController
+import time
 
 
 def hit_ground(t, state_var):
     # Terminal event when UAV lands on the ground
     return state_var[2]
+
+
+def timeout(t, state_var):
+    # Give the simulation a 2 minute time out period
+    return 120 - state_var[7]
 
 
 class FlightModel:
@@ -88,8 +94,13 @@ class FlightModel:
         hit_ground.terminal = True
         hit_ground.direction = 0
 
+        timeout.terminal = True
+        timeout.direction = 0
+
         # Initially not collecting power data throughout simulation for lower run-time
         self.collect_power_data = False
+
+        self.start_run = time.time()
 
     def calculate_cruise_power(self):
         self.calculate_aero_coeff()
@@ -223,24 +234,21 @@ class FlightModel:
     def calculate_propeller_power(self, state_var):
         # Function to calculate the required propelling power for different phases of flight
 
-        if state_var[6] <= 0:
-            self.propeller.power = 0
+        # If landing
+        if self.yaw.landing:
+            self.wing.alpha = self.altitude.aoa_desc
+            self.calculate_cruise_power()
+            self.propeller.power = self.P_cruise * self.altitude.dsc_rate
+        # If ascending
+        elif state_var[2] < self.altitude.cruise_alt:
+            self.wing.alpha = self.altitude.aoa_init
+            self.calculate_cruise_power()
+            self.propeller.power = self.P_cruise * self.altitude.asc_rate
+        # If cruising
         else:
-            # If landing
-            if self.yaw.landing:
-                self.wing.alpha = self.altitude.aoa_desc
-                self.calculate_cruise_power()
-                self.propeller.power = self.P_cruise * self.altitude.dsc_rate
-            # If ascending
-            elif state_var[2] < self.altitude.cruise_alt:
-                self.wing.alpha = self.altitude.aoa_init
-                self.calculate_cruise_power()
-                self.propeller.power = self.P_cruise * self.altitude.asc_rate
-            # If cruising
-            else:
-                self.wing.alpha = self.altitude.aoa_init
-                self.calculate_cruise_power()
-                self.propeller.power = self.P_cruise
+            self.wing.alpha = self.altitude.aoa_init
+            self.calculate_cruise_power()
+            self.propeller.power = self.P_cruise
 
     def calculate_net_pe(self, state_var, state_der, thrust, v_air):
         # Function to convert net positive energy into potential energy (altitude)
@@ -274,7 +282,7 @@ class FlightModel:
     def calculate_derivatives(self, t, state_var):
         # State variables = [x, y, z, x', y', z', E]
         # State derivatives = [x'gr, y'gr, z'gr, x''gr, y''gr, z''gr, Pnet]
-        state_der = np.zeros(7)
+        state_der = np.zeros(8)
 
         self.calculate_wind_vel(t)
 
@@ -308,7 +316,7 @@ class FlightModel:
         self.store_data(t, state_der)
 
         # Prevent battery level going below zero
-        if state_var[6] < 0:
+        if state_var[6] <= 0:
             state_der[6] = 0 if state_der[6] < 0 else state_der[6]
 
         # Compute accelerations
@@ -321,17 +329,24 @@ class FlightModel:
         state_der[5] = (lift * cos(climb_ang) * cos(roll) + (thrust - drag) *
                         sin(climb_ang) - self.aircraft.mass * self.gravity) / self.aircraft.mass
 
+        state_var[7] = time.time() - self.start_run
+        state_der[7] = 0
+
         return state_der
 
     def sim_flight(self):
-        ini_state_var = np.zeros(7)
+        ini_state_var = np.zeros(8)
         ini_state_var[0], ini_state_var[1], ini_state_var[2] = self.initial_position
-        ini_state_var[3],  ini_state_var[4],  ini_state_var[5] = self.initial_velocity
+        ini_state_var[3], ini_state_var[4], ini_state_var[5] = self.initial_velocity
         ini_state_var[6] = self.battery.level
+        ini_state_var[7] = time.time() - self.start_run
 
-        sol = spi.solve_ivp(self.calculate_derivatives, (0, self.t_end), ini_state_var, t_eval=self.t_ODE,
-                            events=hit_ground, dense_output=False, rtol=1e-8)
+        try:
+            sol = spi.solve_ivp(self.calculate_derivatives, (0, self.t_end), ini_state_var, t_eval=self.t_ODE,
+                                events=[hit_ground, timeout], dense_output=False, method='RK45')
 
-        self.state_var = sol.y
-        self.sol_t = sol.t / 3600 + self.start_time
-        self.tx = self.tx / 3600 + self.start_time
+            self.state_var = sol.y
+            self.sol_t = sol.t / 3600 + self.start_time
+            self.tx = self.tx / 3600 + self.start_time
+        except:
+            print('Killed Simulation due to timeout')
