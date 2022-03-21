@@ -11,12 +11,14 @@ class SolarModel:
                  latitude: float,
                  time_zone: str,
                  days: int,
+                 date: datetime.date = datetime.date.today()
                  ):
 
         self.longitude = longitude
         self.latitude = latitude
         self.time_zone = time_zone
         self.days = days
+        self.date = date
 
         self.cs = None
         # Default solar irradiance data
@@ -30,7 +32,7 @@ class SolarModel:
         # Replace the solar irradiance data based on selected co-ordinates, time-zone, and month.
         # Data from the 1st of selected month is used.
         loc = Location(self.latitude, self.longitude, self.time_zone)
-        start = pd.Timestamp(datetime.date.today(), tz=self.time_zone)
+        start = pd.Timestamp(self.date, tz=self.time_zone)
         end = start + pd.Timedelta(days=self.days)
         times = pd.date_range(start=start, end=end, freq='H', tz=self.time_zone)
         self.cs = loc.get_clearsky(times)
