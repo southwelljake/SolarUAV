@@ -11,7 +11,6 @@ from src.cloudCover import CloudCover
 from src.weather import Weather
 from src.probabilityForecast import ProbabilityForecast
 from numpy import array
-import pandas as pd
 
 
 class Simulation:
@@ -21,6 +20,8 @@ class Simulation:
                  time_zone: str,
                  start_hour: float,
                  duration: int,
+                 points: array,
+                 cloud_data: list = None,
                  ):
 
         self.latitude = latitude
@@ -28,6 +29,8 @@ class Simulation:
         self.time_zone = time_zone
         self.start_hour = start_hour
         self.duration = duration
+        self.points = points
+        self.cloud_data = cloud_data
 
     def generate(self):
         solar_model = SolarModel(
@@ -47,14 +50,13 @@ class Simulation:
             days=3,
         )
 
-        # cloud_cover.generate_data()
-        # cloud_cover.data = pd.read_csv('../data/cloud_data_2/cloud_cover_17_58_55.csv')
-        # cloud_cover.process_data()
-
-        probability_forecast = ProbabilityForecast()
-        probability_forecast.generate_data()
-
-        cloud_cover.cloud_cover = probability_forecast.cloud_cover
+        if self.cloud_data is None:
+            cloud_cover.generate_data()
+            cloud_cover.process_data()
+        else:
+            probability_forecast = ProbabilityForecast(file=self.cloud_data)
+            probability_forecast.generate_data()
+            cloud_cover.cloud_cover = probability_forecast.cloud_cover
 
         # Weather Data
         weather = Weather(
@@ -106,8 +108,7 @@ class Simulation:
         # Yaw Controller Properties
         yaw = YawController(
             kp=0.1,
-            points=array(([150000, 150000], [0, 200000],
-                          [-150000, 150000], [0, 0])),
+            points=self.points,
             radius=100,
         )
 
