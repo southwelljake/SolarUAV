@@ -3,6 +3,7 @@ import datetime
 from pvlib.forecast import GFS, NAM, NDFD, HRRR, RAP
 import numpy as np
 import math
+import datetime
 
 
 class CloudCover:
@@ -11,12 +12,14 @@ class CloudCover:
                  longitude: float,
                  time_zone: str,
                  days: int,
+                 date: datetime.date = datetime.date.today(),
                  ):
 
         self.latitude = latitude
         self.longitude = longitude
         self.time_zone = time_zone
         self.days = days
+        self.date = date
 
         self.data = None
         self.cloud_cover = np.array([[0, 0]] * (days * 25 + 1))
@@ -24,7 +27,7 @@ class CloudCover:
 
     def generate_data(self):
 
-        start = pd.Timestamp(datetime.date.today(), tz=self.time_zone)
+        start = pd.Timestamp(self.date, tz=self.time_zone)
         end = start + pd.Timedelta(days=self.days)
 
         model = GFS()
