@@ -1,6 +1,7 @@
 from src.simulation import Simulation
 import time
 import random
+import numpy as np
 
 
 class MonteCarlo:
@@ -30,14 +31,30 @@ class MonteCarlo:
                 if self.other_variables is not None:
                     for var in self.other_variables:
                         sample = random.uniform(var[1][0], var[1][1])
-                        exec(var[0] + ' = ' + str(sample))
+                        if var[2] == 'int':
+                            exec(var[0] + ' = ' + str(int(sample)))
+                        else:
+                            exec(var[0] + ' = ' + str(sample))
 
                 flight_model.sim_flight()
 
-                print('Simulation No.: ' + str(j + 1) + ' Duration: ' + str((time.time() - start_time)) +
-                      's Outcome: ' + str(flight_model.yaw.landing) + '\n')
-                f.write('Simulation No.: ' + str(j + 1) + ' Duration: ' + str((time.time() - start_time)) +
-                        's Outcome: ' + str(flight_model.yaw.landing) + '\n')
+                if flight_model.yaw.mission_type == 'p2p':
+                    print('Simulation No.: ' + str(j + 1) + ' Duration: ' + str((time.time() - start_time)) +
+                          's Outcome: ' + str(flight_model.yaw.distance_travelled /
+                                              flight_model.yaw.total_distance * 100)
+                          + '%\n')
+                    f.write('Simulation No.: ' + str(j + 1) + ' Duration: ' + str((time.time() - start_time)) +
+                            's Outcome: ' + str(flight_model.yaw.distance_travelled /
+                                                flight_model.yaw.total_distance * 100)
+                            + '%\n')
+
+                elif flight_model.yaw.mission_type == 'target':
+                    print('Simulation No.: ' + str(j + 1) + ', Duration: ' + str((time.time() - start_time)) +
+                          's, Time on target: ' + str((flight_model.target_end - flight_model.target_start) / 3600) +
+                          ' hrs \n')
+                    f.write('Simulation No.: ' + str(j + 1) + ', Duration: ' + str((time.time() - start_time)) +
+                            's, Time on target: ' + str((flight_model.target_end - flight_model.target_start) / 3600) +
+                            ' hrs \n')
 
                 if self.other_variables is not None:
                     for i in range(0, len(self.other_variables)):
