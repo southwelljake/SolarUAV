@@ -1,7 +1,6 @@
 from math import cos, pi, sin, sqrt
 import numpy as np
 import scipy.integrate as spi
-from src.weather import Weather
 from src.aircraft import Aircraft
 from src.altitude import AltitudeController
 from src.battery import Battery
@@ -9,6 +8,8 @@ from src.propeller import Propeller
 from src.solarPanel import SolarPanel
 from src.wing import Wing
 from src.yaw import YawController
+from src.solarModel import SolarModel
+from src.cloudCover import CloudCover
 import time
 
 
@@ -18,8 +19,8 @@ def hit_ground(t, state_var):
 
 
 def timeout(t, state_var):
-    # Give the simulation a 2 minute time out period
-    return 120 - state_var[7]
+    # Give the simulation a 5 minute time out period
+    return 300 - state_var[7]
 
 
 class FlightModel:
@@ -35,7 +36,8 @@ class FlightModel:
                  wing: Wing,
                  solar_panel: SolarPanel,
                  yaw: YawController,
-                 weather: Weather,
+                 solar_model: SolarModel,
+                 cloud_cover: CloudCover,
                  ):
 
         # Initialise time parameters
@@ -47,7 +49,6 @@ class FlightModel:
         # Initial Flight Conditions
         self.initial_position = [0, 0, 1]
         self.initial_velocity = launch_velocity
-        self.gravity = 9.80665
         self.wind_x = 0  # Wind velocity in x-direction (m/s)
         self.wind_y = 0  # Wind velocity in y-direction (m/s)
         self.wind_z = 0  # Wind velocity in z-direction (m/s)
@@ -67,11 +68,14 @@ class FlightModel:
         self.altitude = altitude
         # Wing Parameters
         self.wing = wing
+        # Set initial aoa
         self.wing.alpha = self.altitude.aoa_init
         # Calculate Cl and Cd
-        self.calculate_aero_coeff()
-        # Weather Parameters
-        self.weather = weather
+        self.wing.calculate_aero_coeff()
+        # Solar model
+        self.solar_model = solar_model
+        # Cloud Cover
+        self.cloud_cover = cloud_cover
 
         # Initialise time points in seconds, for ODE solver (starts from 0)
         self.t_prev = 0  # Previous time point (in s)
@@ -102,32 +106,6 @@ class FlightModel:
 
         self.start_run = time.time()
 
-    def calculate_cruise_power(self):
-        self.calculate_aero_coeff()
-
-        # Cruise velocity
-        self.v_cruise = sqrt(
-            2 * self.aircraft.mass * self.gravity / (self.wing.density * self.wing.area * self.wing.Cl))
-
-        # Cruise power
-        self.P_cruise = 0.5 * \
-            (self.wing.density * self.wing.area * self.wing.Cd * self.v_cruise ** 3) / self.propeller.efficiency
-
-    def calculate_density(self, state_var):
-        # Evaluate air density at current altitude
-        if state_var[2] > 0:
-            alt_lower = np.floor(state_var[2] / 1000)
-            density_lower = self.wing.density_data[int(alt_lower), 1]
-            alt_upper = np.ceil(state_var[2] / 1000)
-            density_upper = self.wing.density_data[int(alt_upper), 1]
-            self.wing.density = (density_upper - density_lower) * \
-                (state_var[2] / 1000 - alt_lower) + density_lower
-
-    def calculate_aero_coeff(self):
-        # Evaluate Lift and Drag coefficient at current angle of attack
-        index = np.where(self.wing.aero_data == self.wing.alpha)
-        self.wing.Cl, self.wing.Cd = float(self.wing.aero_data[index[0], 1]), float(self.wing.aero_data[index[0], 2])
-
     def store_data(self, t, state_der):
         # Store propelling and net power data of simulation
         if self.collect_power_data:
@@ -144,92 +122,58 @@ class FlightModel:
         time_current = self.start_time + t / 3600  # in hours
 
         # Calculate power from solar panel
-        self.solar_panel.power = self.weather.solar_model.calculate_solar_power(
-            time_current, self.solar_panel.area, self.weather.cloud_cover.calculate_cloud_cover(time_current)
+        return self.solar_model.calculate_solar_power(
+            time_current, self.solar_panel.area, self.cloud_cover.calculate_cloud_cover(time_current)
         ) * self.solar_panel.efficiency
 
-    def calculate_wing_forces(self, v_air):
-        # Compute drag and lift
-        drag = 0.5 * self.wing.density * self.wing.area * self.wing.Cd * v_air ** 2
-        lift = 0.5 * self.wing.density * self.wing.area * self.wing.Cl * v_air ** 2
+    def calculate_abort_mission(self, t, state_var):
+        if self.yaw.abort_mission and self.yaw.abort_time is None:
+            # Function to calculate required roll angle to follow desired flight path
+            # Allow an hour to land
+            time_to_land = 3600
+            energy_to_land = self.P_cruise * self.altitude.dsc_rate * time_to_land
 
-        return drag, lift
+            # Calculate current distance from end point
+            distance_to_return = sqrt((state_var[0] - self.yaw.points[-1, 0]) ** 2 +
+                                      (state_var[1] - self.yaw.points[-1, 1]) ** 2)
 
-    def calculate_propeller_thrust(self, v_air, state_var):
-        # Compute thrust
-        if v_air != 0 and state_var[6] > 0:
-            thrust = abs(self.propeller.power) * self.propeller.efficiency / \
-                v_air  # thrust from propeller
-        else:
-            thrust = 0
-
-        return thrust
-
-    def calculate_wind_vel(self, t):
-        time_current = self.start_time + t / 3600
-        # mph to m/s
-        vel = self.weather.cloud_cover.calculate_wind_speed(time_current) / 2.237
-        hor_angle = 0
-        ver_angle = 0
-        hor_angle = hor_angle * pi / 180
-        ver_angle = ver_angle * pi / 180
-        self.wind_z = vel * sin(ver_angle)
-        hor_wind = vel * cos(ver_angle)
-        self.wind_x = - hor_wind * sin(hor_angle)
-        self.wind_y = hor_wind * cos(hor_angle)
-
-    def calculate_roll_angle(self, t, state_var, yaw):
-        # Function to calculate required roll angle to follow desired flight path
-
-        if not self.yaw.landing:
-            if self.yaw.point_index == len(self.yaw.points):
-                self.yaw.landing = True
-                self.yaw.point_index = 0
-
-            desired_yaw = - np.arctan2(self.yaw.points[self.yaw.point_index, 0] - state_var[0],
-                                       self.yaw.points[self.yaw.point_index, 1] - state_var[1])
-
-            distance = sqrt((self.yaw.points[self.yaw.point_index, 0] - state_var[0]) ** 2 +
-                            (self.yaw.points[self.yaw.point_index, 1] - state_var[1]) ** 2)
-
-        else:
-            if self.yaw.point_index == len(self.yaw.end_circle):
-                self.yaw.point_index = 0
-
-            desired_yaw = - np.arctan2(self.yaw.end_circle[self.yaw.point_index, 0] - state_var[0],
-                                       self.yaw.end_circle[self.yaw.point_index, 1] - state_var[1])
-
-            distance = sqrt((self.yaw.end_circle[self.yaw.point_index, 0] - state_var[0]) ** 2 +
-                            (self.yaw.end_circle[self.yaw.point_index, 1] - state_var[1]) ** 2)
-
-        # Proportional controller
-        dt = t - self.t_prev  # Current time-step
-        if dt > 0:
-            # Evaluate roll angle based on the smaller difference between actual and demand path angle
-            a = desired_yaw - yaw
-            if desired_yaw < 0 < yaw:
-                b = a + 2 * pi
-                if abs(a) < abs(b):
-                    roll = a * self.yaw.kp
-                else:
-                    roll = b * self.yaw.kp
-            elif yaw < 0 < desired_yaw:
-                b = a - 2 * pi
-                if abs(a) < abs(b):
-                    roll = a * self.yaw.kp
-                else:
-                    roll = b * self.yaw.kp
+            # Calculate energy to cruise to end point
+            if distance_to_return > 0:
+                time_to_return = distance_to_return / self.v_cruise
+                energy_to_return = self.P_cruise * time_to_return
             else:
-                roll = self.yaw.kp * a
-            self.yaw.roll_prev = roll
-        else:
-            roll = self.yaw.roll_prev
-        self.t_prev = t
+                time_to_return = 0
+                energy_to_return = 0
 
-        if distance < self.yaw.radius:
-            self.yaw.point_index += 1
+            # At point where the UAV must return if there is no further charging (within 5%)
+            if state_var[6] - 0.05 * self.battery.capacity <= energy_to_return + energy_to_land and not \
+                    self.yaw.returning:
 
-        return roll
+                will_charge = False
+                time = t/3600
+                dt = 0.1
+                net_energy = 0
+                while time + self.start_time <= self.start_time + (t + time_to_return) / 3600:
+                    net_energy += (
+                        self.calculate_solar(time * 3600) - self.propeller.power - self.aircraft.P_other
+                    ) * dt
+                    time += dt
+
+                if net_energy * 3600 + state_var[6] > 0.05 * self.battery.capacity:
+                    will_charge = True
+
+                if not will_charge:
+                    self.yaw.returning = True
+                    if self.yaw.mission_type == 'p2p':
+                        self.yaw.calculate_distance_travelled(state_var)
+                        self.yaw.point_index = len(self.yaw.points) - 1
+
+        elif self.yaw.abort_mission and self.yaw.abort_time is not None:
+            if self.start_time + t / 3600 > self.yaw.abort_time and not self.yaw.returning:
+                self.yaw.returning = True
+                if self.yaw.mission_type == 'p2p':
+                    self.yaw.calculate_distance_travelled(state_var)
+                    self.yaw.point_index = len(self.yaw.points) - 1
 
     def calculate_propeller_power(self, state_var):
         # Function to calculate the required propelling power for different phases of flight
@@ -237,17 +181,20 @@ class FlightModel:
         # If landing
         if self.yaw.landing:
             self.wing.alpha = self.altitude.aoa_desc
-            self.calculate_cruise_power()
+            self.v_cruise, self.P_cruise = self.wing.calculate_cruise_power(self.propeller.efficiency,
+                                                                            self.aircraft.mass)
             self.propeller.power = self.P_cruise * self.altitude.dsc_rate
         # If ascending
         elif state_var[2] < self.altitude.cruise_alt:
             self.wing.alpha = self.altitude.aoa_init
-            self.calculate_cruise_power()
+            self.v_cruise, self.P_cruise = self.wing.calculate_cruise_power(self.propeller.efficiency,
+                                                                            self.aircraft.mass)
             self.propeller.power = self.P_cruise * self.altitude.asc_rate
         # If cruising
         else:
             self.wing.alpha = self.altitude.aoa_init
-            self.calculate_cruise_power()
+            self.v_cruise, self.P_cruise = self.wing.calculate_cruise_power(self.propeller.efficiency,
+                                                                            self.aircraft.mass)
             self.propeller.power = self.P_cruise
 
     def calculate_net_pe(self, state_var, state_der, thrust, v_air):
@@ -262,7 +209,7 @@ class FlightModel:
                     # Convert net power to thrust
                     thrust = abs(self.propeller.power + state_der[6]) * self.propeller.efficiency / v_air
                 else:
-                    self.calculate_cruise_power()
+                    self.wing.calculate_cruise_power(self.propeller.efficiency, self.aircraft.mass)
                     self.propeller.power = self.P_cruise
                 # Remove net power from derivative
                 state_der[6] = 0
@@ -284,7 +231,7 @@ class FlightModel:
         # State derivatives = [x'gr, y'gr, z'gr, x''gr, y''gr, z''gr, Pnet]
         state_der = np.zeros(8)
 
-        self.calculate_wind_vel(t)
+        self.wind_x, self.wind_y, self.wind_z = self.cloud_cover.calculate_wind_vel(t, self.start_time)
 
         # Compute current air speeds
         x_air = state_var[3] - self.wind_x
@@ -301,16 +248,21 @@ class FlightModel:
         # Compute angles
         yaw = -np.arctan2(x_air, y_air)
         climb_ang = np.arctan2(z_air, v_airhor)
-        roll = self.calculate_roll_angle(t, state_var, yaw)
 
-        self.calculate_density(state_var)
+        self.calculate_abort_mission(t, state_var)
+        if self.yaw.mission_type == 'target':
+            roll = self.yaw.calculate_roll_angle_target(t, self.initial_position, state_var, yaw)
+        else:
+            roll = self.yaw.calculate_roll_angle_p2p(t, state_var, yaw)
+
+        self.wing.calculate_density(state_var)
         self.calculate_propeller_power(state_var)
-        drag, lift = self.calculate_wing_forces(v_air)
-        self.calculate_solar(t)
+        drag, lift = self.wing.calculate_wing_forces(v_air)
+        self.solar_panel.power = self.calculate_solar(t)
 
         state_der[6] = self.solar_panel.power - self.propeller.power - self.aircraft.P_other  # P net
 
-        thrust = self.calculate_propeller_thrust(v_air, state_var)
+        thrust = self.propeller.calculate_propeller_thrust(v_air, state_var)
         state_var, state_der, thrust = self.calculate_net_pe(state_var, state_der, thrust, v_air)
 
         self.store_data(t, state_der)
@@ -327,7 +279,7 @@ class FlightModel:
                         lift * sin(climb_ang)) * cos(yaw) / self.aircraft.mass - lift * sin(roll) * sin(yaw) / \
             self.aircraft.mass
         state_der[5] = (lift * cos(climb_ang) * cos(roll) + (thrust - drag) *
-                        sin(climb_ang) - self.aircraft.mass * self.gravity) / self.aircraft.mass
+                        sin(climb_ang) - self.aircraft.mass * self.wing.gravity) / self.aircraft.mass
 
         state_var[7] = time.time() - self.start_run
         state_der[7] = 0
@@ -341,12 +293,21 @@ class FlightModel:
         ini_state_var[6] = self.battery.level
         ini_state_var[7] = time.time() - self.start_run
 
-        try:
-            sol = spi.solve_ivp(self.calculate_derivatives, (0, self.t_end), ini_state_var, t_eval=self.t_ODE,
-                                events=[hit_ground, timeout], dense_output=False, method='RK45')
+        # Create the flight path to simulate
+        self.yaw.create_path()
 
-            self.state_var = sol.y
-            self.sol_t = sol.t / 3600 + self.start_time
-            self.tx = self.tx / 3600 + self.start_time
-        except:
-            print('Killed Simulation due to timeout')
+        # try:
+        sol = spi.solve_ivp(self.calculate_derivatives, (0, self.t_end), ini_state_var, t_eval=self.t_ODE,
+                            events=[hit_ground, timeout], dense_output=False, method='RK45')
+
+        self.state_var = sol.y
+        self.sol_t = sol.t / 3600 + self.start_time
+        self.tx = self.tx / 3600 + self.start_time
+
+        if not self.yaw.returning and self.yaw.landing:
+            self.yaw.distance_travelled = self.yaw.total_distance
+        elif not self.yaw.abort_mission and not self.yaw.landing:
+            self.yaw.calculate_distance_travelled(self.state_var[:, -1])
+
+        # except:
+        #     print('Killed Simulation')
