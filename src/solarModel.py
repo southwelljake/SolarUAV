@@ -32,7 +32,7 @@ class SolarModel:
         # Replace the solar irradiance data based on selected co-ordinates, time-zone, and month.
         # Data from the 1st of selected month is used.
         loc = Location(self.latitude, self.longitude, self.time_zone)
-        start = pd.Timestamp(self.date, tz=self.time_zone)
+        start = pd.Timestamp(self.date)
         end = start + pd.Timedelta(days=self.days)
         times = pd.date_range(start=start, end=end, freq='H', tz=self.time_zone)
         self.cs = loc.get_clearsky(times)
