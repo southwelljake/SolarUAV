@@ -1,6 +1,5 @@
 import pandas as pd
-import datetime
-from pvlib.forecast import GFS, NAM, NDFD, HRRR, RAP
+from pvlib.forecast import GFS
 import numpy as np
 import math
 import datetime
@@ -75,3 +74,18 @@ class CloudCover:
         # grad = v_upper - v_lower
         # return grad * (time - time_lower) + v_lower
         return 0
+
+    def calculate_wind_vel(self, t, start_time):
+        time_current = start_time + t / 3600
+        # mph to m/s
+        vel = self.calculate_wind_speed(time_current) / 2.237
+        hor_angle = 0
+        ver_angle = 0
+        hor_angle = hor_angle * np.pi / 180
+        ver_angle = ver_angle * np.pi / 180
+        wind_z = vel * np.sin(ver_angle)
+        hor_wind = vel * np.cos(ver_angle)
+        wind_x = - hor_wind * np.sin(hor_angle)
+        wind_y = hor_wind * np.cos(hor_angle)
+
+        return wind_x, wind_y, wind_z
