@@ -2,25 +2,36 @@ import timeit
 import numpy as np
 from src.simulation import Simulation
 import matplotlib.pyplot as plt
+import datetime
+import pandas as pd
+from src.generatePaths import GeneratePaths
+
+path = GeneratePaths(
+    points=np.array(([0, 0], [200000, 200000], [0, 300000],
+                    [-200000, 200000], [0, 0])),
+)
+
 
 start_time = timeit.default_timer()
-
-# Central Canada
-# latitude = 55
-# longitude = -100
-# time_zone = 'America/Winnipeg'
-
-# Miami
-# latitude = 25.7617
-# longitude = 80.1918
-# time_zone = 'EST'
 
 # London
 latitude = 51.5072
 longitude = 0.1276
 time_zone = 'GMT'
-start_hour = 24
+
+start_hour = 6
 duration = 2
+
+cloud_data = [
+    # Day 1
+    pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_16_04_31.csv'),
+    pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_22_04_39.csv'),
+    # Day 2
+    pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_04_04_47.csv'),
+    pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_10_04_55.csv'),
+    pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_16_05_03.csv'),
+    pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_22_05_11.csv'),
+]
 
 sim = Simulation(
     latitude=latitude,
@@ -28,6 +39,12 @@ sim = Simulation(
     time_zone=time_zone,
     start_hour=start_hour,
     duration=duration,
+    cloud_data=cloud_data,
+    path=path,
+    mission_type='p2p',
+    date=datetime.date(2021, 3, 12),
+    # abort_mission=False,
+    abort_time=19,
 )
 
 flight_model = sim.generate()
@@ -37,15 +54,23 @@ flight_model.collect_power_data = True  # Collect power data of simulation
 
 flight_model.sim_flight()
 
+if sim.mission_type == 'p2p':
+    if not flight_model.returning and flight_model.yaw.landing:
+        flight_model.distance_travelled = flight_model.yaw.total_distance
+    print('Percentage completed before returning = ' + str(round((flight_model.distance_travelled /
+                                                           flight_model.yaw.total_distance * 100), 2)) + '%')
+else:
+    print("Time on target: " + str((flight_model.target_end - flight_model.target_start) / 3600) + ' hours')
+
 end_time = timeit.default_timer()
 print("--- %s seconds ---" % (end_time - start_time))
 
 # Plot results
 fig1, ax1 = plt.subplots(5, 1, figsize=(8, 12))
 
-v_grhor = np.sqrt(flight_model.state_var[3, :] ** 2 + flight_model.state_var[4, :] ** 2)
+v_hor = np.sqrt(flight_model.state_var[3, :] ** 2 + flight_model.state_var[4, :] ** 2)
 
-ax1[0].plot(flight_model.sol_t, v_grhor)
+ax1[0].plot(flight_model.sol_t, v_hor)
 ax1[0].set_ylabel('Horizontal Velocity (m/s)')
 ax1[0].grid()
 
@@ -92,10 +117,10 @@ ax2.plot(flight_model.yaw.points[:, 0] / 1000, flight_model.yaw.points[:, 1] / 1
 ax2.set_xlabel('X Distance (km)')
 ax2.set_ylabel('Y Distance (km)')
 
-fig3, ax3 = plt.subplots()
-
-ax3.plot(flight_model.weather.cloud_cover.cloud_cover[:, 0], flight_model.weather.cloud_cover.cloud_cover[:, 1])
-ax3.set_ylabel('Cloud cover (%)')
-ax3.set_xlabel('Time (hrs)')
+# fig3, ax3 = plt.subplots()
+#
+# ax3.plot(flight_model.weather.cloud_cover.cloud_cover[:, 0], flight_model.weather.cloud_cover.cloud_cover[:, 1])
+# ax3.set_ylabel('Cloud cover (%)')
+# ax3.set_xlabel('Time (hrs)')
 
 plt.show()

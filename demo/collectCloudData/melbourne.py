@@ -5,10 +5,10 @@ from pathlib import Path
 
 start_time = timeit.default_timer()
 
-# London
-latitude = 51.5072
-longitude = 0.1276
-time_zone = 'GMT'
+# Melbourne
+latitude = -40
+longitude = 145
+time_zone = 'Australia/Melbourne'
 
 cloud_model = CloudCover(
     longitude=longitude,
@@ -17,19 +17,20 @@ cloud_model = CloudCover(
     days=7,
 )
 
-no_forecasts = 10
+no_forecasts = 5
 
 for i in range(0, no_forecasts):
     cloud_model.generate_data()
 
     current_time = time.strftime("%H_%M_%S", time.localtime())
-    file_path = Path('../data/cloud_data_3/cloud_cover_' + current_time + '.csv')
+    file_path = Path('../../data/cloud_data/melbourne_april/melbourne_' + current_time + '.csv')
 
     cloud_model.data.to_csv(file_path, mode='w')
 
-    print(current_time)
+    print('Forecast: ' + str(i + 1) + '/' + str(no_forecasts) + ' at ' + current_time)
 
-    time.sleep(6*3600)
+    if i < no_forecasts - 1:
+        time.sleep(6*3600)
 
 end_time = timeit.default_timer()
 print("--- %s seconds ---" % (end_time - start_time))
