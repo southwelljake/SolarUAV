@@ -48,10 +48,11 @@ class ProbabilityForecast:
             self.start_hour = 0
             no_days = (pd.Timestamp(self.file[0].values[-1, 0]) - pd.Timestamp(
                 self.file[0].values[0, 0])).components.days
-            end_hour = (no_days + 1) * 24 - 3
 
             if self.first_time.tz.zone == 'UTC':
-                end_hour -= 3
+                end_hour = no_days * 24
+            else:
+                end_hour = (no_days + 1) * 24 - 3
 
             self.time = np.linspace(self.start_hour, end_hour, int((end_hour - self.start_hour) / 3 + 1))
 
