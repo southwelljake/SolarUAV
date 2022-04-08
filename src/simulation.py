@@ -8,9 +8,9 @@ from src.solarModel import SolarModel
 from src.wing import Wing
 from src.yaw import YawController
 from src.cloudCover import CloudCover
-from src.weather import Weather
 from src.probabilityForecast import ProbabilityForecast
-from numpy import array
+from src.generatePaths import GeneratePaths
+import datetime
 
 
 class Simulation:
@@ -20,8 +20,12 @@ class Simulation:
                  time_zone: str,
                  start_hour: float,
                  duration: int,
-                 points: array,
+                 path: GeneratePaths,
+                 date: datetime.date = datetime.date.today(),
+                 mission_type: str = 'p2p',
                  cloud_data: list = None,
+                 abort_mission: bool = True,
+                 abort_time: float = None,
                  ):
 
         self.latitude = latitude
@@ -29,15 +33,30 @@ class Simulation:
         self.time_zone = time_zone
         self.start_hour = start_hour
         self.duration = duration
-        self.points = points
+        self.path = path
         self.cloud_data = cloud_data
+        self.date = date
+        self.mission_type = mission_type
+        self.abort_mission = abort_mission
+        self.abort_time = abort_time
 
     def generate(self):
+        path = GeneratePaths(
+            shape=self.path.shape,
+            start_point=self.path.start_point,
+            scanning_range=self.path.range,
+            scanning_width=self.path.width,
+            scanning_length=self.path.length,
+            direction=self.path.direction,
+            points=self.path.points,
+        )
+
         solar_model = SolarModel(
             longitude=self.longitude,
             latitude=self.latitude,
             time_zone=self.time_zone,
-            days=3,
+            date=self.date,
+            days=self.duration,
         )
 
         solar_model.generate_data()
@@ -47,7 +66,8 @@ class Simulation:
             longitude=self.longitude,
             latitude=self.latitude,
             time_zone=self.time_zone,
-            days=3,
+            date=self.date,
+            days=self.duration,
         )
 
         if self.cloud_data is None:
@@ -57,14 +77,6 @@ class Simulation:
             probability_forecast = ProbabilityForecast(file=self.cloud_data)
             probability_forecast.generate_data()
             cloud_cover.cloud_cover = probability_forecast.cloud_cover
-
-        # Weather Data
-        weather = Weather(
-            solar_model=solar_model,
-            cloud_cover=cloud_cover,
-        )
-
-        weather.generate_data()
 
         # Aircraft Properties
         aircraft = Aircraft(
@@ -108,8 +120,13 @@ class Simulation:
         # Yaw Controller Properties
         yaw = YawController(
             kp=0.1,
-            points=self.points,
-            radius=100,
+            path=path,
+            tolerance=100,
+            radius_land=2000,
+            radius_target=2000,
+            mission_type=self.mission_type,
+            abort_mission=self.abort_mission,
+            abort_time=self.abort_time
         )
 
         # Create Flight Model
@@ -122,7 +139,8 @@ class Simulation:
             altitude=altitude,
             battery=battery,
             propeller=propeller,
-            weather=weather,
+            solar_model=solar_model,
+            cloud_cover=cloud_cover,
             solar_panel=solar_panel,
             wing=wing,
             yaw=yaw
