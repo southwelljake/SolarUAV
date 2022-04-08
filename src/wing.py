@@ -1,4 +1,4 @@
-from numpy import array
+from numpy import array, floor, ceil, where, sqrt
 
 
 class Wing:
@@ -11,6 +11,7 @@ class Wing:
         self.Cl = 0
         self.Cd = 0
         self.density = 1.225
+        self.gravity = 9.80665
 
         # Air Density Data
         self.density_data = array((
@@ -45,3 +46,38 @@ class Wing:
                     [1.95, 0.48782, 0.015074],
                     [1.41, 0.435261, 0.013936]
         ))
+
+    def calculate_density(self, state_var):
+        # Evaluate air density at current altitude
+        if state_var[2] > 0:
+            alt_lower = floor(state_var[2] / 1000)
+            density_lower = self.density_data[int(alt_lower), 1]
+            alt_upper = ceil(state_var[2] / 1000)
+            density_upper = self.density_data[int(alt_upper), 1]
+            self.density = (density_upper - density_lower) * \
+                (state_var[2] / 1000 - alt_lower) + density_lower
+
+    def calculate_wing_forces(self, v_air):
+        # Compute drag and lift
+        drag = 0.5 * self.density * self.area * self.Cd * v_air ** 2
+        lift = 0.5 * self.density * self.area * self.Cl * v_air ** 2
+
+        return drag, lift
+
+    def calculate_aero_coeff(self):
+        # Evaluate Lift and Drag coefficient at current angle of attack
+        index = where(self.aero_data == self.alpha)
+        self.Cl, self.Cd = float(self.aero_data[index[0], 1]), float(self.aero_data[index[0], 2])
+
+    def calculate_cruise_power(self, prop_efficiency, mass):
+        self.calculate_aero_coeff()
+
+        # Cruise velocity
+        v_cruise = sqrt(
+            2 * mass * self.gravity / (self.density * self.area * self.Cl))
+
+        # Cruise power
+        P_cruise = 0.5 * \
+            (self.density * self.area * self.Cd * v_cruise ** 3) / prop_efficiency
+
+        return v_cruise, P_cruise
