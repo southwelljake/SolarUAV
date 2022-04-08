@@ -13,7 +13,7 @@ class ProcessSensitivity:
 
             max_line = len(lines)
 
-            self.outcome = [False] * self.no_sims
+            self.outcome = [None] * self.no_sims
 
             no_variables = int((max_line - 2) / self.no_sims - 1)
 
@@ -31,8 +31,14 @@ class ProcessSensitivity:
                     else:
                         start_line += 1
 
-                # Store simulation outcome
-                self.outcome[i - 1] = eval(lines[start_line].split('Outcome: ')[1])
+                if 'Outcome' in lines[start_line]:
+                    if 'True' in lines[start_line] or 'False' in lines[start_line]:
+                        # Store simulation outcome
+                        self.outcome[i - 1] = eval(lines[start_line].split('Outcome: ')[1])
+                    else:
+                        self.outcome[i - 1] = float(lines[start_line].split('Outcome: ')[1].split('%')[0])
+                elif 'Time on target' in lines[start_line]:
+                    self.outcome[i - 1] = float(lines[start_line].split('Time on target: ')[1].split(' hrs')[0])
 
                 values = []
                 for j in range(0, no_variables):
