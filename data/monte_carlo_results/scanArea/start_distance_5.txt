@@ -1,0 +1,17 @@
+Total Simulations to run: 5
+Simulation No.: 1 Duration: 53.25655484199524s Outcome: 56.186320820712666%
+flight_model.yaw.path.width = 44466
+flight_model.yaw.path.start_point[1] = 90847
+Simulation No.: 2 Duration: 43.065107107162476s Outcome: 100.0%
+flight_model.yaw.path.width = 32660
+flight_model.yaw.path.start_point[1] = 50988
+Simulation No.: 3 Duration: 48.20715355873108s Outcome: 43.35537053912163%
+flight_model.yaw.path.width = 53143
+flight_model.yaw.path.start_point[1] = 54741
+Simulation No.: 4 Duration: 27.102949619293213s Outcome: 5.573832987759884%
+flight_model.yaw.path.width = 76974
+flight_model.yaw.path.start_point[1] = 89563
+Simulation No.: 5 Duration: 67.45762515068054s Outcome: 85.36324523355088%
+flight_model.yaw.path.width = 38331
+flight_model.yaw.path.start_point[1] = 36496
+Success rate = 100.0

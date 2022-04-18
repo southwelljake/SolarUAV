@@ -1,0 +1,402 @@
+Total Simulations to run: 200
+Simulation No.: 1, Duration: 60.713170528411865s, Time on target: 12.4226222497936 hrs 
+flight_model.yaw.path.points[0][1] = 89763
+Simulation No.: 2, Duration: 77.44991207122803s, Time on target: 11.43288878142026 hrs 
+flight_model.yaw.path.points[0][1] = 130711
+Simulation No.: 3, Duration: 87.39935088157654s, Time on target: 10.90877334594391 hrs 
+flight_model.yaw.path.points[0][1] = 177401
+Simulation No.: 4, Duration: 68.91481614112854s, Time on target: 22.323852152276903 hrs 
+flight_model.yaw.path.points[0][1] = 44158
+Simulation No.: 5, Duration: 75.97612237930298s, Time on target: 11.4315163846654 hrs 
+flight_model.yaw.path.points[0][1] = 130875
+Simulation No.: 6, Duration: 60.23716473579407s, Time on target: 23.412260390835964 hrs 
+flight_model.yaw.path.points[0][1] = 2840
+Simulation No.: 7, Duration: 95.74427819252014s, Time on target: 10.63014106349089 hrs 
+flight_model.yaw.path.points[0][1] = 187132
+Simulation No.: 8, Duration: 72.16032361984253s, Time on target: 23.325875369176885 hrs 
+flight_model.yaw.path.points[0][1] = 5878
+Simulation No.: 9, Duration: 100.22012877464294s, Time on target: 11.393536423761262 hrs 
+flight_model.yaw.path.points[0][1] = 143825
+Simulation No.: 10, Duration: 136.420184135437s, Time on target: 21.796099289043273 hrs 
+flight_model.yaw.path.points[0][1] = 64106
+Simulation No.: 11, Duration: 96.43560528755188s, Time on target: 11.45985077009268 hrs 
+flight_model.yaw.path.points[0][1] = 151600
+Simulation No.: 12, Duration: 96.19230961799622s, Time on target: 11.453584830899265 hrs 
+flight_model.yaw.path.points[0][1] = 129876
+Simulation No.: 13, Duration: 98.13831853866577s, Time on target: 22.37659440628601 hrs 
+flight_model.yaw.path.points[0][1] = 41882
+Simulation No.: 14, Duration: 124.96247220039368s, Time on target: 11.312607938316955 hrs 
+flight_model.yaw.path.points[0][1] = 163333
+Simulation No.: 15, Duration: 61.43592977523804s, Time on target: 12.174368406454866 hrs 
+flight_model.yaw.path.points[0][1] = 59246
+Simulation No.: 16, Duration: 101.17746949195862s, Time on target: 11.173006132329593 hrs 
+flight_model.yaw.path.points[0][1] = 168218
+Simulation No.: 17, Duration: 94.67815661430359s, Time on target: 21.670068621509436 hrs 
+flight_model.yaw.path.points[0][1] = 69015
+Simulation No.: 18, Duration: 66.98046779632568s, Time on target: 22.943973945044952 hrs 
+flight_model.yaw.path.points[0][1] = 20511
+Simulation No.: 19, Duration: 71.61152291297913s, Time on target: 12.595933436680752 hrs 
+flight_model.yaw.path.points[0][1] = 83680
+Simulation No.: 20, Duration: 76.53333163261414s, Time on target: 12.470326188512727 hrs 
+flight_model.yaw.path.points[0][1] = 88069
+Simulation No.: 21, Duration: 79.79294061660767s, Time on target: 22.495891862621892 hrs 
+flight_model.yaw.path.points[0][1] = 37667
+Simulation No.: 22, Duration: 74.91477680206299s, Time on target: 12.650351735585286 hrs 
+flight_model.yaw.path.points[0][1] = 81722
+Simulation No.: 23, Duration: 93.62386226654053s, Time on target: 21.890509252057324 hrs 
+flight_model.yaw.path.points[0][1] = 60780
+Simulation No.: 24, Duration: 128.98503971099854s, Time on target: 10.635560019175294 hrs 
+flight_model.yaw.path.points[0][1] = 186949
+Simulation No.: 25, Duration: 85.00538206100464s, Time on target: 22.588746368922273 hrs 
+flight_model.yaw.path.points[0][1] = 33995
+Simulation No.: 26, Duration: 84.22582745552063s, Time on target: 21.9403769628047 hrs 
+flight_model.yaw.path.points[0][1] = 58579
+Simulation No.: 27, Duration: 84.264155626297s, Time on target: 22.246365930709217 hrs 
+flight_model.yaw.path.points[0][1] = 46905
+Simulation No.: 28, Duration: 72.80337452888489s, Time on target: 12.331226293870161 hrs 
+flight_model.yaw.path.points[0][1] = 92840
+Simulation No.: 29, Duration: 87.5004529953003s, Time on target: 11.456288221741714 hrs 
+flight_model.yaw.path.points[0][1] = 151474
+Simulation No.: 30, Duration: 88.85088062286377s, Time on target: 11.425348315993194 hrs 
+flight_model.yaw.path.points[0][1] = 127728
+Simulation No.: 31, Duration: 100.97195029258728s, Time on target: 11.826714729239802 hrs 
+flight_model.yaw.path.points[0][1] = 110522
+Simulation No.: 32, Duration: 100.42570304870605s, Time on target: 11.247493752153694 hrs 
+flight_model.yaw.path.points[0][1] = 165518
+Simulation No.: 33, Duration: 70.0597128868103s, Time on target: 23.087991929319696 hrs 
+flight_model.yaw.path.points[0][1] = 15017
+Simulation No.: 34, Duration: 76.52471280097961s, Time on target: 22.739014356766383 hrs 
+flight_model.yaw.path.points[0][1] = 28205
+Simulation No.: 35, Duration: 82.18538355827332s, Time on target: 11.394535316376997 hrs 
+flight_model.yaw.path.points[0][1] = 159489
+Simulation No.: 36, Duration: 68.2651731967926s, Time on target: 11.580019097791434 hrs 
+flight_model.yaw.path.points[0][1] = 119144
+Simulation No.: 37, Duration: 71.03191637992859s, Time on target: 22.113521707369607 hrs 
+flight_model.yaw.path.points[0][1] = 52025
+Simulation No.: 38, Duration: 66.90242624282837s, Time on target: 11.411844465597383 hrs 
+flight_model.yaw.path.points[0][1] = 131780
+Simulation No.: 39, Duration: 63.52197480201721s, Time on target: 11.77794816529338 hrs 
+flight_model.yaw.path.points[0][1] = 112245
+Simulation No.: 40, Duration: 60.20990824699402s, Time on target: 12.234790454058265 hrs 
+flight_model.yaw.path.points[0][1] = 96279
+Simulation No.: 41, Duration: 53.57056546211243s, Time on target: 20.381014478863424 hrs 
+flight_model.yaw.path.points[0][1] = 17246
+Simulation No.: 42, Duration: 59.86435079574585s, Time on target: 12.209381157378973 hrs 
+flight_model.yaw.path.points[0][1] = 97183
+Simulation No.: 43, Duration: 57.87333035469055s, Time on target: 23.110929471039082 hrs 
+flight_model.yaw.path.points[0][1] = 14152
+Simulation No.: 44, Duration: 69.15445113182068s, Time on target: 11.356045550378115 hrs 
+flight_model.yaw.path.points[0][1] = 134405
+Simulation No.: 45, Duration: 59.3282949924469s, Time on target: 23.070205575750794 hrs 
+flight_model.yaw.path.points[0][1] = 15642
+Simulation No.: 46, Duration: 66.59042000770569s, Time on target: 22.361946398167348 hrs 
+flight_model.yaw.path.points[0][1] = 42493
+Simulation No.: 47, Duration: 81.13785171508789s, Time on target: 10.608380351381957 hrs 
+flight_model.yaw.path.points[0][1] = 187806
+Simulation No.: 48, Duration: 77.78485655784607s, Time on target: 11.41447328596202 hrs 
+flight_model.yaw.path.points[0][1] = 153924
+Simulation No.: 49, Duration: 81.52777028083801s, Time on target: 10.917787889252944 hrs 
+flight_model.yaw.path.points[0][1] = 177058
+Simulation No.: 50, Duration: 63.44223999977112s, Time on target: 11.586590432362533 hrs 
+flight_model.yaw.path.points[0][1] = 118892
+Simulation No.: 51, Duration: 60.52188205718994s, Time on target: 12.098090573425695 hrs 
+flight_model.yaw.path.points[0][1] = 101068
+Simulation No.: 52, Duration: 77.16630125045776s, Time on target: 11.413795774956245 hrs 
+flight_model.yaw.path.points[0][1] = 153993
+Simulation No.: 53, Duration: 67.845707654953s, Time on target: 22.230782290013472 hrs 
+flight_model.yaw.path.points[0][1] = 47464
+Simulation No.: 54, Duration: 66.70303082466125s, Time on target: 22.425691431904358 hrs 
+flight_model.yaw.path.points[0][1] = 40157
+Simulation No.: 55, Duration: 67.63320732116699s, Time on target: 21.145724272964564 hrs 
+flight_model.yaw.path.points[0][1] = 54941
+Simulation No.: 56, Duration: 69.2464644908905s, Time on target: 11.388346117009014 hrs 
+flight_model.yaw.path.points[0][1] = 136980
+Simulation No.: 57, Duration: 57.991997718811035s, Time on target: 12.448698600252587 hrs 
+flight_model.yaw.path.points[0][1] = 88834
+Simulation No.: 58, Duration: 69.68473196029663s, Time on target: 11.376733075654089 hrs 
+flight_model.yaw.path.points[0][1] = 136417
+Simulation No.: 59, Duration: 81.91063857078552s, Time on target: 11.354210650875142 hrs 
+flight_model.yaw.path.points[0][1] = 157579
+Simulation No.: 60, Duration: 61.21593117713928s, Time on target: 12.39795486726786 hrs 
+flight_model.yaw.path.points[0][1] = 89173
+Simulation No.: 61, Duration: 82.5603449344635s, Time on target: 11.166831154321997 hrs 
+flight_model.yaw.path.points[0][1] = 168402
+Simulation No.: 62, Duration: 71.86044836044312s, Time on target: 21.896174767474246 hrs 
+flight_model.yaw.path.points[0][1] = 60457
+Simulation No.: 63, Duration: 60.99224925041199s, Time on target: 12.039824032269212 hrs 
+flight_model.yaw.path.points[0][1] = 103082
+Simulation No.: 64, Duration: 65.48561310768127s, Time on target: 22.43366393025981 hrs 
+flight_model.yaw.path.points[0][1] = 39849
+Simulation No.: 65, Duration: 73.9906497001648s, Time on target: 11.35855149419665 hrs 
+flight_model.yaw.path.points[0][1] = 146724
+Simulation No.: 66, Duration: 78.92511200904846s, Time on target: 21.850262926670737 hrs 
+flight_model.yaw.path.points[0][1] = 62208
+Simulation No.: 67, Duration: 61.22025012969971s, Time on target: 12.068279846179346 hrs 
+flight_model.yaw.path.points[0][1] = 102073
+Simulation No.: 68, Duration: 80.19920325279236s, Time on target: 10.596880440732978 hrs 
+flight_model.yaw.path.points[0][1] = 188263
+Simulation No.: 69, Duration: 61.99921250343323s, Time on target: 11.803189197017158 hrs 
+flight_model.yaw.path.points[0][1] = 111343
+Simulation No.: 70, Duration: 59.592835664749146s, Time on target: 22.958532363778392 hrs 
+flight_model.yaw.path.points[0][1] = 19950
+Simulation No.: 71, Duration: 59.05465507507324s, Time on target: 23.083741333815432 hrs 
+flight_model.yaw.path.points[0][1] = 15153
+Simulation No.: 72, Duration: 57.817110776901245s, Time on target: 12.637851124658628 hrs 
+flight_model.yaw.path.points[0][1] = 82229
+Simulation No.: 73, Duration: 61.01117491722107s, Time on target: 22.91625867599819 hrs 
+flight_model.yaw.path.points[0][1] = 21503
+Simulation No.: 74, Duration: 60.957789182662964s, Time on target: 12.196547726552643 hrs 
+flight_model.yaw.path.points[0][1] = 97614
+Simulation No.: 75, Duration: 64.16341614723206s, Time on target: 11.451471772849585 hrs 
+flight_model.yaw.path.points[0][1] = 123589
+Simulation No.: 76, Duration: 60.91635799407959s, Time on target: 12.345468649398457 hrs 
+flight_model.yaw.path.points[0][1] = 92343
+Simulation No.: 77, Duration: 81.88611936569214s, Time on target: 10.899167156283717 hrs 
+flight_model.yaw.path.points[0][1] = 177745
+Simulation No.: 78, Duration: 80.6777355670929s, Time on target: 10.611774363724608 hrs 
+flight_model.yaw.path.points[0][1] = 187699
+Simulation No.: 79, Duration: 62.3901002407074s, Time on target: 11.812677596831115 hrs 
+flight_model.yaw.path.points[0][1] = 111012
+Simulation No.: 80, Duration: 68.1123640537262s, Time on target: 22.212204780261416 hrs 
+flight_model.yaw.path.points[0][1] = 48098
+Simulation No.: 81, Duration: 77.08451962471008s, Time on target: 21.6220093634589 hrs 
+flight_model.yaw.path.points[0][1] = 70711
+Simulation No.: 82, Duration: 62.045300006866455s, Time on target: 12.039458866215949 hrs 
+flight_model.yaw.path.points[0][1] = 103104
+Simulation No.: 83, Duration: 59.178860664367676s, Time on target: 12.441497259766326 hrs 
+flight_model.yaw.path.points[0][1] = 89083
+Simulation No.: 84, Duration: 71.88841891288757s, Time on target: 11.671294447933372 hrs 
+flight_model.yaw.path.points[0][1] = 115926
+Simulation No.: 85, Duration: 80.54753947257996s, Time on target: 11.303955795178108 hrs 
+flight_model.yaw.path.points[0][1] = 163634
+Simulation No.: 86, Duration: 84.1650218963623s, Time on target: 10.937833458837627 hrs 
+flight_model.yaw.path.points[0][1] = 176329
+Simulation No.: 87, Duration: 79.68918108940125s, Time on target: 10.585830351252216 hrs 
+flight_model.yaw.path.points[0][1] = 188666
+Simulation No.: 88, Duration: 66.99680399894714s, Time on target: 12.133337123747749 hrs 
+flight_model.yaw.path.points[0][1] = 99829
+Simulation No.: 89, Duration: 70.31854319572449s, Time on target: 22.111746963057108 hrs 
+flight_model.yaw.path.points[0][1] = 52104
+Simulation No.: 90, Duration: 57.66034555435181s, Time on target: 12.541941845264764 hrs 
+flight_model.yaw.path.points[0][1] = 85564
+Simulation No.: 91, Duration: 82.21223402023315s, Time on target: 10.837940667153525 hrs 
+flight_model.yaw.path.points[0][1] = 179887
+Simulation No.: 92, Duration: 73.65978050231934s, Time on target: 11.410511015783444 hrs 
+flight_model.yaw.path.points[0][1] = 143138
+Simulation No.: 93, Duration: 58.33920741081238s, Time on target: 23.220581894944196 hrs 
+flight_model.yaw.path.points[0][1] = 9949
+Simulation No.: 94, Duration: 65.27964067459106s, Time on target: 11.393625410471747 hrs 
+flight_model.yaw.path.points[0][1] = 125569
+Simulation No.: 95, Duration: 62.886436223983765s, Time on target: 11.513913427633796 hrs 
+flight_model.yaw.path.points[0][1] = 121428
+Simulation No.: 96, Duration: 73.15981984138489s, Time on target: 21.87914382488093 hrs 
+flight_model.yaw.path.points[0][1] = 61183
+Simulation No.: 97, Duration: 60.11291432380676s, Time on target: 22.90484644849993 hrs 
+flight_model.yaw.path.points[0][1] = 21924
+Simulation No.: 98, Duration: 64.57974410057068s, Time on target: 22.571452047928155 hrs 
+flight_model.yaw.path.points[0][1] = 34548
+Simulation No.: 99, Duration: 63.307384729385376s, Time on target: 22.665543059851817 hrs 
+flight_model.yaw.path.points[0][1] = 30857
+Simulation No.: 100, Duration: 78.03781294822693s, Time on target: 21.59521373490773 hrs 
+flight_model.yaw.path.points[0][1] = 71883
+Simulation No.: 101, Duration: 83.06956434249878s, Time on target: 11.275445880804995 hrs 
+flight_model.yaw.path.points[0][1] = 164613
+Simulation No.: 102, Duration: 58.43239426612854s, Time on target: 23.436395252585804 hrs 
+flight_model.yaw.path.points[0][1] = 1813
+Simulation No.: 103, Duration: 78.41352272033691s, Time on target: 10.412125820705437 hrs 
+flight_model.yaw.path.points[0][1] = 194741
+Simulation No.: 104, Duration: 62.87312030792236s, Time on target: 11.652115013709892 hrs 
+flight_model.yaw.path.points[0][1] = 116597
+Simulation No.: 105, Duration: 58.42900824546814s, Time on target: 23.454363095129914 hrs 
+flight_model.yaw.path.points[0][1] = 1066
+Simulation No.: 106, Duration: 80.46803331375122s, Time on target: 11.30585065884354 hrs 
+flight_model.yaw.path.points[0][1] = 163551
+Simulation No.: 107, Duration: 63.10375237464905s, Time on target: 11.79288760998667 hrs 
+flight_model.yaw.path.points[0][1] = 111706
+Simulation No.: 108, Duration: 60.08340382575989s, Time on target: 12.320993705390148 hrs 
+flight_model.yaw.path.points[0][1] = 93269
+Simulation No.: 109, Duration: 66.52666306495667s, Time on target: 22.381198879718948 hrs 
+flight_model.yaw.path.points[0][1] = 41721
+Simulation No.: 110, Duration: 78.55324220657349s, Time on target: 10.261140049412676 hrs 
+flight_model.yaw.path.points[0][1] = 199985
+Simulation No.: 111, Duration: 62.131736755371094s, Time on target: 11.819317935204849 hrs 
+flight_model.yaw.path.points[0][1] = 110794
+Simulation No.: 112, Duration: 70.85687756538391s, Time on target: 11.430807685877262 hrs 
+flight_model.yaw.path.points[0][1] = 130914
+Simulation No.: 113, Duration: 58.12769079208374s, Time on target: 23.02663160910194 hrs 
+flight_model.yaw.path.points[0][1] = 17178
+Simulation No.: 114, Duration: 76.34244728088379s, Time on target: 21.63289820150439 hrs 
+flight_model.yaw.path.points[0][1] = 70300
+Simulation No.: 115, Duration: 56.64882516860962s, Time on target: 12.718772019584089 hrs 
+flight_model.yaw.path.points[0][1] = 79412
+Simulation No.: 116, Duration: 60.54884076118469s, Time on target: 12.178963322279511 hrs 
+flight_model.yaw.path.points[0][1] = 98156
+Simulation No.: 117, Duration: 73.65283155441284s, Time on target: 11.370625113742365 hrs 
+flight_model.yaw.path.points[0][1] = 147334
+Simulation No.: 118, Duration: 68.4926860332489s, Time on target: 22.217531875224513 hrs 
+flight_model.yaw.path.points[0][1] = 47918
+Simulation No.: 119, Duration: 65.074547290802s, Time on target: 22.56378545082175 hrs 
+flight_model.yaw.path.points[0][1] = 34826
+Simulation No.: 120, Duration: 40.30480623245239s, Time on target: 14.195635989861868 hrs 
+flight_model.yaw.path.points[0][1] = 25052
+Simulation No.: 121, Duration: 69.4356381893158s, Time on target: 22.108088304556933 hrs 
+flight_model.yaw.path.points[0][1] = 52245
+Simulation No.: 122, Duration: 72.6148133277893s, Time on target: 21.844996090015695 hrs 
+flight_model.yaw.path.points[0][1] = 62385
+Simulation No.: 123, Duration: 58.92761492729187s, Time on target: 23.444654788190025 hrs 
+flight_model.yaw.path.points[0][1] = 1331
+Simulation No.: 124, Duration: 72.31243228912354s, Time on target: 11.417189962304349 hrs 
+flight_model.yaw.path.points[0][1] = 142653
+Simulation No.: 125, Duration: 58.8156464099884s, Time on target: 23.43340597229103 hrs 
+flight_model.yaw.path.points[0][1] = 1925
+Simulation No.: 126, Duration: 67.07341003417969s, Time on target: 11.41052648287601 hrs 
+flight_model.yaw.path.points[0][1] = 131894
+Simulation No.: 127, Duration: 78.05347990989685s, Time on target: 11.362314407352347 hrs 
+flight_model.yaw.path.points[0][1] = 156403
+Simulation No.: 128, Duration: 78.41738224029541s, Time on target: 21.56256099756406 hrs 
+flight_model.yaw.path.points[0][1] = 73229
+Simulation No.: 129, Duration: 64.62876844406128s, Time on target: 22.540088320910506 hrs 
+flight_model.yaw.path.points[0][1] = 35667
+Simulation No.: 130, Duration: 69.21898603439331s, Time on target: 11.387581145159198 hrs 
+flight_model.yaw.path.points[0][1] = 137029
+Simulation No.: 131, Duration: 64.6021420955658s, Time on target: 22.55763794259356 hrs 
+flight_model.yaw.path.points[0][1] = 35061
+Simulation No.: 132, Duration: 85.78091382980347s, Time on target: 22.444752882464915 hrs 
+flight_model.yaw.path.points[0][1] = 39470
+Simulation No.: 133, Duration: 84.16888523101807s, Time on target: 11.57199796354993 hrs 
+flight_model.yaw.path.points[0][1] = 119399
+Simulation No.: 134, Duration: 85.35910487174988s, Time on target: 21.87883139975011 hrs 
+flight_model.yaw.path.points[0][1] = 61190
+Simulation No.: 135, Duration: 93.27896881103516s, Time on target: 10.320392562559748 hrs 
+flight_model.yaw.path.points[0][1] = 197935
+Simulation No.: 136, Duration: 75.02718663215637s, Time on target: 11.45088634032403 hrs 
+flight_model.yaw.path.points[0][1] = 123625
+Simulation No.: 137, Duration: 83.45235323905945s, Time on target: 12.079828156838246 hrs 
+flight_model.yaw.path.points[0][1] = 101688
+Simulation No.: 138, Duration: 97.37271332740784s, Time on target: 21.581325765753906 hrs 
+flight_model.yaw.path.points[0][1] = 72573
+Simulation No.: 139, Duration: 81.16785740852356s, Time on target: 11.624272675647473 hrs 
+flight_model.yaw.path.points[0][1] = 117613
+Simulation No.: 140, Duration: 79.72251796722412s, Time on target: 11.452504062103193 hrs 
+flight_model.yaw.path.points[0][1] = 151312
+Simulation No.: 141, Duration: 59.01417922973633s, Time on target: 22.989138483722797 hrs 
+flight_model.yaw.path.points[0][1] = 18523
+Simulation No.: 142, Duration: 76.00722193717957s, Time on target: 21.71364152533694 hrs 
+flight_model.yaw.path.points[0][1] = 67446
+Simulation No.: 143, Duration: 59.67782950401306s, Time on target: 12.597373311956604 hrs 
+flight_model.yaw.path.points[0][1] = 83649
+Simulation No.: 144, Duration: 80.8590452671051s, Time on target: 10.508345957565167 hrs 
+flight_model.yaw.path.points[0][1] = 191382
+Simulation No.: 145, Duration: 73.94689297676086s, Time on target: 21.74490503388487 hrs 
+flight_model.yaw.path.points[0][1] = 66205
+Simulation No.: 146, Duration: 58.50558662414551s, Time on target: 23.02533869802585 hrs 
+flight_model.yaw.path.points[0][1] = 17245
+Simulation No.: 147, Duration: 80.97915387153625s, Time on target: 10.74426827687678 hrs 
+flight_model.yaw.path.points[0][1] = 183159
+Simulation No.: 148, Duration: 78.81990361213684s, Time on target: 10.303038541941488 hrs 
+flight_model.yaw.path.points[0][1] = 198464
+Simulation No.: 149, Duration: 65.30957269668579s, Time on target: 22.456008339372033 hrs 
+flight_model.yaw.path.points[0][1] = 39068
+Simulation No.: 150, Duration: 74.6065309047699s, Time on target: 21.7452587773921 hrs 
+flight_model.yaw.path.points[0][1] = 66150
+Simulation No.: 151, Duration: 70.50226879119873s, Time on target: 21.983814587303858 hrs 
+flight_model.yaw.path.points[0][1] = 57091
+Simulation No.: 152, Duration: 76.32929134368896s, Time on target: 11.445987475100013 hrs 
+flight_model.yaw.path.points[0][1] = 150872
+Simulation No.: 153, Duration: 59.737396240234375s, Time on target: 22.920493452151955 hrs 
+flight_model.yaw.path.points[0][1] = 21332
+Simulation No.: 154, Duration: 57.09126877784729s, Time on target: 12.696997938886852 hrs 
+flight_model.yaw.path.points[0][1] = 80172
+Simulation No.: 155, Duration: 98.60042595863342s, Time on target: 21.595285374867238 hrs 
+flight_model.yaw.path.points[0][1] = 71884
+Simulation No.: 156, Duration: 80.5752444267273s, Time on target: 22.823959219519825 hrs 
+flight_model.yaw.path.points[0][1] = 24765
+Simulation No.: 157, Duration: 86.42553186416626s, Time on target: 21.96348460592535 hrs 
+flight_model.yaw.path.points[0][1] = 57700
+Simulation No.: 158, Duration: 70.72147607803345s, Time on target: 23.378334303036095 hrs 
+flight_model.yaw.path.points[0][1] = 4019
+Simulation No.: 159, Duration: 92.71921062469482s, Time on target: 11.375925651565456 hrs 
+flight_model.yaw.path.points[0][1] = 158708
+Simulation No.: 160, Duration: 65.98237872123718s, Time on target: 22.397701201556075 hrs 
+flight_model.yaw.path.points[0][1] = 41112
+Simulation No.: 161, Duration: 58.65329909324646s, Time on target: 23.148161533857934 hrs 
+flight_model.yaw.path.points[0][1] = 12493
+Simulation No.: 162, Duration: 75.89624261856079s, Time on target: 22.050250901442364 hrs 
+flight_model.yaw.path.points[0][1] = 54516
+Simulation No.: 163, Duration: 64.75450491905212s, Time on target: 11.391812779740327 hrs 
+flight_model.yaw.path.points[0][1] = 126053
+Simulation No.: 164, Duration: 82.3839020729065s, Time on target: 11.102823517687117 hrs 
+flight_model.yaw.path.points[0][1] = 170626
+Simulation No.: 165, Duration: 57.28185319900513s, Time on target: 12.624451675674687 hrs 
+flight_model.yaw.path.points[0][1] = 82664
+Simulation No.: 166, Duration: 63.16733407974243s, Time on target: 22.707051352455313 hrs 
+flight_model.yaw.path.points[0][1] = 29344
+Simulation No.: 167, Duration: 83.44422197341919s, Time on target: 10.956474110231337 hrs 
+flight_model.yaw.path.points[0][1] = 175757
+Simulation No.: 168, Duration: 68.83159446716309s, Time on target: 11.395644263238383 hrs 
+flight_model.yaw.path.points[0][1] = 132497
+Simulation No.: 169, Duration: 58.7925808429718s, Time on target: 12.640340145401503 hrs 
+flight_model.yaw.path.points[0][1] = 82141
+Simulation No.: 170, Duration: 83.80255794525146s, Time on target: 11.394389402549264 hrs 
+flight_model.yaw.path.points[0][1] = 160425
+Simulation No.: 171, Duration: 96.87063670158386s, Time on target: 11.114916754296633 hrs 
+flight_model.yaw.path.points[0][1] = 170231
+Simulation No.: 172, Duration: 77.41334128379822s, Time on target: 22.815477408958746 hrs 
+flight_model.yaw.path.points[0][1] = 25173
+Simulation No.: 173, Duration: 69.95320725440979s, Time on target: 22.20505351776727 hrs 
+flight_model.yaw.path.points[0][1] = 48543
+Simulation No.: 174, Duration: 58.860273599624634s, Time on target: 23.0788447423685 hrs 
+flight_model.yaw.path.points[0][1] = 15324
+Simulation No.: 175, Duration: 107.65895104408264s, Time on target: 11.247002729016991 hrs 
+flight_model.yaw.path.points[0][1] = 165533
+Simulation No.: 176, Duration: 67.4333655834198s, Time on target: 23.16701199186614 hrs 
+flight_model.yaw.path.points[0][1] = 11814
+Simulation No.: 177, Duration: 81.04286217689514s, Time on target: 11.337476208949873 hrs 
+flight_model.yaw.path.points[0][1] = 162469
+Simulation No.: 178, Duration: 81.5492959022522s, Time on target: 10.613376783210883 hrs 
+flight_model.yaw.path.points[0][1] = 187642
+Simulation No.: 179, Duration: 61.17956805229187s, Time on target: 12.198764571420599 hrs 
+flight_model.yaw.path.points[0][1] = 97549
+Simulation No.: 180, Duration: 77.38149523735046s, Time on target: 22.130950825134434 hrs 
+flight_model.yaw.path.points[0][1] = 51418
+Simulation No.: 181, Duration: 63.53458380699158s, Time on target: 23.078831460992884 hrs 
+flight_model.yaw.path.points[0][1] = 15338
+Simulation No.: 182, Duration: 84.91873216629028s, Time on target: 12.010037091805648 hrs 
+flight_model.yaw.path.points[0][1] = 104041
+Simulation No.: 183, Duration: 91.78451108932495s, Time on target: 21.861945402971532 hrs 
+flight_model.yaw.path.points[0][1] = 61787
+Simulation No.: 184, Duration: 69.87864851951599s, Time on target: 12.623113994347575 hrs 
+flight_model.yaw.path.points[0][1] = 82751
+Simulation No.: 185, Duration: 67.3426456451416s, Time on target: 23.392405205504403 hrs 
+flight_model.yaw.path.points[0][1] = 3526
+Simulation No.: 186, Duration: 71.68794012069702s, Time on target: 11.454855604216919 hrs 
+flight_model.yaw.path.points[0][1] = 140823
+Simulation No.: 187, Duration: 72.64988231658936s, Time on target: 11.416166951031142 hrs 
+flight_model.yaw.path.points[0][1] = 142677
+Simulation No.: 188, Duration: 82.54564380645752s, Time on target: 11.29586202755087 hrs 
+flight_model.yaw.path.points[0][1] = 163908
+Simulation No.: 189, Duration: 42.14542627334595s, Time on target: 13.035818489633366 hrs 
+flight_model.yaw.path.points[0][1] = 38437
+Simulation No.: 190, Duration: 60.28479886054993s, Time on target: 23.028907112486312 hrs 
+flight_model.yaw.path.points[0][1] = 17091
+Simulation No.: 191, Duration: 58.52175784111023s, Time on target: 23.111744914281754 hrs 
+flight_model.yaw.path.points[0][1] = 14161
+Simulation No.: 192, Duration: 96.53868556022644s, Time on target: 22.797705735856418 hrs 
+flight_model.yaw.path.points[0][1] = 26114
+Simulation No.: 193, Duration: 82.47406959533691s, Time on target: 23.42424953905783 hrs 
+flight_model.yaw.path.points[0][1] = 2282
+Simulation No.: 194, Duration: 120.67089176177979s, Time on target: 10.75809859138373 hrs 
+flight_model.yaw.path.points[0][1] = 182641
+Simulation No.: 195, Duration: 111.52614307403564s, Time on target: 10.599496392679526 hrs 
+flight_model.yaw.path.points[0][1] = 188214
+Simulation No.: 196, Duration: 73.47347807884216s, Time on target: 11.444756335025012 hrs 
+flight_model.yaw.path.points[0][1] = 141357
+Simulation No.: 197, Duration: 92.85537576675415s, Time on target: 11.442494878208613 hrs 
+flight_model.yaw.path.points[0][1] = 150735
+Simulation No.: 198, Duration: 93.64673972129822s, Time on target: 12.477758724529922 hrs 
+flight_model.yaw.path.points[0][1] = 87820
+Simulation No.: 199, Duration: 85.22887945175171s, Time on target: 22.121968454206392 hrs 
+flight_model.yaw.path.points[0][1] = 51701
+Simulation No.: 200, Duration: 65.87735486030579s, Time on target: 22.752531696474186 hrs 
+flight_model.yaw.path.points[0][1] = 27732
+Success rate = 100.0

@@ -1,0 +1,202 @@
+Total Simulations to run: 100
+Simulation No.: 1 Duration: 72.9741723537445s Outcome: 32.74467663202389%
+flight_model.yaw.path.width = 69151
+Simulation No.: 2 Duration: 74.8306016921997s Outcome: 30.864806950054813%
+flight_model.yaw.path.width = 72246
+Simulation No.: 3 Duration: 65.50458717346191s Outcome: 42.27334153095176%
+flight_model.yaw.path.width = 61391
+Simulation No.: 4 Duration: 64.14989757537842s Outcome: 32.83790734663023%
+flight_model.yaw.path.width = 69045
+Simulation No.: 5 Duration: 83.68483448028564s Outcome: 16.63283218307227%
+flight_model.yaw.path.width = 98828
+Simulation No.: 6 Duration: 62.54227113723755s Outcome: 70.80508548223489%
+flight_model.yaw.path.width = 46208
+Simulation No.: 7 Duration: 17.340921878814697s Outcome: 100.0%
+flight_model.yaw.path.width = 15000
+Simulation No.: 8 Duration: 69.79439640045166s Outcome: 66.16530663488828%
+flight_model.yaw.path.width = 47202
+Simulation No.: 9 Duration: 60.92760229110718s Outcome: 33.824965309760934%
+flight_model.yaw.path.width = 67605
+Simulation No.: 10 Duration: 87.38422131538391s Outcome: 22.257710604063732%
+flight_model.yaw.path.width = 82612
+Simulation No.: 11 Duration: 28.912577390670776s Outcome: 100.0%
+flight_model.yaw.path.width = 20868
+Simulation No.: 12 Duration: 34.96612811088562s Outcome: 100.0%
+flight_model.yaw.path.width = 27020
+Simulation No.: 13 Duration: 60.336958169937134s Outcome: 50.73780361846861%
+flight_model.yaw.path.width = 54501
+Simulation No.: 14 Duration: 63.67453169822693s Outcome: 49.19202065112883%
+flight_model.yaw.path.width = 55649
+Simulation No.: 15 Duration: 36.19814896583557s Outcome: 100.0%
+flight_model.yaw.path.width = 26816
+Simulation No.: 16 Duration: 59.94211935997009s Outcome: 30.325844053914995%
+flight_model.yaw.path.width = 73129
+Simulation No.: 17 Duration: 57.38812494277954s Outcome: 23.155087301848017%
+flight_model.yaw.path.width = 80773
+Simulation No.: 18 Duration: 50.545960664749146s Outcome: 65.30256269476514%
+flight_model.yaw.path.width = 47575
+Simulation No.: 19 Duration: 50.45887064933777s Outcome: 52.592270733791565%
+flight_model.yaw.path.width = 53272
+Simulation No.: 20 Duration: 61.464314699172974s Outcome: 19.061666382382388%
+flight_model.yaw.path.width = 90037
+Simulation No.: 21 Duration: 51.229820728302s Outcome: 80.96816862729005%
+flight_model.yaw.path.width = 42796
+Simulation No.: 22 Duration: 60.77803325653076s Outcome: 18.80217713529844%
+flight_model.yaw.path.width = 90893
+Simulation No.: 23 Duration: 51.28821325302124s Outcome: 66.53189331243169%
+flight_model.yaw.path.width = 47051
+Simulation No.: 24 Duration: 49.5876624584198s Outcome: 50.51123762541675%
+flight_model.yaw.path.width = 54639
+Simulation No.: 25 Duration: 49.68385672569275s Outcome: 46.444803819680544%
+flight_model.yaw.path.width = 58091
+Simulation No.: 26 Duration: 16.318541288375854s Outcome: 100.0%
+flight_model.yaw.path.width = 17061
+Simulation No.: 27 Duration: 63.47165608406067s Outcome: 17.805312313609704%
+flight_model.yaw.path.width = 94333
+Simulation No.: 28 Duration: 36.02383041381836s Outcome: 100.0%
+flight_model.yaw.path.width = 31895
+Simulation No.: 29 Duration: 59.512197732925415s Outcome: 20.131782149341618%
+flight_model.yaw.path.width = 87506
+Simulation No.: 30 Duration: 10.515597820281982s Outcome: 100.0%
+flight_model.yaw.path.width = 10463
+Simulation No.: 31 Duration: 7.7450854778289795s Outcome: 100.0%
+flight_model.yaw.path.width = 5453
+Simulation No.: 32 Duration: 9.98157286643982s Outcome: 100.0%
+flight_model.yaw.path.width = 9571
+Simulation No.: 33 Duration: 54.19900321960449s Outcome: 28.302411748018812%
+flight_model.yaw.path.width = 76915
+Simulation No.: 34 Duration: 29.96988344192505s Outcome: 100.0%
+flight_model.yaw.path.width = 28191
+Simulation No.: 35 Duration: 40.59688663482666s Outcome: 100.0%
+flight_model.yaw.path.width = 33651
+Simulation No.: 36 Duration: 24.170320510864258s Outcome: 100.0%
+flight_model.yaw.path.width = 24088
+Simulation No.: 37 Duration: 27.59603476524353s Outcome: 100.0%
+flight_model.yaw.path.width = 25983
+Simulation No.: 38 Duration: 55.1898877620697s Outcome: 57.82820407301532%
+flight_model.yaw.path.width = 51838
+Simulation No.: 39 Duration: 48.99652624130249s Outcome: 33.07225482977658%
+flight_model.yaw.path.width = 68775
+Simulation No.: 40 Duration: 61.84832429885864s Outcome: 17.80655546530818%
+flight_model.yaw.path.width = 94328
+Simulation No.: 41 Duration: 50.27402329444885s Outcome: 74.14400781678067%
+flight_model.yaw.path.width = 44793
+Simulation No.: 42 Duration: 62.030192136764526s Outcome: 18.864624405319937%
+flight_model.yaw.path.width = 90732
+Simulation No.: 43 Duration: 50.395127296447754s Outcome: 42.58022100449196%
+flight_model.yaw.path.width = 61275
+Simulation No.: 44 Duration: 51.992934465408325s Outcome: 56.26147523661421%
+flight_model.yaw.path.width = 52319
+Simulation No.: 45 Duration: 55.03687834739685s Outcome: 27.392774894438748%
+flight_model.yaw.path.width = 77863
+Simulation No.: 46 Duration: 34.198742628097534s Outcome: 100.0%
+flight_model.yaw.path.width = 30518
+Simulation No.: 47 Duration: 49.514713287353516s Outcome: 31.375085549921693%
+flight_model.yaw.path.width = 71415
+Simulation No.: 48 Duration: 49.176164627075195s Outcome: 100.0%
+flight_model.yaw.path.width = 38634
+Simulation No.: 49 Duration: 50.34534001350403s Outcome: 60.16612943289944%
+flight_model.yaw.path.width = 50554
+Simulation No.: 50 Duration: 40.97867298126221s Outcome: 100.0%
+flight_model.yaw.path.width = 33911
+Simulation No.: 51 Duration: 50.3676221370697s Outcome: 89.9303311746958%
+flight_model.yaw.path.width = 39900
+Simulation No.: 52 Duration: 16.449605226516724s Outcome: 100.0%
+flight_model.yaw.path.width = 17274
+Simulation No.: 53 Duration: 49.681463956832886s Outcome: 62.19091219008407%
+flight_model.yaw.path.width = 49146
+Simulation No.: 54 Duration: 62.12447500228882s Outcome: 18.125287253554678%
+flight_model.yaw.path.width = 93235
+Simulation No.: 55 Duration: 30.089266300201416s Outcome: 100.0%
+flight_model.yaw.path.width = 27971
+Simulation No.: 56 Duration: 49.53105568885803s Outcome: 35.72218787480596%
+flight_model.yaw.path.width = 65420
+Simulation No.: 57 Duration: 34.00810480117798s Outcome: 100.0%
+flight_model.yaw.path.width = 30236
+Simulation No.: 58 Duration: 49.78170371055603s Outcome: 37.008788485188035%
+flight_model.yaw.path.width = 64112
+Simulation No.: 59 Duration: 50.332497119903564s Outcome: 28.692323588711627%
+flight_model.yaw.path.width = 75909
+Simulation No.: 60 Duration: 59.59403991699219s Outcome: 20.62009283543739%
+flight_model.yaw.path.width = 86389
+Simulation No.: 61 Duration: 49.887664794921875s Outcome: 74.1806006698143%
+flight_model.yaw.path.width = 44741
+Simulation No.: 62 Duration: 37.32449746131897s Outcome: 100.0%
+flight_model.yaw.path.width = 32603
+Simulation No.: 63 Duration: 40.56097960472107s Outcome: 100.0%
+flight_model.yaw.path.width = 33529
+Simulation No.: 64 Duration: 49.06994938850403s Outcome: 38.598326303803496%
+flight_model.yaw.path.width = 62479
+Simulation No.: 65 Duration: 48.97036170959473s Outcome: 30.2873639399317%
+flight_model.yaw.path.width = 73181
+Simulation No.: 66 Duration: 9.858852624893188s Outcome: 100.0%
+flight_model.yaw.path.width = 9261
+Simulation No.: 67 Duration: 38.80531048774719s Outcome: 100.0%
+flight_model.yaw.path.width = 33096
+Simulation No.: 68 Duration: 48.2469003200531s Outcome: 45.869474332833555%
+flight_model.yaw.path.width = 58633
+Simulation No.: 69 Duration: 49.54299068450928s Outcome: 34.58685257516347%
+flight_model.yaw.path.width = 66749
+Simulation No.: 70 Duration: 61.62142038345337s Outcome: 19.592693804578566%
+flight_model.yaw.path.width = 88987
+Simulation No.: 71 Duration: 61.317126750946045s Outcome: 18.46698383562332%
+flight_model.yaw.path.width = 92144
+Simulation No.: 72 Duration: 13.320297479629517s Outcome: 100.0%
+flight_model.yaw.path.width = 14200
+Simulation No.: 73 Duration: 57.650222301483154s Outcome: 21.43858000878002%
+flight_model.yaw.path.width = 84500
+Simulation No.: 74 Duration: 63.75460886955261s Outcome: 16.62906861481869%
+flight_model.yaw.path.width = 98850
+Simulation No.: 75 Duration: 10.784398078918457s Outcome: 100.0%
+flight_model.yaw.path.width = 10935
+Simulation No.: 76 Duration: 49.28041052818298s Outcome: 36.654107181448076%
+flight_model.yaw.path.width = 64610
+Simulation No.: 77 Duration: 51.026973724365234s Outcome: 88.67624990330974%
+flight_model.yaw.path.width = 40494
+Simulation No.: 78 Duration: 10.07212519645691s Outcome: 100.0%
+flight_model.yaw.path.width = 9344
+Simulation No.: 79 Duration: 50.49583387374878s Outcome: 76.42585597801036%
+flight_model.yaw.path.width = 43699
+Simulation No.: 80 Duration: 50.855443477630615s Outcome: 74.12883785155844%
+flight_model.yaw.path.width = 44815
+Simulation No.: 81 Duration: 49.43424463272095s Outcome: 34.11686372406915%
+flight_model.yaw.path.width = 67241
+Simulation No.: 82 Duration: 51.87794518470764s Outcome: 80.6137600496304%
+flight_model.yaw.path.width = 42915
+Simulation No.: 83 Duration: 34.149887561798096s Outcome: 100.0%
+flight_model.yaw.path.width = 30579
+Simulation No.: 84 Duration: 10.849994659423828s Outcome: 100.0%
+flight_model.yaw.path.width = 11161
+Simulation No.: 85 Duration: 33.18681883811951s Outcome: 100.0%
+flight_model.yaw.path.width = 29187
+Simulation No.: 86 Duration: 49.81369185447693s Outcome: 28.643808821941708%
+flight_model.yaw.path.width = 76066
+Simulation No.: 87 Duration: 46.4825656414032s Outcome: 100.0%
+flight_model.yaw.path.width = 37366
+Simulation No.: 88 Duration: 25.31961703300476s Outcome: 100.0%
+flight_model.yaw.path.width = 24945
+Simulation No.: 89 Duration: 11.614538431167603s Outcome: 100.0%
+flight_model.yaw.path.width = 12387
+Simulation No.: 90 Duration: 63.58474135398865s Outcome: 17.345204800813917%
+flight_model.yaw.path.width = 96076
+Simulation No.: 91 Duration: 49.60174584388733s Outcome: 63.903496207962796%
+flight_model.yaw.path.width = 48146
+Simulation No.: 92 Duration: 49.65978026390076s Outcome: 45.5258244426666%
+flight_model.yaw.path.width = 58996
+Simulation No.: 93 Duration: 50.43234658241272s Outcome: 89.02812909800049%
+flight_model.yaw.path.width = 40313
+Simulation No.: 94 Duration: 44.69704604148865s Outcome: 100.0%
+flight_model.yaw.path.width = 36161
+Simulation No.: 95 Duration: 60.67277479171753s Outcome: 18.817017413771477%
+flight_model.yaw.path.width = 90854
+Simulation No.: 96 Duration: 42.67738127708435s Outcome: 100.0%
+flight_model.yaw.path.width = 35411
+Simulation No.: 97 Duration: 59.182809591293335s Outcome: 20.18415161159819%
+flight_model.yaw.path.width = 87390
+Simulation No.: 98 Duration: 63.26237654685974s Outcome: 17.781938420737323%
+flight_model.yaw.path.width = 94399
+Simulation No.: 99 Duration: 57.19264817237854s Outcome: 25.128507313910788%
+flight_model.yaw.path.width = 79536
+Simulation No.: 100 Duration: 50.12853765487671s Outcome: 66.91807003739261%
+flight_model.yaw.path.width = 46786
+Success rate = 100.0

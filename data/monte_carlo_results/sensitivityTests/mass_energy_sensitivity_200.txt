@@ -1,0 +1,602 @@
+Total Simulations to run: 200
+Simulation No.: 1 Duration: 63.86101055145264s Outcome: False
+flight_model.aircraft.mass = 17.218647812979604
+flight_model.battery.capacity = 3790892.516100211
+Simulation No.: 2 Duration: 59.27973914146423s Outcome: True
+flight_model.aircraft.mass = 18.16559580484835
+flight_model.battery.capacity = 5419564.896581052
+Simulation No.: 3 Duration: 55.461392879486084s Outcome: False
+flight_model.aircraft.mass = 16.991641452209652
+flight_model.battery.capacity = 2507314.0138748265
+Simulation No.: 4 Duration: 72.31619501113892s Outcome: True
+flight_model.aircraft.mass = 15.213486227524884
+flight_model.battery.capacity = 4356433.066238446
+Simulation No.: 5 Duration: 59.78235363960266s Outcome: True
+flight_model.aircraft.mass = 15.197077151593247
+flight_model.battery.capacity = 5692289.151632048
+Simulation No.: 6 Duration: 53.230549573898315s Outcome: True
+flight_model.aircraft.mass = 15.212486936198943
+flight_model.battery.capacity = 5420692.5942816585
+Simulation No.: 7 Duration: 50.761109828948975s Outcome: True
+flight_model.aircraft.mass = 16.25643388487577
+flight_model.battery.capacity = 6712927.382194561
+Simulation No.: 8 Duration: 41.07107925415039s Outcome: False
+flight_model.aircraft.mass = 16.059811953721116
+flight_model.battery.capacity = 2410534.179089082
+Simulation No.: 9 Duration: 40.39605402946472s Outcome: True
+flight_model.aircraft.mass = 19.411726644556637
+flight_model.battery.capacity = 4059099.0585713796
+Simulation No.: 10 Duration: 50.71768021583557s Outcome: True
+flight_model.aircraft.mass = 16.11555684036231
+flight_model.battery.capacity = 6304581.672212513
+Simulation No.: 11 Duration: 46.57662010192871s Outcome: True
+flight_model.aircraft.mass = 17.50295498825216
+flight_model.battery.capacity = 4532809.2680444475
+Simulation No.: 12 Duration: 45.961660861968994s Outcome: True
+flight_model.aircraft.mass = 17.555330089653513
+flight_model.battery.capacity = 4310056.726292817
+Simulation No.: 13 Duration: 48.065762519836426s Outcome: True
+flight_model.aircraft.mass = 16.52078770468988
+flight_model.battery.capacity = 5162912.679359263
+Simulation No.: 14 Duration: 43.64678764343262s Outcome: True
+flight_model.aircraft.mass = 18.82622007738137
+flight_model.battery.capacity = 4298684.481358838
+Simulation No.: 15 Duration: 42.967857122421265s Outcome: True
+flight_model.aircraft.mass = 18.916897562848824
+flight_model.battery.capacity = 4857565.077858749
+Simulation No.: 16 Duration: 45.63437104225159s Outcome: False
+flight_model.aircraft.mass = 17.018446586542527
+flight_model.battery.capacity = 4141231.090997325
+Simulation No.: 17 Duration: 53.161970138549805s Outcome: True
+flight_model.aircraft.mass = 15.390192082133032
+flight_model.battery.capacity = 4727638.797831321
+Simulation No.: 18 Duration: 48.356873989105225s Outcome: True
+flight_model.aircraft.mass = 16.843852428980483
+flight_model.battery.capacity = 5822191.072773312
+Simulation No.: 19 Duration: 42.19372844696045s Outcome: True
+flight_model.aircraft.mass = 19.529466886803895
+flight_model.battery.capacity = 5941157.048769268
+Simulation No.: 20 Duration: 45.017027854919434s Outcome: False
+flight_model.aircraft.mass = 16.648331285699044
+flight_model.battery.capacity = 3371891.597439035
+Simulation No.: 21 Duration: 43.02178144454956s Outcome: True
+flight_model.aircraft.mass = 18.61504063715618
+flight_model.battery.capacity = 5270601.801244112
+Simulation No.: 22 Duration: 42.58963942527771s Outcome: False
+flight_model.aircraft.mass = 16.77137793973059
+flight_model.battery.capacity = 3200801.1334651476
+Simulation No.: 23 Duration: 41.475075483322144s Outcome: True
+flight_model.aircraft.mass = 19.766766278250138
+flight_model.battery.capacity = 6364229.862850391
+Simulation No.: 24 Duration: 52.56529402732849s Outcome: True
+flight_model.aircraft.mass = 15.120286845639578
+flight_model.battery.capacity = 5542100.365449184
+Simulation No.: 25 Duration: 42.40481662750244s Outcome: True
+flight_model.aircraft.mass = 18.780051743852994
+flight_model.battery.capacity = 5937000.578361836
+Simulation No.: 26 Duration: 45.69009709358215s Outcome: True
+flight_model.aircraft.mass = 17.64515424210444
+flight_model.battery.capacity = 5050182.733565242
+Simulation No.: 27 Duration: 46.27147912979126s Outcome: True
+flight_model.aircraft.mass = 17.597328682430472
+flight_model.battery.capacity = 5576444.488681797
+Simulation No.: 28 Duration: 52.117717266082764s Outcome: True
+flight_model.aircraft.mass = 15.457294973579701
+flight_model.battery.capacity = 5297347.825686724
+Simulation No.: 29 Duration: 45.73030400276184s Outcome: True
+flight_model.aircraft.mass = 17.37984400990465
+flight_model.battery.capacity = 5515210.986419814
+Simulation No.: 30 Duration: 45.38974857330322s Outcome: False
+flight_model.aircraft.mass = 15.40049742530329
+flight_model.battery.capacity = 2516929.79950712
+Simulation No.: 31 Duration: 41.19523477554321s Outcome: True
+flight_model.aircraft.mass = 19.812162051596562
+flight_model.battery.capacity = 5671500.016397669
+Simulation No.: 32 Duration: 50.34978723526001s Outcome: True
+flight_model.aircraft.mass = 16.069524258910533
+flight_model.battery.capacity = 6296244.6901488695
+Simulation No.: 33 Duration: 44.056480884552s Outcome: True
+flight_model.aircraft.mass = 19.093932537578468
+flight_model.battery.capacity = 6409364.451684989
+Simulation No.: 34 Duration: 54.97258996963501s Outcome: True
+flight_model.aircraft.mass = 15.463480824255145
+flight_model.battery.capacity = 5264960.433019377
+Simulation No.: 35 Duration: 43.01972579956055s Outcome: True
+flight_model.aircraft.mass = 18.366723911550896
+flight_model.battery.capacity = 6800692.254203908
+Simulation No.: 36 Duration: 39.70966053009033s Outcome: False
+flight_model.aircraft.mass = 19.85526970927769
+flight_model.battery.capacity = 3845395.7789656715
+Simulation No.: 37 Duration: 39.30506634712219s Outcome: False
+flight_model.aircraft.mass = 19.381112334435535
+flight_model.battery.capacity = 5057032.238284331
+Simulation No.: 38 Duration: 39.41871380805969s Outcome: False
+flight_model.aircraft.mass = 19.92336218122313
+flight_model.battery.capacity = 3962345.4859798322
+Simulation No.: 39 Duration: 40.674243211746216s Outcome: False
+flight_model.aircraft.mass = 17.576254935372056
+flight_model.battery.capacity = 2738030.7628810215
+Simulation No.: 40 Duration: 43.30027723312378s Outcome: False
+flight_model.aircraft.mass = 18.42396378149609
+flight_model.battery.capacity = 3855736.1898982394
+Simulation No.: 41 Duration: 41.69437217712402s Outcome: True
+flight_model.aircraft.mass = 19.280043568629573
+flight_model.battery.capacity = 4780141.6424665805
+Simulation No.: 42 Duration: 39.125651121139526s Outcome: False
+flight_model.aircraft.mass = 19.93187732654139
+flight_model.battery.capacity = 4428899.853721319
+Simulation No.: 43 Duration: 49.74883317947388s Outcome: True
+flight_model.aircraft.mass = 16.121822717592323
+flight_model.battery.capacity = 4786956.011605591
+Simulation No.: 44 Duration: 44.997941970825195s Outcome: False
+flight_model.aircraft.mass = 16.534253023294788
+flight_model.battery.capacity = 3187202.852939533
+Simulation No.: 45 Duration: 52.36255145072937s Outcome: True
+flight_model.aircraft.mass = 15.777077094002754
+flight_model.battery.capacity = 6258466.377074524
+Simulation No.: 46 Duration: 45.45647978782654s Outcome: True
+flight_model.aircraft.mass = 18.223402929973865
+flight_model.battery.capacity = 6321542.381258538
+Simulation No.: 47 Duration: 52.45410442352295s Outcome: True
+flight_model.aircraft.mass = 15.44626593637079
+flight_model.battery.capacity = 6648341.531048106
+Simulation No.: 48 Duration: 44.11627268791199s Outcome: True
+flight_model.aircraft.mass = 18.176070692803272
+flight_model.battery.capacity = 5275244.687472109
+Simulation No.: 49 Duration: 49.06977128982544s Outcome: True
+flight_model.aircraft.mass = 16.583293138591493
+flight_model.battery.capacity = 5845091.605535369
+Simulation No.: 50 Duration: 51.0847589969635s Outcome: True
+flight_model.aircraft.mass = 15.733778836769188
+flight_model.battery.capacity = 4794049.933243375
+Simulation No.: 51 Duration: 51.56676483154297s Outcome: True
+flight_model.aircraft.mass = 15.78247732238457
+flight_model.battery.capacity = 5896096.15357461
+Simulation No.: 52 Duration: 49.84442329406738s Outcome: True
+flight_model.aircraft.mass = 16.31872296170872
+flight_model.battery.capacity = 4297566.083655027
+Simulation No.: 53 Duration: 44.87987208366394s Outcome: False
+flight_model.aircraft.mass = 16.310457031496853
+flight_model.battery.capacity = 3012504.931448077
+Simulation No.: 54 Duration: 46.90232491493225s Outcome: True
+flight_model.aircraft.mass = 17.363546194854614
+flight_model.battery.capacity = 4857933.837639425
+Simulation No.: 55 Duration: 43.09911632537842s Outcome: True
+flight_model.aircraft.mass = 18.69507678140244
+flight_model.battery.capacity = 6041579.546829162
+Simulation No.: 56 Duration: 41.21193051338196s Outcome: True
+flight_model.aircraft.mass = 19.739750667584943
+flight_model.battery.capacity = 4625142.500076972
+Simulation No.: 57 Duration: 42.777364015579224s Outcome: False
+flight_model.aircraft.mass = 15.738052360335884
+flight_model.battery.capacity = 2314087.2234834926
+Simulation No.: 58 Duration: 35.62787461280823s Outcome: False
+flight_model.aircraft.mass = 19.923866959838104
+flight_model.battery.capacity = 2593674.9569191607
+Simulation No.: 59 Duration: 41.200249910354614s Outcome: True
+flight_model.aircraft.mass = 19.256300136929294
+flight_model.battery.capacity = 5524621.505568374
+Simulation No.: 60 Duration: 49.66959238052368s Outcome: True
+flight_model.aircraft.mass = 16.50850950836659
+flight_model.battery.capacity = 4522617.34833378
+Simulation No.: 61 Duration: 43.65812849998474s Outcome: True
+flight_model.aircraft.mass = 19.08034519215448
+flight_model.battery.capacity = 6288864.679547049
+Simulation No.: 62 Duration: 51.23867416381836s Outcome: False
+flight_model.aircraft.mass = 15.238544916431405
+flight_model.battery.capacity = 3707738.3348179404
+Simulation No.: 63 Duration: 50.45784521102905s Outcome: True
+flight_model.aircraft.mass = 15.904709352335509
+flight_model.battery.capacity = 4667220.211336768
+Simulation No.: 64 Duration: 48.20853281021118s Outcome: True
+flight_model.aircraft.mass = 16.824411734250624
+flight_model.battery.capacity = 6258771.200736344
+Simulation No.: 65 Duration: 51.73903560638428s Outcome: True
+flight_model.aircraft.mass = 15.734496229273471
+flight_model.battery.capacity = 4099209.5583783546
+Simulation No.: 66 Duration: 43.67688751220703s Outcome: True
+flight_model.aircraft.mass = 19.132477431270253
+flight_model.battery.capacity = 6125944.736760111
+Simulation No.: 67 Duration: 51.40229249000549s Outcome: True
+flight_model.aircraft.mass = 15.896208497439083
+flight_model.battery.capacity = 6649135.684699109
+Simulation No.: 68 Duration: 50.02485227584839s Outcome: True
+flight_model.aircraft.mass = 16.185287193236583
+flight_model.battery.capacity = 6311117.496595269
+Simulation No.: 69 Duration: 57.504239559173584s Outcome: True
+flight_model.aircraft.mass = 16.979879569723696
+flight_model.battery.capacity = 5959507.970784548
+Simulation No.: 70 Duration: 42.0303521156311s Outcome: True
+flight_model.aircraft.mass = 19.572402855940858
+flight_model.battery.capacity = 6360929.780831397
+Simulation No.: 71 Duration: 41.322784423828125s Outcome: True
+flight_model.aircraft.mass = 19.11300601069357
+flight_model.battery.capacity = 5249214.898406936
+Simulation No.: 72 Duration: 41.82152962684631s Outcome: True
+flight_model.aircraft.mass = 19.194693278615624
+flight_model.battery.capacity = 4362909.2354445495
+Simulation No.: 73 Duration: 37.67288398742676s Outcome: False
+flight_model.aircraft.mass = 18.823595213600342
+flight_model.battery.capacity = 2462963.506523286
+Simulation No.: 74 Duration: 37.77065682411194s Outcome: False
+flight_model.aircraft.mass = 18.90226328239036
+flight_model.battery.capacity = 2748056.098638409
+Simulation No.: 75 Duration: 46.55345177650452s Outcome: True
+flight_model.aircraft.mass = 17.04153084538205
+flight_model.battery.capacity = 4183700.5555103645
+Simulation No.: 76 Duration: 35.58193373680115s Outcome: False
+flight_model.aircraft.mass = 19.49940139028331
+flight_model.battery.capacity = 2373386.022570468
+Simulation No.: 77 Duration: 57.90166926383972s Outcome: True
+flight_model.aircraft.mass = 15.535371870071135
+flight_model.battery.capacity = 4566739.473103467
+Simulation No.: 78 Duration: 55.18940544128418s Outcome: True
+flight_model.aircraft.mass = 15.2344587870938
+flight_model.battery.capacity = 5997271.409362514
+Simulation No.: 79 Duration: 51.25684857368469s Outcome: True
+flight_model.aircraft.mass = 15.130775976365577
+flight_model.battery.capacity = 5010776.823539173
+Simulation No.: 80 Duration: 45.638545751571655s Outcome: False
+flight_model.aircraft.mass = 15.047656952435727
+flight_model.battery.capacity = 2932967.541033988
+Simulation No.: 81 Duration: 48.498605251312256s Outcome: False
+flight_model.aircraft.mass = 15.64550110852514
+flight_model.battery.capacity = 3713191.7957955636
+Simulation No.: 82 Duration: 50.37564826011658s Outcome: True
+flight_model.aircraft.mass = 16.38749372550633
+flight_model.battery.capacity = 5237970.447397044
+Simulation No.: 83 Duration: 38.75031542778015s Outcome: False
+flight_model.aircraft.mass = 18.877361930686945
+flight_model.battery.capacity = 2717880.5121761826
+Simulation No.: 84 Duration: 49.3068733215332s Outcome: True
+flight_model.aircraft.mass = 16.556565973627173
+flight_model.battery.capacity = 6297801.9614174925
+Simulation No.: 85 Duration: 45.01909065246582s Outcome: False
+flight_model.aircraft.mass = 16.198190660395948
+flight_model.battery.capacity = 3187562.8166874414
+Simulation No.: 86 Duration: 42.63940644264221s Outcome: True
+flight_model.aircraft.mass = 19.454259699802446
+flight_model.battery.capacity = 5168085.727519251
+Simulation No.: 87 Duration: 42.94704484939575s Outcome: True
+flight_model.aircraft.mass = 19.238981545693413
+flight_model.battery.capacity = 5796364.30239002
+Simulation No.: 88 Duration: 43.815401792526245s Outcome: True
+flight_model.aircraft.mass = 18.35543725849921
+flight_model.battery.capacity = 6658965.100161101
+Simulation No.: 89 Duration: 44.38076090812683s Outcome: False
+flight_model.aircraft.mass = 16.792890817870482
+flight_model.battery.capacity = 3240879.8772288435
+Simulation No.: 90 Duration: 48.59451079368591s Outcome: True
+flight_model.aircraft.mass = 16.61045317261314
+flight_model.battery.capacity = 5283997.966714796
+Simulation No.: 91 Duration: 52.13561773300171s Outcome: True
+flight_model.aircraft.mass = 15.242042233452612
+flight_model.battery.capacity = 5501839.047068514
+Simulation No.: 92 Duration: 50.294275522232056s Outcome: True
+flight_model.aircraft.mass = 15.9427580280562
+flight_model.battery.capacity = 6450987.925398606
+Simulation No.: 93 Duration: 41.31558275222778s Outcome: False
+flight_model.aircraft.mass = 17.50616756381836
+flight_model.battery.capacity = 2823687.9854080705
+Simulation No.: 94 Duration: 48.892489433288574s Outcome: True
+flight_model.aircraft.mass = 16.874448167707087
+flight_model.battery.capacity = 6612461.5695654545
+Simulation No.: 95 Duration: 39.71312355995178s Outcome: False
+flight_model.aircraft.mass = 17.797275445904912
+flight_model.battery.capacity = 2797237.780991134
+Simulation No.: 96 Duration: 36.80072736740112s Outcome: False
+flight_model.aircraft.mass = 19.804795863877253
+flight_model.battery.capacity = 2737739.1547091044
+Simulation No.: 97 Duration: 41.94306755065918s Outcome: False
+flight_model.aircraft.mass = 17.813814469151694
+flight_model.battery.capacity = 3288006.487432231
+Simulation No.: 98 Duration: 44.559696435928345s Outcome: False
+flight_model.aircraft.mass = 17.73461573562923
+flight_model.battery.capacity = 5733691.809299858
+Simulation No.: 99 Duration: 50.892767667770386s Outcome: True
+flight_model.aircraft.mass = 16.055788749398378
+flight_model.battery.capacity = 6483041.982435223
+Simulation No.: 100 Duration: 50.996708393096924s Outcome: True
+flight_model.aircraft.mass = 16.113609312986192
+flight_model.battery.capacity = 6227705.1798817795
+Simulation No.: 101 Duration: 41.302480936050415s Outcome: False
+flight_model.aircraft.mass = 19.26422464074368
+flight_model.battery.capacity = 4243776.774961729
+Simulation No.: 102 Duration: 43.52695989608765s Outcome: False
+flight_model.aircraft.mass = 16.712430878441786
+flight_model.battery.capacity = 3001370.0280940575
+Simulation No.: 103 Duration: 46.0569064617157s Outcome: False
+flight_model.aircraft.mass = 16.233850834949376
+flight_model.battery.capacity = 3450156.475031588
+Simulation No.: 104 Duration: 47.2604763507843s Outcome: True
+flight_model.aircraft.mass = 17.545965094859547
+flight_model.battery.capacity = 6633815.613953392
+Simulation No.: 105 Duration: 50.338571310043335s Outcome: True
+flight_model.aircraft.mass = 16.02694131610448
+flight_model.battery.capacity = 5097322.798443033
+Simulation No.: 106 Duration: 44.480778217315674s Outcome: True
+flight_model.aircraft.mass = 18.3948852130838
+flight_model.battery.capacity = 4265594.253653473
+Simulation No.: 107 Duration: 44.307865142822266s Outcome: True
+flight_model.aircraft.mass = 18.3988211246011
+flight_model.battery.capacity = 4559538.163765887
+Simulation No.: 108 Duration: 42.938504457473755s Outcome: True
+flight_model.aircraft.mass = 18.326931238699665
+flight_model.battery.capacity = 4944223.743684061
+Simulation No.: 109 Duration: 48.90657448768616s Outcome: True
+flight_model.aircraft.mass = 16.46367640758873
+flight_model.battery.capacity = 5522396.7982570585
+Simulation No.: 110 Duration: 45.89347767829895s Outcome: False
+flight_model.aircraft.mass = 15.668916092054058
+flight_model.battery.capacity = 2786947.800559094
+Simulation No.: 111 Duration: 43.8745551109314s Outcome: True
+flight_model.aircraft.mass = 18.804252923154518
+flight_model.battery.capacity = 5650431.4959266875
+Simulation No.: 112 Duration: 48.34186673164368s Outcome: True
+flight_model.aircraft.mass = 18.129837661684462
+flight_model.battery.capacity = 4829237.462373265
+Simulation No.: 113 Duration: 47.78611135482788s Outcome: True
+flight_model.aircraft.mass = 16.883012879471103
+flight_model.battery.capacity = 4209079.348833554
+Simulation No.: 114 Duration: 41.16274285316467s Outcome: True
+flight_model.aircraft.mass = 19.25100279019651
+flight_model.battery.capacity = 6829862.08143254
+Simulation No.: 115 Duration: 44.65019989013672s Outcome: False
+flight_model.aircraft.mass = 15.025580791167261
+flight_model.battery.capacity = 2353681.571203811
+Simulation No.: 116 Duration: 38.7770414352417s Outcome: False
+flight_model.aircraft.mass = 19.072558130900518
+flight_model.battery.capacity = 5918938.744204395
+Simulation No.: 117 Duration: 43.84337544441223s Outcome: False
+flight_model.aircraft.mass = 17.880071226664924
+flight_model.battery.capacity = 5195335.575450053
+Simulation No.: 118 Duration: 48.0199339389801s Outcome: False
+flight_model.aircraft.mass = 16.25209041378924
+flight_model.battery.capacity = 3675937.988949802
+Simulation No.: 119 Duration: 49.39075040817261s Outcome: False
+flight_model.aircraft.mass = 16.447137280989907
+flight_model.battery.capacity = 3927996.0095174527
+Simulation No.: 120 Duration: 46.176575899124146s Outcome: False
+flight_model.aircraft.mass = 17.064804693866904
+flight_model.battery.capacity = 3795509.2677849047
+Simulation No.: 121 Duration: 50.686135053634644s Outcome: True
+flight_model.aircraft.mass = 16.312169145293336
+flight_model.battery.capacity = 6135558.979009889
+Simulation No.: 122 Duration: 41.72012376785278s Outcome: True
+flight_model.aircraft.mass = 19.027220640478667
+flight_model.battery.capacity = 6683048.514743315
+Simulation No.: 123 Duration: 38.28495264053345s Outcome: False
+flight_model.aircraft.mass = 19.954620545970457
+flight_model.battery.capacity = 3144076.826046625
+Simulation No.: 124 Duration: 44.440781354904175s Outcome: False
+flight_model.aircraft.mass = 17.896211589941874
+flight_model.battery.capacity = 3964097.053614001
+Simulation No.: 125 Duration: 53.39461708068848s Outcome: True
+flight_model.aircraft.mass = 15.236801129117557
+flight_model.battery.capacity = 5152676.9943455085
+Simulation No.: 126 Duration: 39.629403829574585s Outcome: False
+flight_model.aircraft.mass = 19.75534246536891
+flight_model.battery.capacity = 4841786.959574496
+Simulation No.: 127 Duration: 41.92610144615173s Outcome: False
+flight_model.aircraft.mass = 16.006983346622228
+flight_model.battery.capacity = 2489149.3793479567
+Simulation No.: 128 Duration: 45.79843759536743s Outcome: True
+flight_model.aircraft.mass = 17.67675215254965
+flight_model.battery.capacity = 4542874.571938993
+Simulation No.: 129 Duration: 37.36132001876831s Outcome: False
+flight_model.aircraft.mass = 19.712215408342917
+flight_model.battery.capacity = 3442350.2159325746
+Simulation No.: 130 Duration: 45.502464056015015s Outcome: False
+flight_model.aircraft.mass = 17.368246395978947
+flight_model.battery.capacity = 4052439.3127819374
+Simulation No.: 131 Duration: 45.06006050109863s Outcome: False
+flight_model.aircraft.mass = 16.160929255271892
+flight_model.battery.capacity = 3063604.4271866395
+Simulation No.: 132 Duration: 48.05994701385498s Outcome: False
+flight_model.aircraft.mass = 15.100913087958741
+flight_model.battery.capacity = 2931548.281329859
+Simulation No.: 133 Duration: 50.31204605102539s Outcome: True
+flight_model.aircraft.mass = 16.49485669929294
+flight_model.battery.capacity = 6481084.421761198
+Simulation No.: 134 Duration: 50.20315647125244s Outcome: True
+flight_model.aircraft.mass = 16.0395909153909
+flight_model.battery.capacity = 4515924.316641221
+Simulation No.: 135 Duration: 38.96794009208679s Outcome: False
+flight_model.aircraft.mass = 19.33987691110593
+flight_model.battery.capacity = 6147654.328748174
+Simulation No.: 136 Duration: 50.90222716331482s Outcome: True
+flight_model.aircraft.mass = 16.06223932882384
+flight_model.battery.capacity = 6314382.629010778
+Simulation No.: 137 Duration: 37.2694206237793s Outcome: False
+flight_model.aircraft.mass = 18.183818597031795
+flight_model.battery.capacity = 2343334.213235721
+Simulation No.: 138 Duration: 42.29350972175598s Outcome: True
+flight_model.aircraft.mass = 18.86863227623839
+flight_model.battery.capacity = 4677841.062023798
+Simulation No.: 139 Duration: 42.162046909332275s Outcome: True
+flight_model.aircraft.mass = 19.448305173397813
+flight_model.battery.capacity = 6367293.8128639385
+Simulation No.: 140 Duration: 40.72009992599487s Outcome: True
+flight_model.aircraft.mass = 19.901705928300668
+flight_model.battery.capacity = 5208159.092544185
+Simulation No.: 141 Duration: 45.76273584365845s Outcome: True
+flight_model.aircraft.mass = 17.650400960240567
+flight_model.battery.capacity = 5250538.852642455
+Simulation No.: 142 Duration: 53.64479470252991s Outcome: True
+flight_model.aircraft.mass = 15.308927441556225
+flight_model.battery.capacity = 6261786.259823069
+Simulation No.: 143 Duration: 46.001747608184814s Outcome: True
+flight_model.aircraft.mass = 17.86243358856522
+flight_model.battery.capacity = 5845571.950128198
+Simulation No.: 144 Duration: 43.45295214653015s Outcome: False
+flight_model.aircraft.mass = 18.0830416404848
+flight_model.battery.capacity = 3932541.141228518
+Simulation No.: 145 Duration: 54.390111446380615s Outcome: True
+flight_model.aircraft.mass = 15.339670729417891
+flight_model.battery.capacity = 5720406.158848686
+Simulation No.: 146 Duration: 38.10902976989746s Outcome: False
+flight_model.aircraft.mass = 19.945897565496075
+flight_model.battery.capacity = 4341980.525635445
+Simulation No.: 147 Duration: 36.75911521911621s Outcome: False
+flight_model.aircraft.mass = 19.754362170943367
+flight_model.battery.capacity = 2735471.69763049
+Simulation No.: 148 Duration: 49.90848159790039s Outcome: True
+flight_model.aircraft.mass = 16.30202734372197
+flight_model.battery.capacity = 5632215.831691587
+Simulation No.: 149 Duration: 42.006399393081665s Outcome: True
+flight_model.aircraft.mass = 18.951915161380448
+flight_model.battery.capacity = 5076464.7593214195
+Simulation No.: 150 Duration: 49.06149411201477s Outcome: True
+flight_model.aircraft.mass = 16.48027368638553
+flight_model.battery.capacity = 4984492.828078456
+Simulation No.: 151 Duration: 44.400665283203125s Outcome: True
+flight_model.aircraft.mass = 17.830425713351303
+flight_model.battery.capacity = 6415253.6618968565
+Simulation No.: 152 Duration: 42.6757915019989s Outcome: True
+flight_model.aircraft.mass = 18.678107268095786
+flight_model.battery.capacity = 4647926.92642101
+Simulation No.: 153 Duration: 49.342445611953735s Outcome: True
+flight_model.aircraft.mass = 16.14257600409175
+flight_model.battery.capacity = 5322042.30350557
+Simulation No.: 154 Duration: 44.5586793422699s Outcome: True
+flight_model.aircraft.mass = 18.24198798317523
+flight_model.battery.capacity = 4516627.860833051
+Simulation No.: 155 Duration: 47.80691576004028s Outcome: True
+flight_model.aircraft.mass = 16.827912665786464
+flight_model.battery.capacity = 5224141.460309412
+Simulation No.: 156 Duration: 52.229493856430054s Outcome: True
+flight_model.aircraft.mass = 15.90592850183861
+flight_model.battery.capacity = 4275527.71238114
+Simulation No.: 157 Duration: 41.30449390411377s Outcome: False
+flight_model.aircraft.mass = 19.302484143509467
+flight_model.battery.capacity = 3881833.9092943445
+Simulation No.: 158 Duration: 39.367037534713745s Outcome: False
+flight_model.aircraft.mass = 18.211901576188612
+flight_model.battery.capacity = 2927578.4373927745
+Simulation No.: 159 Duration: 53.502617597579956s Outcome: True
+flight_model.aircraft.mass = 15.368996414356614
+flight_model.battery.capacity = 5663549.787948513
+Simulation No.: 160 Duration: 41.00980186462402s Outcome: True
+flight_model.aircraft.mass = 19.11547661050891
+flight_model.battery.capacity = 4924560.510873908
+Simulation No.: 161 Duration: 35.24728798866272s Outcome: False
+flight_model.aircraft.mass = 19.761102689144032
+flight_model.battery.capacity = 2484733.699829128
+Simulation No.: 162 Duration: 55.12039375305176s Outcome: True
+flight_model.aircraft.mass = 15.093510390458793
+flight_model.battery.capacity = 6382674.231275171
+Simulation No.: 163 Duration: 43.18177652359009s Outcome: False
+flight_model.aircraft.mass = 17.044534423667788
+flight_model.battery.capacity = 3184377.456801742
+Simulation No.: 164 Duration: 45.54416084289551s Outcome: True
+flight_model.aircraft.mass = 18.031735589811237
+flight_model.battery.capacity = 4694472.313446653
+Simulation No.: 165 Duration: 47.827595710754395s Outcome: False
+flight_model.aircraft.mass = 16.654178117817807
+flight_model.battery.capacity = 3889225.8495141338
+Simulation No.: 166 Duration: 45.47868466377258s Outcome: False
+flight_model.aircraft.mass = 15.635199211583924
+flight_model.battery.capacity = 2973106.7872572374
+Simulation No.: 167 Duration: 46.021206855773926s Outcome: False
+flight_model.aircraft.mass = 16.329470397372592
+flight_model.battery.capacity = 3256208.6119543537
+Simulation No.: 168 Duration: 44.20439696311951s Outcome: False
+flight_model.aircraft.mass = 16.00686584226328
+flight_model.battery.capacity = 2666114.37549678
+Simulation No.: 169 Duration: 51.041849851608276s Outcome: True
+flight_model.aircraft.mass = 15.881597807206822
+flight_model.battery.capacity = 4328334.373354686
+Simulation No.: 170 Duration: 40.73666834831238s Outcome: True
+flight_model.aircraft.mass = 19.802203152826387
+flight_model.battery.capacity = 6323671.727796473
+Simulation No.: 171 Duration: 37.65971398353577s Outcome: False
+flight_model.aircraft.mass = 19.890927890539544
+flight_model.battery.capacity = 3070831.9942732286
+Simulation No.: 172 Duration: 48.58428144454956s Outcome: True
+flight_model.aircraft.mass = 16.489587616297598
+flight_model.battery.capacity = 4441508.253195369
+Simulation No.: 173 Duration: 39.552764892578125s Outcome: True
+flight_model.aircraft.mass = 19.931207594570626
+flight_model.battery.capacity = 5132381.684151438
+Simulation No.: 174 Duration: 47.92054581642151s Outcome: True
+flight_model.aircraft.mass = 16.60801376569622
+flight_model.battery.capacity = 4145513.224503658
+Simulation No.: 175 Duration: 53.0490186214447s Outcome: True
+flight_model.aircraft.mass = 15.414702544513828
+flight_model.battery.capacity = 4512345.87419815
+Simulation No.: 176 Duration: 41.42828941345215s Outcome: False
+flight_model.aircraft.mass = 19.363791696309978
+flight_model.battery.capacity = 3926630.5445555924
+Simulation No.: 177 Duration: 40.48494601249695s Outcome: False
+flight_model.aircraft.mass = 19.524345440096614
+flight_model.battery.capacity = 3585263.867748912
+Simulation No.: 178 Duration: 44.19566750526428s Outcome: False
+flight_model.aircraft.mass = 18.07632498723703
+flight_model.battery.capacity = 4435451.838230308
+Simulation No.: 179 Duration: 41.54579544067383s Outcome: False
+flight_model.aircraft.mass = 19.229832853120893
+flight_model.battery.capacity = 3797096.1459637946
+Simulation No.: 180 Duration: 45.02787399291992s Outcome: True
+flight_model.aircraft.mass = 17.194039536830036
+flight_model.battery.capacity = 6557121.273776033
+Simulation No.: 181 Duration: 52.5152382850647s Outcome: True
+flight_model.aircraft.mass = 15.00737617524748
+flight_model.battery.capacity = 4305989.653579578
+Simulation No.: 182 Duration: 44.64551877975464s Outcome: False
+flight_model.aircraft.mass = 17.07498017328651
+flight_model.battery.capacity = 3638850.0089120492
+Simulation No.: 183 Duration: 41.0140323638916s Outcome: False
+flight_model.aircraft.mass = 18.9495719913856
+flight_model.battery.capacity = 3306755.793381962
+Simulation No.: 184 Duration: 43.23222064971924s Outcome: True
+flight_model.aircraft.mass = 19.08677838934037
+flight_model.battery.capacity = 5515799.246424327
+Simulation No.: 185 Duration: 37.69632315635681s Outcome: False
+flight_model.aircraft.mass = 18.853429027490673
+flight_model.battery.capacity = 6460092.5354130315
+Simulation No.: 186 Duration: 53.26478981971741s Outcome: True
+flight_model.aircraft.mass = 15.247364060554737
+flight_model.battery.capacity = 4713495.601925906
+Simulation No.: 187 Duration: 49.429309606552124s Outcome: True
+flight_model.aircraft.mass = 16.263569354454
+flight_model.battery.capacity = 4096905.6074647103
+Simulation No.: 188 Duration: 48.64882183074951s Outcome: True
+flight_model.aircraft.mass = 18.426115438687003
+flight_model.battery.capacity = 4656613.538104391
+Simulation No.: 189 Duration: 38.89475393295288s Outcome: False
+flight_model.aircraft.mass = 17.905704530847068
+flight_model.battery.capacity = 2488414.3280041544
+Simulation No.: 190 Duration: 43.9721314907074s Outcome: False
+flight_model.aircraft.mass = 15.784280233927149
+flight_model.battery.capacity = 2630551.8019271484
+Simulation No.: 191 Duration: 42.46083402633667s Outcome: True
+flight_model.aircraft.mass = 18.787493424068877
+flight_model.battery.capacity = 5686225.04968282
+Simulation No.: 192 Duration: 45.65524959564209s Outcome: False
+flight_model.aircraft.mass = 17.97151861834015
+flight_model.battery.capacity = 4943437.652454235
+Simulation No.: 193 Duration: 47.790802240371704s Outcome: False
+flight_model.aircraft.mass = 15.790544562136937
+flight_model.battery.capacity = 3510486.590522674
+Simulation No.: 194 Duration: 37.67445611953735s Outcome: False
+flight_model.aircraft.mass = 18.946668301959058
+flight_model.battery.capacity = 2675776.4406010215
+Simulation No.: 195 Duration: 40.735944986343384s Outcome: False
+flight_model.aircraft.mass = 18.11617574255971
+flight_model.battery.capacity = 3459984.5499307406
+Simulation No.: 196 Duration: 39.124842166900635s Outcome: False
+flight_model.aircraft.mass = 19.437108658872294
+flight_model.battery.capacity = 3790503.509795651
+Simulation No.: 197 Duration: 46.490349769592285s Outcome: True
+flight_model.aircraft.mass = 17.437949805561246
+flight_model.battery.capacity = 6375937.241860023
+Simulation No.: 198 Duration: 35.83768606185913s Outcome: False
+flight_model.aircraft.mass = 19.084918068379324
+flight_model.battery.capacity = 2394210.2579215397
+Simulation No.: 199 Duration: 47.60489583015442s Outcome: False
+flight_model.aircraft.mass = 16.321372074160248
+flight_model.battery.capacity = 3559126.87210357
+Simulation No.: 200 Duration: 44.989835023880005s Outcome: True
+flight_model.aircraft.mass = 17.92629032763404
+flight_model.battery.capacity = 5386789.2075609
+Success rate = 60.5

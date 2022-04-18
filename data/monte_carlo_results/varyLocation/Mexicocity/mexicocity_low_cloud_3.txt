@@ -1,0 +1,12 @@
+Total Simulations to run: 10
+Simulation No.: 1 Duration: 54.888479232788086s Outcome: 86.45753537050038%
+Simulation No.: 2 Duration: 55.48957848548889s Outcome: 86.724260132167%
+Simulation No.: 3 Duration: 56.33575081825256s Outcome: 86.75372638404681%
+Simulation No.: 4 Duration: 59.51664400100708s Outcome: 86.75372983108726%
+Simulation No.: 5 Duration: 56.38361573219299s Outcome: 86.75372211068157%
+Simulation No.: 6 Duration: 55.52276301383972s Outcome: 86.75328815396468%
+Simulation No.: 7 Duration: 54.73184013366699s Outcome: 86.75343367334625%
+Simulation No.: 8 Duration: 54.79406261444092s Outcome: 86.75373955102742%
+Simulation No.: 9 Duration: 55.00859022140503s Outcome: 86.75365775332124%
+Simulation No.: 10 Duration: 55.306910037994385s Outcome: 86.7236139978026%
+Success rate = 0.0

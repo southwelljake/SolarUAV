@@ -1,0 +1,27 @@
+Total Simulations to run: 25
+Simulation No.: 1 Duration: 64.17805194854736s Outcome: 100.0%
+Simulation No.: 2 Duration: 55.395349740982056s Outcome: 88.79685218060955%
+Simulation No.: 3 Duration: 64.1646511554718s Outcome: 100.0%
+Simulation No.: 4 Duration: 63.40892052650452s Outcome: 100.0%
+Simulation No.: 5 Duration: 50.628807067871094s Outcome: 80.09795077636916%
+Simulation No.: 6 Duration: 64.80427312850952s Outcome: 100.0%
+Simulation No.: 7 Duration: 64.36521768569946s Outcome: 100.0%
+Simulation No.: 8 Duration: 62.73298144340515s Outcome: 100.0%
+Simulation No.: 9 Duration: 63.487608671188354s Outcome: 100.0%
+Simulation No.: 10 Duration: 54.76077890396118s Outcome: 87.4939969773013%
+Simulation No.: 11 Duration: 65.41095066070557s Outcome: 100.0%
+Simulation No.: 12 Duration: 52.96455979347229s Outcome: 84.44708642982687%
+Simulation No.: 13 Duration: 72.59941959381104s Outcome: 100.0%
+Simulation No.: 14 Duration: 64.06220769882202s Outcome: 100.0%
+Simulation No.: 15 Duration: 54.715883016586304s Outcome: 87.13906695540457%
+Simulation No.: 16 Duration: 64.61346769332886s Outcome: 100.0%
+Simulation No.: 17 Duration: 46.4656343460083s Outcome: 74.3578705182693%
+Simulation No.: 18 Duration: 64.21389055252075s Outcome: 100.0%
+Simulation No.: 19 Duration: 64.9305362701416s Outcome: 100.0%
+Simulation No.: 20 Duration: 64.39380955696106s Outcome: 100.0%
+Simulation No.: 21 Duration: 64.6455590724945s Outcome: 100.0%
+Simulation No.: 22 Duration: 53.301976442337036s Outcome: 85.3931516073114%
+Simulation No.: 23 Duration: 62.933237075805664s Outcome: 100.0%
+Simulation No.: 24 Duration: 52.60132622718811s Outcome: 85.00935707268472%
+Simulation No.: 25 Duration: 63.9843213558197s Outcome: 100.0%
+Success rate = 68.0

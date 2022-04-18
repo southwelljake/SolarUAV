@@ -1,0 +1,402 @@
+Total Simulations to run: 200
+Simulation No.: 1 Duration: 37.75488781929016s Outcome: False
+flight_model.start_time = 0.9041314792555379
+Simulation No.: 2 Duration: 56.805848598480225s Outcome: False
+flight_model.start_time = 15.131401301109747
+Simulation No.: 3 Duration: 54.44345188140869s Outcome: False
+flight_model.start_time = 15.50039784507825
+Simulation No.: 4 Duration: 28.16295552253723s Outcome: False
+flight_model.start_time = 5.308525212592992
+Simulation No.: 5 Duration: 43.76085114479065s Outcome: False
+flight_model.start_time = 20.720446336726432
+Simulation No.: 6 Duration: 47.7240686416626s Outcome: False
+flight_model.start_time = 19.03962417338331
+Simulation No.: 7 Duration: 61.30653500556946s Outcome: True
+flight_model.start_time = 10.06666627216645
+Simulation No.: 8 Duration: 59.269487142562866s Outcome: True
+flight_model.start_time = 12.630933707452387
+Simulation No.: 9 Duration: 63.39256715774536s Outcome: True
+flight_model.start_time = 10.150102094742937
+Simulation No.: 10 Duration: 22.255611181259155s Outcome: False
+flight_model.start_time = 9.61676768266964
+Simulation No.: 11 Duration: 45.15776467323303s Outcome: False
+flight_model.start_time = 23.335862910582364
+Simulation No.: 12 Duration: 49.23852801322937s Outcome: False
+flight_model.start_time = 17.77125068381919
+Simulation No.: 13 Duration: 44.470820903778076s Outcome: False
+flight_model.start_time = 20.71410336073621
+Simulation No.: 14 Duration: 22.658645153045654s Outcome: False
+flight_model.start_time = 9.43630007569523
+Simulation No.: 15 Duration: 23.497488021850586s Outcome: False
+flight_model.start_time = 9.79614465382922
+Simulation No.: 16 Duration: 52.91866135597229s Outcome: False
+flight_model.start_time = 16.702969764919867
+Simulation No.: 17 Duration: 62.763628005981445s Outcome: True
+flight_model.start_time = 12.33712070102698
+Simulation No.: 18 Duration: 50.096121072769165s Outcome: False
+flight_model.start_time = 17.631910697008347
+Simulation No.: 19 Duration: 54.091739654541016s Outcome: False
+flight_model.start_time = 16.154629644365464
+Simulation No.: 20 Duration: 47.74794960021973s Outcome: False
+flight_model.start_time = 19.88016898196598
+Simulation No.: 21 Duration: 25.192974090576172s Outcome: False
+flight_model.start_time = 6.108400500756342
+Simulation No.: 22 Duration: 25.868566036224365s Outcome: False
+flight_model.start_time = 5.822621940588972
+Simulation No.: 23 Duration: 58.39299249649048s Outcome: False
+flight_model.start_time = 13.58023162562069
+Simulation No.: 24 Duration: 46.41232872009277s Outcome: False
+flight_model.start_time = 20.403218014905132
+Simulation No.: 25 Duration: 39.12458395957947s Outcome: False
+flight_model.start_time = 23.53346272355403
+Simulation No.: 26 Duration: 26.309723377227783s Outcome: False
+flight_model.start_time = 5.795553057051579
+Simulation No.: 27 Duration: 34.7371985912323s Outcome: False
+flight_model.start_time = 1.837035475225223
+Simulation No.: 28 Duration: 35.53347373008728s Outcome: False
+flight_model.start_time = 1.4258184240416751
+Simulation No.: 29 Duration: 51.1785192489624s Outcome: False
+flight_model.start_time = 17.544151669412294
+Simulation No.: 30 Duration: 46.637951374053955s Outcome: False
+flight_model.start_time = 19.771577158390215
+Simulation No.: 31 Duration: 62.51526927947998s Outcome: True
+flight_model.start_time = 11.349248849008717
+Simulation No.: 32 Duration: 24.230936288833618s Outcome: False
+flight_model.start_time = 6.5750613317200886
+Simulation No.: 33 Duration: 37.03417706489563s Outcome: False
+flight_model.start_time = 23.686396396294143
+Simulation No.: 34 Duration: 42.1826171875s Outcome: False
+flight_model.start_time = 22.289490580164333
+Simulation No.: 35 Duration: 40.722039222717285s Outcome: False
+flight_model.start_time = 22.884502114792035
+Simulation No.: 36 Duration: 48.98693537712097s Outcome: False
+flight_model.start_time = 18.747041576137256
+Simulation No.: 37 Duration: 56.25951385498047s Outcome: False
+flight_model.start_time = 14.982266441835863
+Simulation No.: 38 Duration: 46.820865631103516s Outcome: False
+flight_model.start_time = 19.638387680665403
+Simulation No.: 39 Duration: 61.52550148963928s Outcome: True
+flight_model.start_time = 12.12042676882799
+Simulation No.: 40 Duration: 22.62581181526184s Outcome: False
+flight_model.start_time = 9.538779760654545
+Simulation No.: 41 Duration: 47.78663778305054s Outcome: False
+flight_model.start_time = 19.284206442850024
+Simulation No.: 42 Duration: 41.09880971908569s Outcome: False
+flight_model.start_time = 23.109517070547454
+Simulation No.: 43 Duration: 22.107936143875122s Outcome: False
+flight_model.start_time = 8.360864761793398
+Simulation No.: 44 Duration: 60.92197799682617s Outcome: True
+flight_model.start_time = 11.613358944485928
+Simulation No.: 45 Duration: 24.795955657958984s Outcome: False
+flight_model.start_time = 6.19830522223791
+Simulation No.: 46 Duration: 41.32723951339722s Outcome: False
+flight_model.start_time = 22.815722163891824
+Simulation No.: 47 Duration: 40.48430824279785s Outcome: False
+flight_model.start_time = 23.01521525187153
+Simulation No.: 48 Duration: 35.242316484451294s Outcome: False
+flight_model.start_time = 1.4853239285734317
+Simulation No.: 49 Duration: 34.91877365112305s Outcome: False
+flight_model.start_time = 1.05442667236394
+Simulation No.: 50 Duration: 48.97136855125427s Outcome: False
+flight_model.start_time = 18.7455970331489
+Simulation No.: 51 Duration: 49.87688398361206s Outcome: False
+flight_model.start_time = 17.93471652998286
+Simulation No.: 52 Duration: 24.779234170913696s Outcome: False
+flight_model.start_time = 6.512164357297931
+Simulation No.: 53 Duration: 43.56314659118652s Outcome: False
+flight_model.start_time = 21.11001826001376
+Simulation No.: 54 Duration: 25.96604013442993s Outcome: False
+flight_model.start_time = 5.7330463039068515
+Simulation No.: 55 Duration: 59.18701505661011s Outcome: False
+flight_model.start_time = 13.02449091075255
+Simulation No.: 56 Duration: 52.78546094894409s Outcome: False
+flight_model.start_time = 21.45392376882279
+Simulation No.: 57 Duration: 40.246981620788574s Outcome: False
+flight_model.start_time = 22.496325830169834
+Simulation No.: 58 Duration: 57.51895046234131s Outcome: False
+flight_model.start_time = 13.849817739182505
+Simulation No.: 59 Duration: 60.28424954414368s Outcome: True
+flight_model.start_time = 10.42056763453105
+Simulation No.: 60 Duration: 61.2577223777771s Outcome: True
+flight_model.start_time = 12.359993245550028
+Simulation No.: 61 Duration: 61.04505467414856s Outcome: True
+flight_model.start_time = 11.352185636293854
+Simulation No.: 62 Duration: 60.41696858406067s Outcome: True
+flight_model.start_time = 12.727320754416743
+Simulation No.: 63 Duration: 49.018306255340576s Outcome: False
+flight_model.start_time = 17.935991113872284
+Simulation No.: 64 Duration: 62.34715986251831s Outcome: True
+flight_model.start_time = 11.746928715981722
+Simulation No.: 65 Duration: 25.604491233825684s Outcome: False
+flight_model.start_time = 6.069913399903208
+Simulation No.: 66 Duration: 43.97111988067627s Outcome: False
+flight_model.start_time = 21.583023000481436
+Simulation No.: 67 Duration: 41.74297618865967s Outcome: False
+flight_model.start_time = 22.427185583462997
+Simulation No.: 68 Duration: 61.00518465042114s Outcome: True
+flight_model.start_time = 11.84832811675279
+Simulation No.: 69 Duration: 38.457172870635986s Outcome: False
+flight_model.start_time = 0.29065529112980126
+Simulation No.: 70 Duration: 53.30370259284973s Outcome: False
+flight_model.start_time = 16.37928407164975
+Simulation No.: 71 Duration: 30.463001012802124s Outcome: False
+flight_model.start_time = 3.7676657721774545
+Simulation No.: 72 Duration: 49.69528770446777s Outcome: False
+flight_model.start_time = 17.88676790853067
+Simulation No.: 73 Duration: 24.085094928741455s Outcome: False
+flight_model.start_time = 9.359065989093384
+Simulation No.: 74 Duration: 58.63950848579407s Outcome: False
+flight_model.start_time = 13.690507365956547
+Simulation No.: 75 Duration: 22.450932025909424s Outcome: False
+flight_model.start_time = 9.64433084484796
+Simulation No.: 76 Duration: 32.0747447013855s Outcome: False
+flight_model.start_time = 3.491200206320136
+Simulation No.: 77 Duration: 42.21128821372986s Outcome: False
+flight_model.start_time = 22.2755743471448
+Simulation No.: 78 Duration: 32.05576705932617s Outcome: False
+flight_model.start_time = 3.399025335443045
+Simulation No.: 79 Duration: 66.30660939216614s Outcome: True
+flight_model.start_time = 12.124964554357705
+Simulation No.: 80 Duration: 48.66427159309387s Outcome: False
+flight_model.start_time = 20.835814501507635
+Simulation No.: 81 Duration: 37.06610679626465s Outcome: False
+flight_model.start_time = 0.8373320474129944
+Simulation No.: 82 Duration: 69.75671577453613s Outcome: True
+flight_model.start_time = 10.031022846352187
+Simulation No.: 83 Duration: 41.05160212516785s Outcome: False
+flight_model.start_time = 22.53523077045523
+Simulation No.: 84 Duration: 28.0240535736084s Outcome: False
+flight_model.start_time = 5.120745687896096
+Simulation No.: 85 Duration: 62.50124216079712s Outcome: True
+flight_model.start_time = 10.147079908708776
+Simulation No.: 86 Duration: 36.26301646232605s Outcome: False
+flight_model.start_time = 0.8874649225890403
+Simulation No.: 87 Duration: 41.740044593811035s Outcome: False
+flight_model.start_time = 22.641026959551112
+Simulation No.: 88 Duration: 36.42750000953674s Outcome: False
+flight_model.start_time = 1.1590119651939066
+Simulation No.: 89 Duration: 37.54528570175171s Outcome: False
+flight_model.start_time = 0.628367617752402
+Simulation No.: 90 Duration: 32.04328966140747s Outcome: False
+flight_model.start_time = 5.3989762939788735
+Simulation No.: 91 Duration: 69.3330545425415s Outcome: True
+flight_model.start_time = 12.112772215470036
+Simulation No.: 92 Duration: 55.40666627883911s Outcome: False
+flight_model.start_time = 22.424906156386264
+Simulation No.: 93 Duration: 46.435017585754395s Outcome: False
+flight_model.start_time = 23.200980347128848
+Simulation No.: 94 Duration: 24.341371774673462s Outcome: False
+flight_model.start_time = 6.878386646187221
+Simulation No.: 95 Duration: 36.72990012168884s Outcome: False
+flight_model.start_time = 5.049304562260238
+Simulation No.: 96 Duration: 28.161849975585938s Outcome: False
+flight_model.start_time = 9.503026408141846
+Simulation No.: 97 Duration: 58.98414468765259s Outcome: False
+flight_model.start_time = 18.017216018151828
+Simulation No.: 98 Duration: 69.9829671382904s Outcome: False
+flight_model.start_time = 15.84744552686626
+Simulation No.: 99 Duration: 32.74086904525757s Outcome: False
+flight_model.start_time = 5.746834140078723
+Simulation No.: 100 Duration: 39.208019495010376s Outcome: False
+flight_model.start_time = 0.25888125459163724
+Simulation No.: 101 Duration: 60.37616419792175s Outcome: False
+flight_model.start_time = 14.499924860698725
+Simulation No.: 102 Duration: 38.42078757286072s Outcome: False
+flight_model.start_time = 0.3292470770146636
+Simulation No.: 103 Duration: 59.185413122177124s Outcome: True
+flight_model.start_time = 12.79395657634366
+Simulation No.: 104 Duration: 57.995617151260376s Outcome: False
+flight_model.start_time = 13.649851043046398
+Simulation No.: 105 Duration: 36.15012311935425s Outcome: False
+flight_model.start_time = 1.8401357801323668
+Simulation No.: 106 Duration: 43.048542499542236s Outcome: False
+flight_model.start_time = 21.99714064193266
+Simulation No.: 107 Duration: 22.76512336730957s Outcome: False
+flight_model.start_time = 6.9775361655156685
+Simulation No.: 108 Duration: 40.40716814994812s Outcome: False
+flight_model.start_time = 23.171963299875763
+Simulation No.: 109 Duration: 55.970887184143066s Outcome: False
+flight_model.start_time = 14.71869814216937
+Simulation No.: 110 Duration: 48.162686824798584s Outcome: False
+flight_model.start_time = 18.4951570525402
+Simulation No.: 111 Duration: 25.944371938705444s Outcome: False
+flight_model.start_time = 6.089405936529028
+Simulation No.: 112 Duration: 41.46737027168274s Outcome: False
+flight_model.start_time = 22.49153822086719
+Simulation No.: 113 Duration: 34.19884896278381s Outcome: False
+flight_model.start_time = 1.5403949468564226
+Simulation No.: 114 Duration: 44.62247848510742s Outcome: False
+flight_model.start_time = 21.059094439876425
+Simulation No.: 115 Duration: 28.36403203010559s Outcome: False
+flight_model.start_time = 4.732873490381533
+Simulation No.: 116 Duration: 37.34889626502991s Outcome: False
+flight_model.start_time = 0.8252616909543793
+Simulation No.: 117 Duration: 41.875221490859985s Outcome: False
+flight_model.start_time = 22.430199670786685
+Simulation No.: 118 Duration: 54.75541162490845s Outcome: False
+flight_model.start_time = 14.97396678265805
+Simulation No.: 119 Duration: 23.125918865203857s Outcome: False
+flight_model.start_time = 7.741946837280547
+Simulation No.: 120 Duration: 43.02186727523804s Outcome: False
+flight_model.start_time = 21.876790634597143
+Simulation No.: 121 Duration: 61.77522158622742s Outcome: True
+flight_model.start_time = 11.007753321816445
+Simulation No.: 122 Duration: 36.856223583221436s Outcome: False
+flight_model.start_time = 0.9611761988284391
+Simulation No.: 123 Duration: 29.36545443534851s Outcome: False
+flight_model.start_time = 4.534676977741789
+Simulation No.: 124 Duration: 34.967838525772095s Outcome: False
+flight_model.start_time = 1.5483785195655075
+Simulation No.: 125 Duration: 29.22994327545166s Outcome: False
+flight_model.start_time = 4.743337349159472
+Simulation No.: 126 Duration: 56.19291162490845s Outcome: False
+flight_model.start_time = 15.323817583885846
+Simulation No.: 127 Duration: 22.103113651275635s Outcome: False
+flight_model.start_time = 8.263255094886112
+Simulation No.: 128 Duration: 48.686283349990845s Outcome: False
+flight_model.start_time = 18.704390385289184
+Simulation No.: 129 Duration: 22.968626499176025s Outcome: False
+flight_model.start_time = 7.94972130663829
+Simulation No.: 130 Duration: 50.38525080680847s Outcome: False
+flight_model.start_time = 17.578219279192965
+Simulation No.: 131 Duration: 45.0799343585968s Outcome: False
+flight_model.start_time = 20.53997774596167
+Simulation No.: 132 Duration: 25.38213849067688s Outcome: False
+flight_model.start_time = 6.221534287175767
+Simulation No.: 133 Duration: 51.07717299461365s Outcome: False
+flight_model.start_time = 16.805881672833085
+Simulation No.: 134 Duration: 31.281770944595337s Outcome: False
+flight_model.start_time = 2.8552951893186007
+Simulation No.: 135 Duration: 58.67254376411438s Outcome: False
+flight_model.start_time = 17.46365294292255
+Simulation No.: 136 Duration: 59.725887060165405s Outcome: False
+flight_model.start_time = 20.05814512907526
+Simulation No.: 137 Duration: 34.39986228942871s Outcome: False
+flight_model.start_time = 3.3484536289343643
+Simulation No.: 138 Duration: 46.872875690460205s Outcome: False
+flight_model.start_time = 23.93563489459362
+Simulation No.: 139 Duration: 38.06115746498108s Outcome: False
+flight_model.start_time = 3.975784539880248
+Simulation No.: 140 Duration: 38.70970296859741s Outcome: False
+flight_model.start_time = 2.1876257558142935
+Simulation No.: 141 Duration: 65.26760506629944s Outcome: False
+flight_model.start_time = 21.425079582190687
+Simulation No.: 142 Duration: 47.17869281768799s Outcome: False
+flight_model.start_time = 21.009126627883113
+Simulation No.: 143 Duration: 47.473488330841064s Outcome: False
+flight_model.start_time = 19.384218835652362
+Simulation No.: 144 Duration: 27.44753336906433s Outcome: False
+flight_model.start_time = 5.740968068921859
+Simulation No.: 145 Duration: 43.741201639175415s Outcome: False
+flight_model.start_time = 21.285046652776714
+Simulation No.: 146 Duration: 39.37156891822815s Outcome: False
+flight_model.start_time = 23.57389303983482
+Simulation No.: 147 Duration: 34.845874071121216s Outcome: False
+flight_model.start_time = 2.593427835364862
+Simulation No.: 148 Duration: 40.28725075721741s Outcome: False
+flight_model.start_time = 23.516322327409874
+Simulation No.: 149 Duration: 24.71101427078247s Outcome: False
+flight_model.start_time = 6.70740426010022
+Simulation No.: 150 Duration: 61.158766746520996s Outcome: False
+flight_model.start_time = 13.107201630354599
+Simulation No.: 151 Duration: 39.99602675437927s Outcome: False
+flight_model.start_time = 0.3499991617036011
+Simulation No.: 152 Duration: 48.82924151420593s Outcome: False
+flight_model.start_time = 18.764029722195936
+Simulation No.: 153 Duration: 48.89989686012268s Outcome: False
+flight_model.start_time = 18.943835942458712
+Simulation No.: 154 Duration: 55.99270796775818s Outcome: False
+flight_model.start_time = 14.941540930929284
+Simulation No.: 155 Duration: 62.31593203544617s Outcome: True
+flight_model.start_time = 9.987910448121733
+Simulation No.: 156 Duration: 28.394160985946655s Outcome: False
+flight_model.start_time = 5.880008673112319
+Simulation No.: 157 Duration: 56.39899730682373s Outcome: False
+flight_model.start_time = 16.51820471972032
+Simulation No.: 158 Duration: 52.48433589935303s Outcome: False
+flight_model.start_time = 16.292617147715276
+Simulation No.: 159 Duration: 34.466697692871094s Outcome: False
+flight_model.start_time = 3.2097705291904255
+Simulation No.: 160 Duration: 94.74971413612366s Outcome: False
+flight_model.start_time = 14.701649312865069
+Simulation No.: 161 Duration: 29.58670210838318s Outcome: False
+flight_model.start_time = 9.720318083470598
+Simulation No.: 162 Duration: 73.17954707145691s Outcome: False
+flight_model.start_time = 13.01943007007711
+Simulation No.: 163 Duration: 62.70599102973938s Outcome: True
+flight_model.start_time = 11.911306631563892
+Simulation No.: 164 Duration: 23.95049476623535s Outcome: False
+flight_model.start_time = 6.744692671224845
+Simulation No.: 165 Duration: 62.20026445388794s Outcome: True
+flight_model.start_time = 12.492900557265646
+Simulation No.: 166 Duration: 22.534816026687622s Outcome: False
+flight_model.start_time = 9.740510441467553
+Simulation No.: 167 Duration: 36.72094678878784s Outcome: False
+flight_model.start_time = 2.0596468461438784
+Simulation No.: 168 Duration: 36.033334255218506s Outcome: False
+flight_model.start_time = 2.3674500819687365
+Simulation No.: 169 Duration: 34.44177532196045s Outcome: False
+flight_model.start_time = 3.0383987084477013
+Simulation No.: 170 Duration: 56.02675151824951s Outcome: True
+flight_model.start_time = 10.254147607852126
+Simulation No.: 171 Duration: 23.090903997421265s Outcome: False
+flight_model.start_time = 5.661899027791118
+Simulation No.: 172 Duration: 32.70682644844055s Outcome: False
+flight_model.start_time = 23.26782815591554
+Simulation No.: 173 Duration: 33.32167291641235s Outcome: False
+flight_model.start_time = 22.920820122796968
+Simulation No.: 174 Duration: 49.76044702529907s Outcome: True
+flight_model.start_time = 11.16667969415013
+Simulation No.: 175 Duration: 18.801986694335938s Outcome: False
+flight_model.start_time = 7.8521512961012965
+Simulation No.: 176 Duration: 21.926076412200928s Outcome: False
+flight_model.start_time = 8.797682022154458
+Simulation No.: 177 Duration: 50.99287295341492s Outcome: True
+flight_model.start_time = 11.184952997228137
+Simulation No.: 178 Duration: 37.40436553955078s Outcome: False
+flight_model.start_time = 21.83240414530748
+Simulation No.: 179 Duration: 53.02835392951965s Outcome: True
+flight_model.start_time = 11.535584760281559
+Simulation No.: 180 Duration: 26.721383571624756s Outcome: False
+flight_model.start_time = 2.669906546269301
+Simulation No.: 181 Duration: 23.75955033302307s Outcome: False
+flight_model.start_time = 4.835428070808906
+Simulation No.: 182 Duration: 25.399325609207153s Outcome: False
+flight_model.start_time = 3.4436200409805915
+Simulation No.: 183 Duration: 18.11146593093872s Outcome: False
+flight_model.start_time = 8.866491431404171
+Simulation No.: 184 Duration: 50.59707713127136s Outcome: True
+flight_model.start_time = 10.74636823447976
+Simulation No.: 185 Duration: 43.36588668823242s Outcome: False
+flight_model.start_time = 16.304523558812956
+Simulation No.: 186 Duration: 34.107176780700684s Outcome: False
+flight_model.start_time = 22.770117689756525
+Simulation No.: 187 Duration: 40.420313596725464s Outcome: False
+flight_model.start_time = 19.357675693888645
+Simulation No.: 188 Duration: 49.679863691329956s Outcome: True
+flight_model.start_time = 9.98963107762445
+Simulation No.: 189 Duration: 36.69101357460022s Outcome: False
+flight_model.start_time = 21.026910665476017
+Simulation No.: 190 Duration: 24.10429883003235s Outcome: False
+flight_model.start_time = 4.281865643622534
+Simulation No.: 191 Duration: 50.76369857788086s Outcome: True
+flight_model.start_time = 10.927284423874237
+Simulation No.: 192 Duration: 47.92018675804138s Outcome: False
+flight_model.start_time = 16.979395373506655
+Simulation No.: 193 Duration: 31.793113470077515s Outcome: False
+flight_model.start_time = 0.12970294899739
+Simulation No.: 194 Duration: 31.831801414489746s Outcome: False
+flight_model.start_time = 23.733770767337056
+Simulation No.: 195 Duration: 36.70633864402771s Outcome: False
+flight_model.start_time = 21.20795830359608
+Simulation No.: 196 Duration: 42.990984201431274s Outcome: False
+flight_model.start_time = 16.536442710703376
+Simulation No.: 197 Duration: 38.64434862136841s Outcome: False
+flight_model.start_time = 19.928077544981015
+Simulation No.: 198 Duration: 18.250497341156006s Outcome: False
+flight_model.start_time = 7.96878585402375
+Simulation No.: 199 Duration: 37.16597557067871s Outcome: False
+flight_model.start_time = 19.928752314411152
+Simulation No.: 200 Duration: 18.604466915130615s Outcome: False
+flight_model.start_time = 9.748312626622866
+Success rate = 14.5

@@ -1,0 +1,502 @@
+Total Simulations to run: 250
+Simulation No.: 1 Duration: 37.58368539810181s Outcome: 67.92252194874648%
+flight_model.start_time = 5.8609741162381495
+Simulation No.: 2 Duration: 18.35801410675049s Outcome: 22.237889702156718%
+flight_model.start_time = 23.358958415798718
+Simulation No.: 3 Duration: 36.21721005439758s Outcome: 24.338644648140082%
+flight_model.start_time = 15.592269940440517
+Simulation No.: 4 Duration: 53.63762974739075s Outcome: 50.356666201812516%
+flight_model.start_time = 0.9976396146068289
+Simulation No.: 5 Duration: 23.171345949172974s Outcome: 22.237889702156718%
+flight_model.start_time = 22.798170230020638
+Simulation No.: 6 Duration: 41.06643342971802s Outcome: 56.260747244174546%
+flight_model.start_time = 8.035995051660215
+Simulation No.: 7 Duration: 45.70079231262207s Outcome: 70.96777813213465%
+flight_model.start_time = 5.1692325208527
+Simulation No.: 8 Duration: 46.26464366912842s Outcome: 100.0%
+flight_model.start_time = 2.6914317987844143
+Simulation No.: 9 Duration: 22.109275341033936s Outcome: 22.237889702156718%
+flight_model.start_time = 21.327106141025276
+Simulation No.: 10 Duration: 31.56266188621521s Outcome: 39.130510043748316%
+flight_model.start_time = 12.200719904053228
+Simulation No.: 11 Duration: 37.63189911842346s Outcome: 48.914260903225596%
+flight_model.start_time = 9.198487659358808
+Simulation No.: 12 Duration: 21.522740840911865s Outcome: 22.238961437814275%
+flight_model.start_time = 17.900797975578932
+Simulation No.: 13 Duration: 44.394227504730225s Outcome: 100.0%
+flight_model.start_time = 3.252015840533641
+Simulation No.: 14 Duration: 36.83510899543762s Outcome: 36.25092867560672%
+flight_model.start_time = 12.93389448580088
+Simulation No.: 15 Duration: 21.183747053146362s Outcome: 22.237889702156718%
+flight_model.start_time = 23.78378674531895
+Simulation No.: 16 Duration: 43.404786825180054s Outcome: 64.68533809560421%
+flight_model.start_time = 6.5960327411461765
+Simulation No.: 17 Duration: 21.237958669662476s Outcome: 22.237889702156718%
+flight_model.start_time = 21.6761411071767
+Simulation No.: 18 Duration: 44.55914282798767s Outcome: 72.72497414170293%
+flight_model.start_time = 4.722306318767617
+Simulation No.: 19 Duration: 21.3498592376709s Outcome: 22.237889702156718%
+flight_model.start_time = 22.903387211890543
+Simulation No.: 20 Duration: 23.487767219543457s Outcome: 23.859181797918605%
+flight_model.start_time = 16.065434818598398
+Simulation No.: 21 Duration: 22.954331159591675s Outcome: 23.175973099014353%
+flight_model.start_time = 16.434798606277717
+Simulation No.: 22 Duration: 45.62420177459717s Outcome: 49.463141677731%
+flight_model.start_time = 8.993861154992274
+Simulation No.: 23 Duration: 44.5266809463501s Outcome: 71.70123334991119%
+flight_model.start_time = 4.988393853238073
+Simulation No.: 24 Duration: 24.84328293800354s Outcome: 27.841574592115293%
+flight_model.start_time = 14.84170071661065
+Simulation No.: 25 Duration: 21.565110206604004s Outcome: 22.237889702156718%
+flight_model.start_time = 19.807071847856538
+Simulation No.: 26 Duration: 42.48231101036072s Outcome: 65.58196516752848%
+flight_model.start_time = 6.310512596527502
+Simulation No.: 27 Duration: 21.39207100868225s Outcome: 22.237889702156718%
+flight_model.start_time = 21.04515022166925
+Simulation No.: 28 Duration: 21.354633808135986s Outcome: 22.237889702156718%
+flight_model.start_time = 22.291898724343213
+Simulation No.: 29 Duration: 43.56176686286926s Outcome: 81.04170490264964%
+flight_model.start_time = 4.504077935852627
+Simulation No.: 30 Duration: 21.495325565338135s Outcome: 22.237889702156718%
+flight_model.start_time = 21.673741256146506
+Simulation No.: 31 Duration: 38.372875690460205s Outcome: 57.18062620976505%
+flight_model.start_time = 7.898470060302302
+Simulation No.: 32 Duration: 40.31115198135376s Outcome: 62.00070301057148%
+flight_model.start_time = 7.030908580837059
+Simulation No.: 33 Duration: 21.47719407081604s Outcome: 22.237889702156718%
+flight_model.start_time = 18.352525159508122
+Simulation No.: 34 Duration: 32.39231014251709s Outcome: 43.14170157030674%
+flight_model.start_time = 10.99950850095701
+Simulation No.: 35 Duration: 21.317408084869385s Outcome: 22.237889702156718%
+flight_model.start_time = 18.565138489165186
+Simulation No.: 36 Duration: 22.46122908592224s Outcome: 22.93737111698189%
+flight_model.start_time = 16.615410775882783
+Simulation No.: 37 Duration: 25.999202489852905s Outcome: 26.94245275572088%
+flight_model.start_time = 15.027451319978287
+Simulation No.: 38 Duration: 31.80979323387146s Outcome: 42.09153084234%
+flight_model.start_time = 11.317828420846546
+Simulation No.: 39 Duration: 21.227855682373047s Outcome: 22.237889702156718%
+flight_model.start_time = 22.465450950685394
+Simulation No.: 40 Duration: 21.43779230117798s Outcome: 22.237889702156718%
+flight_model.start_time = 19.3543937904995
+Simulation No.: 41 Duration: 40.818150758743286s Outcome: 63.94139047424762%
+flight_model.start_time = 6.743737988541282
+Simulation No.: 42 Duration: 21.318711280822754s Outcome: 22.898851449121256%
+flight_model.start_time = 16.642957451419868
+Simulation No.: 43 Duration: 28.413827180862427s Outcome: 31.263370999536257%
+flight_model.start_time = 14.137922134408587
+Simulation No.: 44 Duration: 32.28250980377197s Outcome: 43.349279679624175%
+flight_model.start_time = 0.8110905035741309
+Simulation No.: 45 Duration: 39.98262906074524s Outcome: 64.07407339396565%
+flight_model.start_time = 6.36823323410821
+Simulation No.: 46 Duration: 42.79162573814392s Outcome: 100.0%
+flight_model.start_time = 2.32195688492623
+Simulation No.: 47 Duration: 29.003225326538086s Outcome: 35.322417041159646%
+flight_model.start_time = 13.189168485619014
+Simulation No.: 48 Duration: 43.51745557785034s Outcome: 100.0%
+flight_model.start_time = 2.548867091505289
+Simulation No.: 49 Duration: 33.59272789955139s Outcome: 46.59590239840761%
+flight_model.start_time = 1.3496413743965174
+Simulation No.: 50 Duration: 21.54121732711792s Outcome: 22.6974625247203%
+flight_model.start_time = 16.83441686866168
+Simulation No.: 51 Duration: 40.49573755264282s Outcome: 65.62194493502841%
+flight_model.start_time = 6.4034020589560185
+Simulation No.: 52 Duration: 24.43631148338318s Outcome: 26.89037144937329%
+flight_model.start_time = 15.018494084099506
+Simulation No.: 53 Duration: 21.24607229232788s Outcome: 22.237889702156718%
+flight_model.start_time = 18.732049603649507
+Simulation No.: 54 Duration: 31.948506593704224s Outcome: 43.03199264973396%
+flight_model.start_time = 2.2023059251696075
+Simulation No.: 55 Duration: 32.3694806098938s Outcome: 42.18824848434039%
+flight_model.start_time = 11.219994198594875
+Simulation No.: 56 Duration: 28.012804746627808s Outcome: 32.02099199842067%
+flight_model.start_time = 13.976518730529534
+Simulation No.: 57 Duration: 28.775418043136597s Outcome: 35.12255635145189%
+flight_model.start_time = 13.128598617295465
+Simulation No.: 58 Duration: 29.321183681488037s Outcome: 37.002343566035265%
+flight_model.start_time = 12.77208130873895
+Simulation No.: 59 Duration: 41.49794626235962s Outcome: 66.9967098462611%
+flight_model.start_time = 6.07916418681641
+Simulation No.: 60 Duration: 34.9601035118103s Outcome: 47.330984174962445%
+flight_model.start_time = 1.7306751745959241
+Simulation No.: 61 Duration: 35.512317180633545s Outcome: 47.839281701533864%
+flight_model.start_time = 0.9153893153719315
+Simulation No.: 62 Duration: 21.25003409385681s Outcome: 22.237889702156718%
+flight_model.start_time = 20.319494218730302
+Simulation No.: 63 Duration: 35.43702244758606s Outcome: 48.47092461705186%
+flight_model.start_time = 0.7678059135971314
+Simulation No.: 64 Duration: 21.038670778274536s Outcome: 22.237889702156718%
+flight_model.start_time = 21.904558107862115
+Simulation No.: 65 Duration: 35.19628858566284s Outcome: 46.78536777063221%
+flight_model.start_time = 9.87166748393714
+Simulation No.: 66 Duration: 21.079469442367554s Outcome: 22.237889702156718%
+flight_model.start_time = 20.704041586153757
+Simulation No.: 67 Duration: 41.29055833816528s Outcome: 64.55729048274044%
+flight_model.start_time = 6.621359558903621
+Simulation No.: 68 Duration: 28.58453106880188s Outcome: 36.76406095982463%
+flight_model.start_time = 12.830054518697764
+Simulation No.: 69 Duration: 21.46044659614563s Outcome: 22.237889702156718%
+flight_model.start_time = 18.73952249599925
+Simulation No.: 70 Duration: 30.642094135284424s Outcome: 40.448451682368194%
+flight_model.start_time = 11.705121126251985
+Simulation No.: 71 Duration: 39.65832543373108s Outcome: 59.023143077319574%
+flight_model.start_time = 7.618277859409172
+Simulation No.: 72 Duration: 37.506284952163696s Outcome: 51.976812849914225%
+flight_model.start_time = 8.582224808062662
+Simulation No.: 73 Duration: 21.44894766807556s Outcome: 22.237889702156718%
+flight_model.start_time = 20.289970223722086
+Simulation No.: 74 Duration: 36.34831714630127s Outcome: 51.846197822602726%
+flight_model.start_time = 0.16103831726166984
+Simulation No.: 75 Duration: 22.360581398010254s Outcome: 22.3040041003535%
+flight_model.start_time = 17.550185878174076
+Simulation No.: 76 Duration: 30.594334602355957s Outcome: 41.00392216094005%
+flight_model.start_time = 11.642688381084042
+Simulation No.: 77 Duration: 44.66250824928284s Outcome: 100.0%
+flight_model.start_time = 2.1215473906048166
+Simulation No.: 78 Duration: 32.70098423957825s Outcome: 43.628675794566654%
+flight_model.start_time = 10.889658700122343
+Simulation No.: 79 Duration: 31.921330213546753s Outcome: 41.84674674247152%
+flight_model.start_time = 11.323428482380432
+Simulation No.: 80 Duration: 21.233675241470337s Outcome: 22.237889702156718%
+flight_model.start_time = 19.95354432135856
+Simulation No.: 81 Duration: 21.38040065765381s Outcome: 22.237889702156718%
+flight_model.start_time = 18.97544155523282
+Simulation No.: 82 Duration: 21.179656982421875s Outcome: 22.237889702156718%
+flight_model.start_time = 18.368296139326475
+Simulation No.: 83 Duration: 31.075604915618896s Outcome: 36.930621728326415%
+flight_model.start_time = 12.783127699186018
+Simulation No.: 84 Duration: 20.935528993606567s Outcome: 22.332853708453023%
+flight_model.start_time = 17.461764123920336
+Simulation No.: 85 Duration: 39.502434492111206s Outcome: 55.759181468081096%
+flight_model.start_time = 8.077810276777235
+Simulation No.: 86 Duration: 35.95575165748596s Outcome: 49.062888520555845%
+flight_model.start_time = 9.148878095123813
+Simulation No.: 87 Duration: 21.4570209980011s Outcome: 22.237889702156718%
+flight_model.start_time = 21.692671158218307
+Simulation No.: 88 Duration: 21.16814160346985s Outcome: 22.237889702156718%
+flight_model.start_time = 18.624568216163468
+Simulation No.: 89 Duration: 30.512635707855225s Outcome: 38.96479808416481%
+flight_model.start_time = 12.164786409336099
+Simulation No.: 90 Duration: 40.116194009780884s Outcome: 61.872836959908774%
+flight_model.start_time = 7.133792689788238
+Simulation No.: 91 Duration: 22.315338134765625s Outcome: 22.237889702156718%
+flight_model.start_time = 18.549127498490222
+Simulation No.: 92 Duration: 39.690011501312256s Outcome: 63.82063477585146%
+flight_model.start_time = 6.744931004098583
+Simulation No.: 93 Duration: 27.918538331985474s Outcome: 32.06935079154606%
+flight_model.start_time = 13.905661948397327
+Simulation No.: 94 Duration: 22.567896366119385s Outcome: 23.632595473521803%
+flight_model.start_time = 16.17237630883258
+Simulation No.: 95 Duration: 35.935593605041504s Outcome: 47.93311919517673%
+flight_model.start_time = 9.405532853106877
+Simulation No.: 96 Duration: 41.85852408409119s Outcome: 60.70002794301275%
+flight_model.start_time = 7.288680510192271
+Simulation No.: 97 Duration: 40.894078731536865s Outcome: 60.98641022853612%
+flight_model.start_time = 7.291853571356407
+Simulation No.: 98 Duration: 31.80738377571106s Outcome: 42.63229740177627%
+flight_model.start_time = 2.158659047438257
+Simulation No.: 99 Duration: 39.4251811504364s Outcome: 58.61852570596041%
+flight_model.start_time = 7.6812533416365065
+Simulation No.: 100 Duration: 39.80950951576233s Outcome: 60.72814210141703%
+flight_model.start_time = 7.336598377295403
+Simulation No.: 101 Duration: 23.719796180725098s Outcome: 25.83302116982873%
+flight_model.start_time = 15.342622883768502
+Simulation No.: 102 Duration: 34.434988498687744s Outcome: 45.406865224571256%
+flight_model.start_time = 10.339683931049692
+Simulation No.: 103 Duration: 21.541871786117554s Outcome: 22.542266633151677%
+flight_model.start_time = 16.847148279373034
+Simulation No.: 104 Duration: 40.39722204208374s Outcome: 63.39540225071409%
+flight_model.start_time = 6.8495773074021535
+Simulation No.: 105 Duration: 21.373276472091675s Outcome: 22.237889702156718%
+flight_model.start_time = 18.780614674476226
+Simulation No.: 106 Duration: 22.032947301864624s Outcome: 23.6373787637367%
+flight_model.start_time = 16.183631681483206
+Simulation No.: 107 Duration: 41.34808373451233s Outcome: 70.09036152476882%
+flight_model.start_time = 5.257283874978151
+Simulation No.: 108 Duration: 35.374423027038574s Outcome: 66.23678947924293%
+flight_model.start_time = 6.272877534057571
+Simulation No.: 109 Duration: 31.24197816848755s Outcome: 51.06803522045765%
+flight_model.start_time = 0.562789679197091
+Simulation No.: 110 Duration: 17.899152994155884s Outcome: 22.237405241205067%
+flight_model.start_time = 19.12709476111897
+Simulation No.: 111 Duration: 37.40426540374756s Outcome: 72.05150302212593%
+flight_model.start_time = 4.893697495819071
+Simulation No.: 112 Duration: 27.710647106170654s Outcome: 41.63597424837494%
+flight_model.start_time = 11.488213968311417
+Simulation No.: 113 Duration: 27.515794038772583s Outcome: 42.278427091678786%
+flight_model.start_time = 0.8534231175407809
+Simulation No.: 114 Duration: 18.408939838409424s Outcome: 22.237431060818626%
+flight_model.start_time = 19.396350907788094
+Simulation No.: 115 Duration: 19.610304355621338s Outcome: 22.237889702156718%
+flight_model.start_time = 19.755378690314384
+Simulation No.: 116 Duration: 23.883514404296875s Outcome: 32.55684450673707%
+flight_model.start_time = 13.85379877225718
+Simulation No.: 117 Duration: 18.158132076263428s Outcome: 22.237889702156718%
+flight_model.start_time = 20.609572894127176
+Simulation No.: 118 Duration: 18.43649673461914s Outcome: 22.237889702156718%
+flight_model.start_time = 22.632775814342764
+Simulation No.: 119 Duration: 28.85457181930542s Outcome: 43.89084550932233%
+flight_model.start_time = 10.81181906277165
+Simulation No.: 120 Duration: 18.254440307617188s Outcome: 22.237889702156718%
+flight_model.start_time = 19.76648705771856
+Simulation No.: 121 Duration: 37.191570520401s Outcome: 100.0%
+flight_model.start_time = 2.4005296315584497
+Simulation No.: 122 Duration: 32.87481164932251s Outcome: 59.65159342406685%
+flight_model.start_time = 7.408904327283702
+Simulation No.: 123 Duration: 35.0465726852417s Outcome: 66.27223872441942%
+flight_model.start_time = 6.26221305426198
+Simulation No.: 124 Duration: 18.260052919387817s Outcome: 22.237889702156718%
+flight_model.start_time = 20.153963310556012
+Simulation No.: 125 Duration: 36.18021583557129s Outcome: 68.6443532871067%
+flight_model.start_time = 5.665930238696479
+Simulation No.: 126 Duration: 18.374444246292114s Outcome: 22.237889702156718%
+flight_model.start_time = 22.814869718625722
+Simulation No.: 127 Duration: 18.073736906051636s Outcome: 22.237889702156718%
+flight_model.start_time = 19.45946260295105
+Simulation No.: 128 Duration: 36.721096992492676s Outcome: 69.58735626861132%
+flight_model.start_time = 5.5125927587032875
+Simulation No.: 129 Duration: 33.348548412323s Outcome: 56.72568820788592%
+flight_model.start_time = 7.955989379374728
+Simulation No.: 130 Duration: 18.285957098007202s Outcome: 22.237889702156718%
+flight_model.start_time = 20.685051655391042
+Simulation No.: 131 Duration: 24.546217441558838s Outcome: 34.50569727329683%
+flight_model.start_time = 13.401046859872285
+Simulation No.: 132 Duration: 28.478097677230835s Outcome: 42.61817317320899%
+flight_model.start_time = 11.194881649175784
+Simulation No.: 133 Duration: 18.193035125732422s Outcome: 22.237889702156718%
+flight_model.start_time = 18.373556049152544
+Simulation No.: 134 Duration: 31.515549182891846s Outcome: 47.14289788581225%
+flight_model.start_time = 9.779747188588791
+Simulation No.: 135 Duration: 34.96548342704773s Outcome: 63.62422956781383%
+flight_model.start_time = 6.806570138118185
+Simulation No.: 136 Duration: 18.222729921340942s Outcome: 22.23812517432912%
+flight_model.start_time = 17.929490121833336
+Simulation No.: 137 Duration: 19.02831792831421s Outcome: 22.348961112653683%
+flight_model.start_time = 17.416186997305644
+Simulation No.: 138 Duration: 18.01708674430847s Outcome: 22.250192371783438%
+flight_model.start_time = 17.803251526026926
+Simulation No.: 139 Duration: 37.62088322639465s Outcome: 84.95056323120355%
+flight_model.start_time = 4.427361327561622
+Simulation No.: 140 Duration: 38.60407066345215s Outcome: 73.1953284381949%
+flight_model.start_time = 4.628416985316606
+Simulation No.: 141 Duration: 18.633187770843506s Outcome: 22.944884749587157%
+flight_model.start_time = 16.602743240967996
+Simulation No.: 142 Duration: 18.3518488407135s Outcome: 22.237889702156718%
+flight_model.start_time = 20.221481982431307
+Simulation No.: 143 Duration: 27.205469131469727s Outcome: 39.710043106594625%
+flight_model.start_time = 11.978983698457
+Simulation No.: 144 Duration: 42.852662563323975s Outcome: 100.0%
+flight_model.start_time = 1.93294453604274
+Simulation No.: 145 Duration: 31.10357356071472s Outcome: 48.38991790848989%
+flight_model.start_time = 9.341724736227437
+Simulation No.: 146 Duration: 26.637522220611572s Outcome: 39.02555858268431%
+flight_model.start_time = 12.14523260658817
+Simulation No.: 147 Duration: 18.168132305145264s Outcome: 22.237889702156718%
+flight_model.start_time = 18.959260744886517
+Simulation No.: 148 Duration: 37.89975595474243s Outcome: 100.0%
+flight_model.start_time = 2.630825274636342
+Simulation No.: 149 Duration: 36.607138872146606s Outcome: 100.0%
+flight_model.start_time = 3.1455801266624084
+Simulation No.: 150 Duration: 23.94890856742859s Outcome: 34.98536994416562%
+flight_model.start_time = 2.518537751320582
+Simulation No.: 151 Duration: 27.63188910484314s Outcome: 41.718679717227445%
+flight_model.start_time = 11.138298195996548
+Simulation No.: 152 Duration: 33.03416681289673s Outcome: 55.923559609844254%
+flight_model.start_time = 8.032153126860187
+Simulation No.: 153 Duration: 30.57472562789917s Outcome: 49.15807123477535%
+flight_model.start_time = 9.114289439651639
+Simulation No.: 154 Duration: 35.43167996406555s Outcome: 64.90949279647641%
+flight_model.start_time = 6.542221769590586
+Simulation No.: 155 Duration: 24.829367637634277s Outcome: 37.139613638406885%
+flight_model.start_time = 2.6246485452142245
+Simulation No.: 156 Duration: 28.013921976089478s Outcome: 42.37466133046407%
+flight_model.start_time = 11.209890906894934
+Simulation No.: 157 Duration: 18.42853617668152s Outcome: 22.237889702156718%
+flight_model.start_time = 18.661692614211027
+Simulation No.: 158 Duration: 20.408544540405273s Outcome: 24.770433853362267%
+flight_model.start_time = 15.598851189260998
+Simulation No.: 159 Duration: 37.8503041267395s Outcome: 69.91949466070572%
+flight_model.start_time = 5.433317467989092
+Simulation No.: 160 Duration: 18.586451292037964s Outcome: 22.237889702156718%
+flight_model.start_time = 21.335446906973214
+Simulation No.: 161 Duration: 33.2750678062439s Outcome: 59.7509187569016%
+flight_model.start_time = 7.487557406157953
+Simulation No.: 162 Duration: 30.874574422836304s Outcome: 47.261116435193365%
+flight_model.start_time = 9.71823543723475
+Simulation No.: 163 Duration: 18.369253158569336s Outcome: 22.237889702156718%
+flight_model.start_time = 21.34645731225041
+Simulation No.: 164 Duration: 38.545734882354736s Outcome: 72.89381438945259%
+flight_model.start_time = 4.676649079718447
+Simulation No.: 165 Duration: 38.10802602767944s Outcome: 100.0%
+flight_model.start_time = 3.7328961016825417
+Simulation No.: 166 Duration: 18.40009355545044s Outcome: 22.237889702156718%
+flight_model.start_time = 18.152975943298433
+Simulation No.: 167 Duration: 18.38996958732605s Outcome: 22.237889702156718%
+flight_model.start_time = 18.929785990856253
+Simulation No.: 168 Duration: 18.35106110572815s Outcome: 22.703748760801744%
+flight_model.start_time = 16.67642585174142
+Simulation No.: 169 Duration: 18.82274293899536s Outcome: 22.6233055233218%
+flight_model.start_time = 16.769446983629678
+Simulation No.: 170 Duration: 18.328102827072144s Outcome: 22.237889702156718%
+flight_model.start_time = 20.305058760140195
+Simulation No.: 171 Duration: 26.858786821365356s Outcome: 39.55092347891648%
+flight_model.start_time = 12.054066162353145
+Simulation No.: 172 Duration: 32.607701778411865s Outcome: 53.03919451566196%
+flight_model.start_time = 8.475951727096131
+Simulation No.: 173 Duration: 34.32241606712341s Outcome: 58.38674762087176%
+flight_model.start_time = 7.7212192855642146
+Simulation No.: 174 Duration: 18.653746366500854s Outcome: 22.237889702156718%
+flight_model.start_time = 18.230681264190437
+Simulation No.: 175 Duration: 33.07724213600159s Outcome: 53.2137620679614%
+flight_model.start_time = 8.305900201700124
+Simulation No.: 176 Duration: 34.37510561943054s Outcome: 59.997036059784094%
+flight_model.start_time = 7.43555845759087
+Simulation No.: 177 Duration: 19.11872363090515s Outcome: 23.32229968524631%
+flight_model.start_time = 16.354093139648878
+Simulation No.: 178 Duration: 22.171512603759766s Outcome: 27.4626457750644%
+flight_model.start_time = 14.908837058136127
+Simulation No.: 179 Duration: 32.61898970603943s Outcome: 52.610798173300196%
+flight_model.start_time = 1.2168254652420956
+Simulation No.: 180 Duration: 38.23120617866516s Outcome: 82.72230252025291%
+flight_model.start_time = 4.467894687895852
+Simulation No.: 181 Duration: 17.736473321914673s Outcome: 22.23752216881999%
+flight_model.start_time = 21.305618939301773
+Simulation No.: 182 Duration: 28.408698081970215s Outcome: 42.305299800471616%
+flight_model.start_time = 11.291065593995347
+Simulation No.: 183 Duration: 37.94903206825256s Outcome: 100.0%
+flight_model.start_time = 3.045729064674183
+Simulation No.: 184 Duration: 23.62107753753662s Outcome: 31.788830307799575%
+flight_model.start_time = 14.019158090705401
+Simulation No.: 185 Duration: 34.91094899177551s Outcome: 61.88922497457408%
+flight_model.start_time = 6.732275825192059
+Simulation No.: 186 Duration: 18.130391597747803s Outcome: 22.237889702156718%
+flight_model.start_time = 18.60713340389259
+Simulation No.: 187 Duration: 35.73146438598633s Outcome: 66.70814116207147%
+flight_model.start_time = 6.109567567658128
+Simulation No.: 188 Duration: 21.726333141326904s Outcome: 26.96135860381059%
+flight_model.start_time = 15.007100781737314
+Simulation No.: 189 Duration: 18.021488428115845s Outcome: 22.237889702156718%
+flight_model.start_time = 23.839306079398717
+Simulation No.: 190 Duration: 18.37131357192993s Outcome: 22.237889702156718%
+flight_model.start_time = 21.382658302604497
+Simulation No.: 191 Duration: 21.229543924331665s Outcome: 27.611469120492533%
+flight_model.start_time = 14.884338024538678
+Simulation No.: 192 Duration: 18.58835196495056s Outcome: 22.237889702156718%
+flight_model.start_time = 18.318154833661765
+Simulation No.: 193 Duration: 21.218129873275757s Outcome: 25.600463103661987%
+flight_model.start_time = 15.388064798897618
+Simulation No.: 194 Duration: 33.70586895942688s Outcome: 62.41602592981875%
+flight_model.start_time = 7.013634995528886
+Simulation No.: 195 Duration: 30.691377878189087s Outcome: 47.57266826430406%
+flight_model.start_time = 9.642468136008322
+Simulation No.: 196 Duration: 18.530574083328247s Outcome: 22.614669164968507%
+flight_model.start_time = 16.894749924010807
+Simulation No.: 197 Duration: 31.952556133270264s Outcome: 50.750498789555195%
+flight_model.start_time = 1.2925974267289106
+Simulation No.: 198 Duration: 33.55034518241882s Outcome: 55.45371605787194%
+flight_model.start_time = 8.135342058606755
+Simulation No.: 199 Duration: 18.52133345603943s Outcome: 22.237889702156718%
+flight_model.start_time = 22.3933770660259
+Simulation No.: 200 Duration: 20.835655212402344s Outcome: 24.528766365756383%
+flight_model.start_time = 15.785433606201554
+Simulation No.: 201 Duration: 18.310980558395386s Outcome: 22.237889702156718%
+flight_model.start_time = 18.234084077790566
+Simulation No.: 202 Duration: 36.41773200035095s Outcome: 68.96117025620299%
+flight_model.start_time = 5.661722598565382
+Simulation No.: 203 Duration: 36.154810190200806s Outcome: 67.42758742085844%
+flight_model.start_time = 6.01297087733216
+Simulation No.: 204 Duration: 38.730220079422s Outcome: 61.6212472255919%
+flight_model.start_time = 7.168309538313732
+Simulation No.: 205 Duration: 28.34735679626465s Outcome: 29.71902611028953%
+flight_model.start_time = 14.438056070185402
+Simulation No.: 206 Duration: 19.193359851837158s Outcome: 22.237421512043955%
+flight_model.start_time = 23.70412914952413
+Simulation No.: 207 Duration: 37.28666853904724s Outcome: 100.0%
+flight_model.start_time = 3.34311855263054
+Simulation No.: 208 Duration: 18.166382789611816s Outcome: 22.237889702156718%
+flight_model.start_time = 22.704867549457
+Simulation No.: 209 Duration: 37.41009593009949s Outcome: 100.0%
+flight_model.start_time = 3.0843412552426015
+Simulation No.: 210 Duration: 18.33975076675415s Outcome: 22.237889702156718%
+flight_model.start_time = 21.093972017284628
+Simulation No.: 211 Duration: 19.55123805999756s Outcome: 23.521743683614925%
+flight_model.start_time = 16.11590836113368
+Simulation No.: 212 Duration: 23.344048500061035s Outcome: 30.71569917405968%
+flight_model.start_time = 14.223069663739656
+Simulation No.: 213 Duration: 32.40690898895264s Outcome: 51.299893189468115%
+flight_model.start_time = 0.32424213307642535
+Simulation No.: 214 Duration: 25.329580783843994s Outcome: 36.00602327484551%
+flight_model.start_time = 12.977789107774434
+Simulation No.: 215 Duration: 18.27271556854248s Outcome: 22.237889702156718%
+flight_model.start_time = 19.156111373409505
+Simulation No.: 216 Duration: 18.816181659698486s Outcome: 22.237889702156718%
+flight_model.start_time = 19.733646320687107
+Simulation No.: 217 Duration: 37.62517738342285s Outcome: 100.0%
+flight_model.start_time = 3.1271127695101546
+Simulation No.: 218 Duration: 26.072590827941895s Outcome: 30.02312477659752%
+flight_model.start_time = 14.39998026212009
+Simulation No.: 219 Duration: 34.33037757873535s Outcome: 42.38213018929941%
+flight_model.start_time = 1.023968930679275
+Simulation No.: 220 Duration: 36.432894468307495s Outcome: 66.62190558094836%
+flight_model.start_time = 6.105914771879403
+Simulation No.: 221 Duration: 30.965931177139282s Outcome: 48.639739829618854%
+flight_model.start_time = 9.289179806921084
+Simulation No.: 222 Duration: 33.94636297225952s Outcome: 57.82745896841162%
+flight_model.start_time = 7.810139589153549
+Simulation No.: 223 Duration: 36.89685344696045s Outcome: 100.0%
+flight_model.start_time = 2.386495414347011
+Simulation No.: 224 Duration: 30.873295545578003s Outcome: 50.72461843736333%
+flight_model.start_time = 8.753077596800178
+Simulation No.: 225 Duration: 36.31719708442688s Outcome: 65.74350372366283%
+flight_model.start_time = 6.319631982297338
+Simulation No.: 226 Duration: 36.55506658554077s Outcome: 100.0%
+flight_model.start_time = 3.7400481512879526
+Simulation No.: 227 Duration: 37.61917304992676s Outcome: 100.0%
+flight_model.start_time = 2.581250706235707
+Simulation No.: 228 Duration: 35.78780126571655s Outcome: 64.76200345275616%
+flight_model.start_time = 6.495862753034342
+Simulation No.: 229 Duration: 31.280033111572266s Outcome: 52.166400888780885%
+flight_model.start_time = 0.4588284031273968
+Simulation No.: 230 Duration: 32.632967948913574s Outcome: 53.99003413257013%
+flight_model.start_time = 8.35230002059801
+Simulation No.: 231 Duration: 18.08179211616516s Outcome: 22.625340074693895%
+flight_model.start_time = 16.769659680023405
+Simulation No.: 232 Duration: 18.197355031967163s Outcome: 22.237889702156718%
+flight_model.start_time = 23.49659859909258
+Simulation No.: 233 Duration: 18.415944814682007s Outcome: 22.237889702156718%
+flight_model.start_time = 18.77234954102647
+Simulation No.: 234 Duration: 18.239492177963257s Outcome: 22.237889702156718%
+flight_model.start_time = 21.126181918609976
+Simulation No.: 235 Duration: 40.423088788986206s Outcome: 49.08952638111699%
+flight_model.start_time = 9.13861565552508
+Simulation No.: 236 Duration: 22.549774646759033s Outcome: 22.832275084373357%
+flight_model.start_time = 16.69649376477153
+Simulation No.: 237 Duration: 33.41327261924744s Outcome: 55.1380153705009%
+flight_model.start_time = 8.199261579111436
+Simulation No.: 238 Duration: 36.45717906951904s Outcome: 66.95723044432317%
+flight_model.start_time = 6.10222411891024
+Simulation No.: 239 Duration: 36.78960680961609s Outcome: 68.94634025077579%
+flight_model.start_time = 4.860805869664232
+Simulation No.: 240 Duration: 23.53900671005249s Outcome: 34.375226511110405%
+flight_model.start_time = 13.429811503676223
+Simulation No.: 241 Duration: 18.324387311935425s Outcome: 22.237889702156718%
+flight_model.start_time = 21.218223762631126
+Simulation No.: 242 Duration: 18.24882936477661s Outcome: 22.237889702156718%
+flight_model.start_time = 22.23663282507323
+Simulation No.: 243 Duration: 31.06255531311035s Outcome: 48.76677144211997%
+flight_model.start_time = 1.6235442916701892
+Simulation No.: 244 Duration: 29.71854829788208s Outcome: 47.82537890794717%
+flight_model.start_time = 9.507487448132721
+Simulation No.: 245 Duration: 18.08177614212036s Outcome: 22.237889702156718%
+flight_model.start_time = 20.022876369296718
+Simulation No.: 246 Duration: 22.765496730804443s Outcome: 27.913628803378487%
+flight_model.start_time = 14.82759114595564
+Simulation No.: 247 Duration: 35.98718070983887s Outcome: 65.9566617065175%
+flight_model.start_time = 6.313242873341488
+Simulation No.: 248 Duration: 24.051106929779053s Outcome: 35.22316584339545%
+flight_model.start_time = 13.225389426184009
+Simulation No.: 249 Duration: 39.3715283870697s Outcome: 100.0%
+flight_model.start_time = 3.2964049796569688
+Simulation No.: 250 Duration: 19.41331958770752s Outcome: 24.033985845954902%
+flight_model.start_time = 15.818013501538907
+Success rate = 100.0
