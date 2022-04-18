@@ -1,16 +1,14 @@
 from src.simulation import Simulation
 from src.monteCarlo import MonteCarlo
 import pandas as pd
-from src.generatePaths import GeneratePaths
+import numpy as np
 import datetime
+from src.generatePaths import GeneratePaths
+
 
 path = GeneratePaths(
-    shape='s',
-    start_point=[0, 50000],
-    scanning_range=1000,
-    scanning_width=50000,
-    scanning_area=25000*10**6,
-    direction='n',
+    points=np.array(([0, 0], [250000, 200000], [0, 300000],
+                    [-250000, 200000], [0, 0])),
 )
 
 # London
@@ -19,7 +17,7 @@ longitude = 0
 time_zone = 'GMT'
 
 start_hour = 0
-duration = 3
+duration = 7
 
 # Recorded Cloud Data from London
 file = [
@@ -33,16 +31,18 @@ sim = Simulation(
     time_zone=time_zone,
     start_hour=start_hour,
     duration=duration,
-    date=datetime.date(2022, 4, 4),
-    mission_type='p2p',
     cloud_data=file,
+    cloud_sd=0.1,
     path=path,
+    mission_type='p2p',
+    abort_mission=False,
+    date=datetime.date(2022, 4, 4),
 )
 
-file_name = '../../../data/monte_carlo_results/scanArea/spiralNorth_A250.txt'
-no_sims = 100
+file_name = '../../../data/monte_carlo_results/cloudUncertainty/london_constant_0p1_24_30.txt'
+no_sims = 50
 
-other_variables = [['flight_model.yaw.path.width', [5000, 100000], 'int']]
+other_variables = [['flight_model.start_time', [24, 30], 'float']]
 
 monte_carlo = MonteCarlo(
     simulation=sim,

@@ -6,12 +6,12 @@ import numpy as np
 import datetime
 
 # London
-latitude = 50
-longitude = 0
-time_zone = 'GMT'
+latitude = -40
+longitude = 145
+time_zone = 'Australia/Melbourne'
 
 cloud_data = [
-    pd.read_csv('../../../data/cloud_data/london_april/london_13_40_26.csv'),
+    pd.read_csv('../../../data/cloud_data/melbourne_april/melbourne_13_40_37.csv'),
 ]
 
 start_hour = 0
@@ -28,18 +28,17 @@ sim = Simulation(
     start_hour=start_hour,
     duration=duration,
     cloud_data=cloud_data,
-    mission_type='target',
     path=path,
-    date=datetime.date(2022, 4, 3),
+    mission_type='target',
+    date=datetime.date(2022, 4, 4),
 )
 
-file_name = '../../../data/monte_carlo_results/timeOnTarget/london_target_distance_r4km_300.txt'
-no_sims = 300
+file_name = '../../../data/monte_carlo_results/timeOnTarget/melbourne_target_start_hour_100.txt'
+no_sims = 100
 
-other_variables = [['flight_model.yaw.path.points[0][1]', [1000, 300000], 'float']]
+other_variables = [['flight_model.start_time', [0, 120], 'float']]
 
 monte_carlo = MonteCarlo(
-
     simulation=sim,
     samples=no_sims,
     file_path=file_name,

@@ -7,10 +7,12 @@ from scipy.stats import beta
 class ProbabilityForecast:
     def __init__(self,
                  file: list,
-                 plot_results: bool = False):
+                 plot_results: bool = False,
+                 standard_deviation: float = None):
 
         self.file = file
         self.plot_results = plot_results
+        self.standard_deviation = standard_deviation
 
         # First time to be used as the first time of the last reading
         self.first_time = pd.Timestamp(self.file[-1].values[0, 0])
@@ -61,6 +63,8 @@ class ProbabilityForecast:
             self.cloud_cover = np.array([[0.0, 0.0]] * (3 * len(self.time) - 2))
 
             self.mean_total = np.zeros(len(self.time))
+            self.mean_plus_sigma = np.zeros(len(self.time))
+            self.mean_minus_sigma = np.zeros(len(self.time))
             self.var_total = np.zeros(len(self.time))
             self.sd_total = np.zeros(len(self.time))
             self.a = np.zeros(len(self.time))
@@ -87,12 +91,25 @@ class ProbabilityForecast:
             self.mean_total[j] = np.sum(self.total_clouds, axis=0)[j] / len(self.file)
             self.var_total[j] = np.var(self.total_clouds, axis=0)[j]
             self.sd_total[j] = np.sqrt(self.var_total[j])
+            self.mean_plus_sigma[j] = self.mean_total[j] + 2 * self.sd_total[j]
+            if self.mean_plus_sigma[j] > 1:
+                self.mean_plus_sigma[j] = 1
+            self.mean_minus_sigma[j] = self.mean_total[j] - 2 * self.sd_total[j]
+            if self.mean_minus_sigma[j] < 0:
+                self.mean_minus_sigma[j] = 0
 
-            if self.var_total[j] > 0:
+            if self.standard_deviation is not None:
+                samples = np.random.normal(self.mean_total[j], self.standard_deviation, 1)
+                self.cloud_cover[3 * j, 0] = 3 * j
+                self.cloud_cover[3 * j, 1] = samples[0] * 100
+                if self.cloud_cover[3 * j, 1] > 100:
+                    self.cloud_cover[3 * j, 1] = 100
+                elif self.cloud_cover[3 * j, 1] < 0:
+                    self.cloud_cover[3 * j, 1] = 0
+            elif self.var_total[j] > 0:
                 self.a[j] = self.mean_total[j] * (self.mean_total[j] * (1 - self.mean_total[j]) / self.var_total[j] - 1)
                 self.b[j] = (1 - self.mean_total[j]) * (self.mean_total[j] * (1 - self.mean_total[j]) /
                                                         self.var_total[j] - 1)
-
                 samples = np.random.beta(self.a[j], self.b[j], 1)
                 self.cloud_cover[3 * j, 0] = 3 * j
                 self.cloud_cover[3 * j, 1] = samples[0] * 100
@@ -125,7 +142,8 @@ class ProbabilityForecast:
         fig2, ax2 = plt.subplots()
 
         ax2.plot(self.time, self.mean_total * 100, label='Mean')
-        ax2.plot(self.time, self.sd_total * 100, label='SD')
+        ax2.plot(self.time, self.mean_plus_sigma * 100, '--', label='+2$\sigma$')
+        ax2.plot(self.time, self.mean_minus_sigma * 100, '--', label='-2$\sigma$')
         ax2.set_xlabel('Time (hrs)')
         ax2.set_ylabel('Cloud Cover (%)')
         ax2.set_title('Total Cloud Cover')
@@ -139,13 +157,5 @@ class ProbabilityForecast:
         ax3.set_ylabel('Cloud Cover (%)')
         ax3.plot(self.cloud_cover[:, 0] + self.start_hour, self.cloud_cover[:, 1])
         ax3.set_ylim([-5, 105])
-
-        # fig4, ax4 = plt.subplots()
-        #
-        # ax4.plot(beta.pdf(np.linspace(0, 1, 100), self.a[5], self.b[5]))
-        # ax4.plot([self.total_clouds[0, 5] * 100, self.total_clouds[1, 5] * 100, self.total_clouds[2, 5] * 100,
-        #          self.total_clouds[3, 5] * 100, self.total_clouds[4, 5] * 100], [0, 0, 0, 0, 0], 'xr')
-        # ax4.set_xlabel('Cloud Cover (%)')
-        # ax4.set_ylabel('PDF')
 
         plt.show()

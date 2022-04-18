@@ -13,55 +13,32 @@ path = GeneratePaths(
     # scanning_width=50000,
     # scanning_length=50000,
     # direction='n',
-    points=np.array(([0, 0], [250000, 200000], [0, 300000],
-                    [-250000, 200000], [0, 0])),
-    # points=np.array(([0, 50000], [0, 0])),
+    # points=np.array(([0, 0], [250000, 200000], [0, 300000],
+    #                 [-250000, 200000], [0, 0])),
+    # points=np.array(([0, 0], [200000, 150000], [0, 250000],
+    #                  [-200000, 150000], [0, 0])),
+    points=np.array(([0, 50000], [0, 0])),
 )
 
 
 start_time = timeit.default_timer()
 
-# Singapore
-latitude = 0
-longitude = 105
-time_zone = 'Singapore'
-
 # London
-# latitude = 51.5072
-# longitude = 0.1276
-# time_zone = 'GMT'
+latitude = 50
+longitude = 0
+time_zone = 'GMT'
 
 start_hour = 0
 duration = 2
 
-# cloud_data = [
-#     Day 1
-#     pd.read_csv('../data/cloud_data_winnipeg/cloud_cover_11_22_13.csv'),
-#     pd.read_csv('../data/cloud_data_winnipeg/cloud_cover_17_22_22.csv'),
-#     pd.read_csv('../data/cloud_data_winnipeg/cloud_cover_23_22_37.csv'),
-#     Day 2
-#     pd.read_csv('../data/cloud_data_winnipeg/cloud_cover_05_22_45.csv'),
-#     pd.read_csv('../data/cloud_data_winnipeg/cloud_cover_11_23_00.csv'),
-# ]
-
-# cloud_data = [
-#     Day 1
-#     pd.read_csv('../../data/cloud_data/cloud_data_london/cloud_cover_16_04_31.csv'),
-#     pd.read_csv('../data/cloud_data_london/cloud_cover_22_04_39.csv'),
-#     Day 2
-#     pd.read_csv('../data/cloud_data_london/cloud_cover_04_04_47.csv'),
-#     pd.read_csv('../data/cloud_data_london/cloud_cover_10_04_55.csv'),
-#     pd.read_csv('../data/cloud_data_london/cloud_cover_16_05_03.csv'),
-#     pd.read_csv('../data/cloud_data_london/cloud_cover_22_05_11.csv'),
-# ]
-
 cloud_data = [
-    pd.read_csv('../../data/general_cloud_data/low_cloud_data.csv'),
-    pd.read_csv('../../data/general_cloud_data/lowmed_cloud_data.csv'),
-    pd.read_csv('../../data/general_cloud_data/med_cloud_data.csv')
-    # pd.read_csv('../../data/general_cloud_data/med_cloud_data.csv'),
-    # pd.read_csv('../../data/general_cloud_data/medhigh_cloud_data.csv'),
-    # pd.read_csv('../../data/general_cloud_data/high_cloud_data.csv')
+        # Day 1
+        pd.read_csv('../../data/cloud_data/london_april/london_13_40_26.csv'),
+        # pd.read_csv('../../data/cloud_data/london_april/london_19_40_34.csv'),
+        # # Day 2
+        # pd.read_csv('../../data/cloud_data/london_april/london_01_40_44.csv'),
+        # pd.read_csv('../../data/cloud_data/london_april/london_07_40_52.csv'),
+        # pd.read_csv('../../data/cloud_data/london_april/london_13_41_01.csv'),
 ]
 
 sim = Simulation(
@@ -73,10 +50,10 @@ sim = Simulation(
     # cloud_data=[pd.read_csv('../../data/general_cloud_data/blank_cloud_data.csv')],
     cloud_data=cloud_data,
     path=path,
-    mission_type='p2p',
-    # mission_type='target',
-    abort_mission=False,
-    date=datetime.date(2021, 7, 1),
+    # mission_type='p2p',
+    mission_type='target',
+    abort_mission=True,
+    date=datetime.date(2022, 4, 4),
 )
 
 flight_model = sim.generate()
@@ -146,6 +123,15 @@ ax2.plot(flight_model.state_var[0, :] / 1000, flight_model.state_var[1, :] / 100
 ax2.plot(flight_model.yaw.points[:, 0] / 1000, flight_model.yaw.points[:, 1] / 1000, 'xr')
 ax2.set_xlabel('X Distance (km)')
 ax2.set_ylabel('Y Distance (km)')
+
+ax2.text(flight_model.yaw.points[0, 0] / 1000, flight_model.yaw.points[0, 1] / 1000 + 5, 'Target')
+ax2.text(flight_model.yaw.points[-1, 0] / 1000 + 1, flight_model.yaw.points[-1, 1] / 1000 + 4, 'Start')
+ax2.text(flight_model.yaw.points[-1, 0] / 1000 - 3, flight_model.yaw.points[-1, 1] / 1000 + 4, 'End')
+
+# ax2.text(flight_model.yaw.points[0, 0] / 1000 + 20, flight_model.yaw.points[0, 1] / 1000 + 5, 'Start')
+# ax2.text(flight_model.yaw.points[-1, 0] / 1000 - 50, flight_model.yaw.points[-1, 1] / 1000 + 5, 'End')
+# for i in range(1, len(flight_model.yaw.points) - 1):
+#     ax2.text(flight_model.yaw.points[i, 0] / 1000 - 5, flight_model.yaw.points[i, 1] / 1000 + 5, 'P' + str(i))
 
 fig3, ax3 = plt.subplots()
 

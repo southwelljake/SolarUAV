@@ -9,8 +9,8 @@ path = GeneratePaths(
     start_point=[0, 50000],
     scanning_range=1000,
     scanning_width=50000,
-    scanning_area=25000*10**6,
-    direction='n',
+    scanning_area=2500*10**6,
+    direction='w',
 )
 
 # London
@@ -39,7 +39,7 @@ sim = Simulation(
     path=path,
 )
 
-file_name = '../../../data/monte_carlo_results/scanArea/spiralNorth_A250.txt'
+file_name = '../../../data/monte_carlo_results/scanArea/spiralWest_50km.txt'
 no_sims = 100
 
 other_variables = [['flight_model.yaw.path.width', [5000, 100000], 'int']]

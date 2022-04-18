@@ -50,11 +50,11 @@ class MonteCarlo:
 
                 elif flight_model.yaw.mission_type == 'target':
                     print('Simulation No.: ' + str(j + 1) + ', Duration: ' + str((time.time() - start_time)) +
-                          's, Time on target: ' + str((flight_model.target_end - flight_model.target_start) / 3600) +
-                          ' hrs \n')
+                          's, Time on target: ' + str((flight_model.yaw.target_end - flight_model.yaw.target_start) /
+                                                      3600) + ' hrs \n')
                     f.write('Simulation No.: ' + str(j + 1) + ', Duration: ' + str((time.time() - start_time)) +
-                            's, Time on target: ' + str((flight_model.target_end - flight_model.target_start) / 3600) +
-                            ' hrs \n')
+                            's, Time on target: ' + str((flight_model.yaw.target_end - flight_model.yaw.target_start) /
+                                                        3600) + ' hrs \n')
 
                 if self.other_variables is not None:
                     for i in range(0, len(self.other_variables)):

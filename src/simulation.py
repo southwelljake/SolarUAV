@@ -24,6 +24,7 @@ class Simulation:
                  date: datetime.date = datetime.date.today(),
                  mission_type: str = 'p2p',
                  cloud_data: list = None,
+                 cloud_sd: float = None,
                  abort_mission: bool = True,
                  abort_time: float = None,
                  ):
@@ -35,6 +36,7 @@ class Simulation:
         self.duration = duration
         self.path = path
         self.cloud_data = cloud_data
+        self.cloud_sd = cloud_sd
         self.date = date
         self.mission_type = mission_type
         self.abort_mission = abort_mission
@@ -74,7 +76,7 @@ class Simulation:
             cloud_cover.generate_data()
             cloud_cover.process_data()
         else:
-            probability_forecast = ProbabilityForecast(file=self.cloud_data)
+            probability_forecast = ProbabilityForecast(file=self.cloud_data, standard_deviation=self.cloud_sd)
             probability_forecast.generate_data()
             cloud_cover.cloud_cover = probability_forecast.cloud_cover
 
@@ -123,7 +125,7 @@ class Simulation:
             path=path,
             tolerance=100,
             radius_land=2000,
-            radius_target=2000,
+            radius_target=4000,
             mission_type=self.mission_type,
             abort_mission=self.abort_mission,
             abort_time=self.abort_time

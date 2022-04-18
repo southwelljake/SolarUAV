@@ -13,15 +13,15 @@ longitude = 0.1276
 time_zone = 'GMT'
 
 start_hour = 2
-duration = 2
+duration = 1
 
 cloud_data = [
-    pd.read_csv('../../../data/cloud_data/cloud_data_london/cloud_cover_16_04_31.csv'),
+    pd.read_csv('../../../data/general_cloud_data/blank_cloud_data.csv'),
 ]
 
 # Path 1
 path_1 = GeneratePaths(
-    shape='s',
+    shape='z',
     start_point=[30000, 40000],
     scanning_range=1000,
     scanning_width=20000,
@@ -47,7 +47,7 @@ flight_model_1.sim_flight()
 
 # Path 2
 path_2 = GeneratePaths(
-    shape='s',
+    shape='z',
     start_point=[30000, 40000],
     scanning_range=1000,
     scanning_width=20000,
@@ -73,7 +73,7 @@ flight_model_2.sim_flight()
 
 # Path 3
 path_3 = GeneratePaths(
-    shape='s',
+    shape='z',
     start_point=[30000, 40000],
     scanning_range=1000,
     scanning_width=20000,
@@ -99,7 +99,7 @@ flight_model_3.sim_flight()
 
 # Path 4
 path_4 = GeneratePaths(
-    shape='s',
+    shape='z',
     start_point=[30000, 40000],
     scanning_range=1000,
     scanning_width=20000,

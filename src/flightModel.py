@@ -296,18 +296,17 @@ class FlightModel:
         # Create the flight path to simulate
         self.yaw.create_path()
 
-        # try:
-        sol = spi.solve_ivp(self.calculate_derivatives, (0, self.t_end), ini_state_var, t_eval=self.t_ODE,
-                            events=[hit_ground, timeout], dense_output=False, method='RK45')
+        try:
+            sol = spi.solve_ivp(self.calculate_derivatives, (0, self.t_end), ini_state_var, t_eval=self.t_ODE,
+                                events=[hit_ground, timeout], dense_output=False, method='RK45')
 
-        self.state_var = sol.y
-        self.sol_t = sol.t / 3600 + self.start_time
-        self.tx = self.tx / 3600 + self.start_time
+            self.state_var = sol.y
+            self.sol_t = sol.t / 3600 + self.start_time
+            self.tx = self.tx / 3600 + self.start_time
 
-        if not self.yaw.returning and self.yaw.landing:
-            self.yaw.distance_travelled = self.yaw.total_distance
-        elif not self.yaw.abort_mission and not self.yaw.landing:
-            self.yaw.calculate_distance_travelled(self.state_var[:, -1])
-
-        # except:
-        #     print('Killed Simulation')
+            if not self.yaw.returning and self.yaw.landing:
+                self.yaw.distance_travelled = self.yaw.total_distance
+            elif not self.yaw.abort_mission and not self.yaw.landing:
+                self.yaw.calculate_distance_travelled(self.state_var[:, -1])
+        except:
+            print('Killed Simulation')

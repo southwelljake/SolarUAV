@@ -2,9 +2,9 @@ from src.processSensitivity import ProcessSensitivity
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 
-p = ProcessSensitivity('../../data/monte_carlo_results/percentageSuccess/london_percentage_success_longer_500.txt')
+p = ProcessSensitivity('../../../data/monte_carlo_results/percentageSuccess/london_percentage_success_longer_500.txt')
 p2 = ProcessSensitivity(
-    '../../data/monte_carlo_results/percentageSuccess/london_percentage_success_initial_longer_250.txt')
+    '../../../data/monte_carlo_results/percentageSuccess/london_percentage_success_initial_longer_250.txt')
 
 # Plot results
 fig1, ax1 = plt.subplots()
