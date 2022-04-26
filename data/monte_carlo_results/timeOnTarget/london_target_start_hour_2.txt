@@ -1,6 +1,0 @@
-Total Simulations to run: 2
-Simulation No.: 1, Duration: 60.538745403289795s, Time on target: 18.485250069146318 hrs 
-flight_model.start_time = 7.1247305550466775
-Simulation No.: 2, Duration: 72.65714073181152s, Time on target: 25.842656134785454 hrs 
-flight_model.start_time = 23.767365061114077
-Success rate = 100.0
