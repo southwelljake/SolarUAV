@@ -13,6 +13,19 @@ class GeneratePaths:
                  points: np.array = None,
                  ):
 
+        """
+        Class to generate coordinates for different path shapes.
+
+        :param shape: Path shape ('s' or 'z').
+        :param start_point: Starting location to scan from (m).
+        :param scanning_range: UAV scanning range, distance between paths (m).
+        :param scanning_width: Width of scanning range (m).
+        :param scanning_length: Length of scanning range (m).
+        :param scanning_area: Scanning area (m^2).
+        :param direction: Direction to scan ('n', 'e', 's', 'w').
+        :param points: Input coordinates or locations. Overrides any other path variables.
+        """
+
         self.shape = shape
         self.start_point = start_point
         self.range = scanning_range
@@ -28,12 +41,13 @@ class GeneratePaths:
         if self.points is not None:
             return self.points
         else:
-            if self.length is None:
-                self.length = self.width
-            elif self.area is not None and self.length is None:
+
+            if self.area is not None and self.length is None:
                 self.length = int(self.area/self.width)
             elif self.area is not None and self.width is None:
                 self.width = int(self.area/self.length)
+            elif self.length is None:
+                self.length = self.width
 
             self.points = np.array(([0, 0], self.start_point))
             start = np.array(self.start_point)

@@ -4,5 +4,12 @@ class Battery:
                  initial_level: float,
                  capacity: float):
 
-        self.level = initial_level  # Initial battery energy (J)
-        self.capacity = capacity  # Battery capacity (J)
+        """
+        Class to store battery variables.
+
+        :param initial_level: Initial battery energy (J)
+        :param capacity:  Battery capacity (J)
+        """
+
+        self.level = initial_level
+        self.capacity = capacity

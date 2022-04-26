@@ -3,8 +3,14 @@ class Propeller:
     def __init__(self,
                  efficiency: float):
 
-        self.efficiency = efficiency  # Efficiency of propellers
-        self.power = 0  # Power to propellers (W)
+        """
+        Class to represent propeller subsystem.
+
+        :param efficiency: Propeller efficiency.
+        """
+
+        self.efficiency = efficiency
+        self.power = 0
 
     def calculate_propeller_thrust(self, v_air, state_var):
         # Compute thrust

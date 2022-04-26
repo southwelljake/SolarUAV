@@ -14,6 +14,16 @@ class CloudCover:
                  date: datetime.date = datetime.date.today(),
                  ):
 
+        """
+        Class to collect and process cloud data to be used in FlightModel.
+
+        :param latitude: Latitude (deg).
+        :param longitude: Longitude (deg).
+        :param time_zone: Time Zone in pytz format e.g. 'America/New_York'.
+        :param days: Number of days to forecast for.
+        :param date: Date of first day of forecast. Default as current day.
+        """
+
         self.latitude = latitude
         self.longitude = longitude
         self.time_zone = time_zone
@@ -25,12 +35,14 @@ class CloudCover:
         self.wind_data = np.array([[0, 0, 0, 0]] * (days * 25 + 1))
 
     def generate_data(self):
-
+        # Set the start and end times for the forecast
         start = pd.Timestamp(self.date, tz=self.time_zone)
         end = start + pd.Timedelta(days=self.days)
 
+        # Set up the GFS model
         model = GFS()
 
+        # Collect the model data
         self.data = model.get_processed_data(self.latitude, self.longitude, start, end)
 
     def process_data(self):
@@ -43,6 +55,7 @@ class CloudCover:
 
         total_cc = np.array(self.data['total_clouds'])
 
+        # Interpolate between collected points to give hourly frequency of data
         for i in range(0, len(total_cc) - 1):
             self.cloud_cover[3 * i, 1] = total_cc[i]
             self.cloud_cover[3 * i + 1, 1] = (total_cc[i + 1] - total_cc[i]) / 3 + total_cc[i]
@@ -52,6 +65,7 @@ class CloudCover:
     def process_wind_data(self):
         wind_vel = np.array(self.data['wind_speed'])
 
+        # Interpolate between collected points to give hourly frequency of data
         for i in range(0, len(wind_vel) - 1):
             self.wind_data[3 * i, 1] = wind_vel[i]
             self.wind_data[3 * i + 1, 1] = (wind_vel[i + 1] - wind_vel[i]) / 3 + wind_vel[i]

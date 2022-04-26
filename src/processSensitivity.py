@@ -3,6 +3,12 @@ class ProcessSensitivity:
     def __init__(self,
                  file_path: str):
 
+        """
+        Class to process Monte Carlo simulation results.
+
+        :param file_path: Results file path.
+        """
+
         with open(file_path, 'r') as f:
             lines = []
             for row in f:

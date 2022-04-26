@@ -6,6 +6,12 @@ class Wing:
                  area: float,
                  ):
 
+        """
+        Class to represent wing subsystem.
+
+        :param area: Wing area.
+        """
+
         self.area = area
         self.alpha = 0
         self.Cl = 0

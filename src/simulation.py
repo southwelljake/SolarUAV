@@ -26,8 +26,23 @@ class Simulation:
                  cloud_data: list = None,
                  cloud_sd: float = None,
                  abort_mission: bool = True,
-                 abort_time: float = None,
                  ):
+
+        """
+        Class to generate a simulation to return a parametrised flight model.
+
+        :param latitude: Latitude (deg).
+        :param longitude: Longitude (deg).
+        :param time_zone: Time Zone in pytz format e.g. 'America/New_York'.
+        :param start_hour: Launch hour for the simulation (hours).
+        :param duration: Maximum flight duration (hours).
+        :param path: GeneratePaths class.
+        :param date: Date of first day of forecast. Default as current day.
+        :param mission_type: Mission type ('p2p' or 'target').
+        :param cloud_data: Files to generate cloud data.
+        :param cloud_sd: Value for standard deviation if constant uncertainty to be used.
+        :param abort_mission: Whether to abort the flight mission.
+        """
 
         self.latitude = latitude
         self.longitude = longitude
@@ -40,7 +55,6 @@ class Simulation:
         self.date = date
         self.mission_type = mission_type
         self.abort_mission = abort_mission
-        self.abort_time = abort_time
 
     def generate(self):
         path = GeneratePaths(
@@ -48,6 +62,7 @@ class Simulation:
             start_point=self.path.start_point,
             scanning_range=self.path.range,
             scanning_width=self.path.width,
+            scanning_area=self.path.area,
             scanning_length=self.path.length,
             direction=self.path.direction,
             points=self.path.points,
@@ -125,10 +140,9 @@ class Simulation:
             path=path,
             tolerance=100,
             radius_land=2000,
-            radius_target=4000,
+            radius_target=2000,
             mission_type=self.mission_type,
             abort_mission=self.abort_mission,
-            abort_time=self.abort_time
         )
 
         # Create Flight Model

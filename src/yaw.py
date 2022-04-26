@@ -7,19 +7,29 @@ class YawController:
                  kp: float,
                  path: GeneratePaths,
                  tolerance: float,
-                 radius_target: float,
                  radius_land: float,
+                 radius_target: float = None,
                  mission_type: str = 'p2p',
                  abort_mission: bool = True,
-                 abort_time: float = None,
                  ):
+
+        """
+        Class to represent yaw controller subsystem.
+
+        :param kp: Proportional gain.
+        :param path: GeneratePaths class.
+        :param tolerance: Tolerance for reaching a desired point.
+        :param radius_target: Radius for circling if using target method.
+        :param radius_land:  Radius for circling in land manoeuvre.
+        :param mission_type: Mission type ('p2p' or 'target').
+        :param abort_mission: Whether to abort the mission.
+        """
 
         self.kp = kp
         self.path = path
         self.tolerance = tolerance
         self.mission_type = mission_type
         self.abort_mission = abort_mission
-        self.abort_time = abort_time
 
         self.desired_yaw = 0
         self.roll_prev = 0
@@ -44,10 +54,11 @@ class YawController:
     def create_path(self):
         self.points = self.path.generate()
 
-        self.target_circle = array(([self.points[0, 0], self.points[0, 1] + self.radius_target],
-                                    [self.points[0, 0] - self.radius_target, self.points[0, 1]],
-                                    [self.points[0, 0], self.points[0, 1] - self.radius_target],
-                                    [self.points[0, 0] + self.radius_target, self.points[0, 1]]))
+        if self.radius_target is not None:
+            self.target_circle = array(([self.points[0, 0], self.points[0, 1] + self.radius_target],
+                                        [self.points[0, 0] - self.radius_target, self.points[0, 1]],
+                                        [self.points[0, 0], self.points[0, 1] - self.radius_target],
+                                        [self.points[0, 0] + self.radius_target, self.points[0, 1]]))
 
         self.end_circle = array(([self.points[-1, 0], self.points[-1, 1] + self.radius_land],
                                  [self.points[-1, 0] - self.radius_land, self.points[-1, 1]],
@@ -92,6 +103,11 @@ class YawController:
     def calculate_roll_angle_target(self, t, initial_position, state_var, yaw):
         if not self.landing:
             if self.returning:
+                if not self.at_target:
+                    self.target_start = t
+                if self.target_end == 0:
+                    self.target_end = t
+
                 # Return to initial position
                 desired_yaw = - arctan2(initial_position[0] - state_var[0],
                                         initial_position[1] - state_var[1])
@@ -102,7 +118,6 @@ class YawController:
                 if distance < self.tolerance:
                     self.landing = True
                     self.point_index = 0
-                    self.target_end = t
 
             elif not self.at_target:
                 desired_yaw = - arctan2(self.points[0, 0] - state_var[0],

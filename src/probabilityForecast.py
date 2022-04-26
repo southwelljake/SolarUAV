@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import beta
 
 
 class ProbabilityForecast:
@@ -9,6 +8,14 @@ class ProbabilityForecast:
                  file: list,
                  plot_results: bool = False,
                  standard_deviation: float = None):
+
+        """
+        Class to generate random samples of cloud forecasts based on recorded data.
+
+        :param file: List of input files read using pandas dataframes
+        :param plot_results: Whether to plot the results or not.
+        :param standard_deviation: Value for standard deviation if constant uncertainty to be used.
+        """
 
         self.file = file
         self.plot_results = plot_results

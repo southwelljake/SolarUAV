@@ -5,5 +5,12 @@ class Aircraft:
                  power_other: float,
                  ):
 
-        self.mass = mass  # Aircraft mass
-        self.P_other = power_other  # Non-aerodynamic power draw  (W)
+        """
+        Class to store general aircraft variables.
+
+        :param mass: Mass of the aircraft (kg)
+        :param power_other: Other Power draw on aircraft (W)
+        """
+
+        self.mass = mass
+        self.P_other = power_other

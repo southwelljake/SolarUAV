@@ -14,6 +14,16 @@ class SolarModel:
                  date: datetime.date = datetime.date.today()
                  ):
 
+        """
+        Class to collect and process solar data to be used in FlightModel.
+
+        :param latitude: Latitude (deg).
+        :param longitude: Longitude (deg).
+        :param time_zone: Time Zone in pytz format e.g. 'America/New_York'.
+        :param days: Number of days to forecast for.
+        :param date: Date of first day of forecast. Default as current day.
+        """
+
         self.longitude = longitude
         self.latitude = latitude
         self.time_zone = time_zone

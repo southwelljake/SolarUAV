@@ -40,6 +40,24 @@ class FlightModel:
                  cloud_cover: CloudCover,
                  ):
 
+        """
+        Class to execute the overall flight dynamics equations from connected subsystems.
+
+        :param start_time: Launch hour for the simulation (hours).
+        :param duration: Maximum flight duration (hours).
+        :param dt: Time step for simulation results (hours).
+        :param launch_velocity: Launch velocities (m/s).
+        :param aircraft: Aircraft class.
+        :param altitude: AltitudeController class.
+        :param battery: Battery class.
+        :param propeller: Propeller class.
+        :param wing: Wing class.
+        :param solar_panel: SolarPanel class.
+        :param yaw: YawController class.
+        :param solar_model: SolarModel class.
+        :param cloud_cover: CloudCover class.
+        """
+
         # Initialise time parameters
         self.start_time = start_time  # Start time of flight (hrs)
         self.duration = duration  # Maximum duration for simulation (hrs)
@@ -89,8 +107,11 @@ class FlightModel:
         self.P_propx = np.zeros(0, dtype=int)    # Propelling power in simulation (in W)
         self.P_netx = np.zeros(0, dtype=int)     # Net power in simulation (in W)
 
+        # Variables for cruise conditions
         self.v_cruise = 0
         self.P_cruise = 0
+
+        # Final output variables
         self.state_var = None
         self.sol_t = None
 
@@ -104,10 +125,14 @@ class FlightModel:
         # Initially not collecting power data throughout simulation for lower run-time
         self.collect_power_data = False
 
+        # Store time simulation begins
         self.start_run = time.time()
 
     def store_data(self, t, state_der):
-        # Store propelling and net power data of simulation
+        """
+        Function to store propelling and net power data of simulation.
+        """
+
         if self.collect_power_data:
             seconds_elapsed = int(np.floor(t))
             dt_int = seconds_elapsed - self.t_prevint
@@ -119,7 +144,12 @@ class FlightModel:
                 self.t_prevint = seconds_elapsed
 
     def calculate_solar(self, t):
-        time_current = self.start_time + t / 3600  # in hours
+        """
+        Function to calculate solar power input at a given time.
+        """
+
+        # Current time in hours
+        time_current = self.start_time + t / 3600
 
         # Calculate power from solar panel
         return self.solar_model.calculate_solar_power(
@@ -127,6 +157,10 @@ class FlightModel:
         ) * self.solar_panel.efficiency
 
     def calculate_abort_mission(self, t, state_var):
+        """
+        Function to determine when to abort a mission.
+        """
+
         if self.yaw.abort_mission and self.yaw.abort_time is None:
             # Function to calculate required roll angle to follow desired flight path
             # Allow an hour to land
@@ -176,7 +210,9 @@ class FlightModel:
                     self.yaw.point_index = len(self.yaw.points) - 1
 
     def calculate_propeller_power(self, state_var):
-        # Function to calculate the required propelling power for different phases of flight
+        """
+        Function to calculate the required propelling power for different phases of flight.
+        """
 
         # If landing
         if self.yaw.landing:
@@ -198,7 +234,9 @@ class FlightModel:
             self.propeller.power = self.P_cruise
 
     def calculate_net_pe(self, state_var, state_der, thrust, v_air):
-        # Function to convert net positive energy into potential energy (altitude)
+        """
+        Function to convert net positive energy into potential energy (altitude)
+        """
 
         # If the SUAV is cruising
         if self.altitude.store_PE:
@@ -227,10 +265,16 @@ class FlightModel:
         return state_var, state_der, thrust
 
     def calculate_derivatives(self, t, state_var):
-        # State variables = [x, y, z, x', y', z', E]
-        # State derivatives = [x'gr, y'gr, z'gr, x''gr, y''gr, z''gr, Pnet]
+        """
+
+        State variables = [x, y, z, x', y', z', E, time]
+        State derivatives = [x'gr, y'gr, z'gr, x''gr, y''gr, z''gr, Pnet, time]
+        """
+
+        # Initialise state derivatives
         state_der = np.zeros(8)
 
+        # Calculate wind speeds from data
         self.wind_x, self.wind_y, self.wind_z = self.cloud_cover.calculate_wind_vel(t, self.start_time)
 
         # Compute current air speeds
@@ -308,5 +352,6 @@ class FlightModel:
                 self.yaw.distance_travelled = self.yaw.total_distance
             elif not self.yaw.abort_mission and not self.yaw.landing:
                 self.yaw.calculate_distance_travelled(self.state_var[:, -1])
+
         except:
             print('Killed Simulation')

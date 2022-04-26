@@ -1,7 +1,6 @@
 from src.simulation import Simulation
 import time
 import random
-import numpy as np
 
 
 class MonteCarlo:
@@ -10,6 +9,17 @@ class MonteCarlo:
                  samples: int,
                  file_path: str,
                  other_variables: list = None):
+
+        """
+        Class to run multiple simulations and vary parameters.
+
+        :param simulation: A flight simulation.
+        :param samples: No. of samples.
+        :param file_path: File path to write results to.
+        :param other_variables: List of parameters to vary and range of values.
+            e.g. [['flight_model.aircraft.mass', [15, 20]],
+                  ['flight_model.battery.capacity', [0.5 * 4590000, 1.5 * 4590000]]]
+        """
 
         self.sim = simulation
         self.samples = samples
