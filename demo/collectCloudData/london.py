@@ -23,7 +23,7 @@ for i in range(0, no_forecasts):
     cloud_model.generate_data()
 
     current_time = time.strftime("%H_%M_%S", time.localtime())
-    file_path = Path('../../data/cloud_data/london_april/london_' + current_time + '.csv')
+    file_path = Path('../../data/cloud_data/london_april2/london_' + current_time + '.csv')
 
     cloud_model.data.to_csv(file_path, mode='w')
 

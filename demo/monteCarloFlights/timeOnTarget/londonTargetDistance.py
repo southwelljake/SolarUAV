@@ -33,10 +33,10 @@ sim = Simulation(
     date=datetime.date(2022, 4, 3),
 )
 
-file_name = '../../../data/monte_carlo_results/timeOnTarget/london_target_distance_r4km_300.txt'
-no_sims = 300
+file_name = '../../../data/monte_carlo_results/timeOnTarget/london_target_distance_500.txt'
+no_sims = 500
 
-other_variables = [['flight_model.yaw.path.points[0][1]', [1000, 300000], 'float']]
+other_variables = [['flight_model.yaw.path.points[0][1]', [1000, 550000], 'float']]
 
 monte_carlo = MonteCarlo(
 

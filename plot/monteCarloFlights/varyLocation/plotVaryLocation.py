@@ -15,13 +15,13 @@ for i in range(0, 8):
 
     months = [i for i in range(1, 13)]
     for month in months:
-        p = ProcessSensitivity('../../data/monte_carlo_results/varyLocation/' +
+        p = ProcessSensitivity('../../../data/monte_carlo_results/varyLocation/' +
                                locations[i].capitalize() + '/' + locations[i] +
                                '_low_cloud_' + str(month) + '.txt')
 
         low.append(sum(p.outcome) / p.no_sims)
 
-        p2 = ProcessSensitivity('../../data/monte_carlo_results/varyLocation/' +
+        p2 = ProcessSensitivity('../../../data/monte_carlo_results/varyLocation/' +
                                 locations[i].capitalize() + '/' + locations[i].lower() +
                                 '_high_cloud_' + str(month) + '.txt')
 
@@ -46,5 +46,8 @@ ax[2, 0].set_ylabel('Percentage Complete (%)')
 ax[3, 0].set_ylabel('Percentage Complete (%)')
 ax[3, 0].set_xlabel('Month')
 ax[3, 1].set_xlabel('Month')
+
+
+plt.subplots_adjust(left=0.075, right=0.925, top=0.95, bottom=0.075, wspace=0.25, hspace=0.275)
 
 plt.show()

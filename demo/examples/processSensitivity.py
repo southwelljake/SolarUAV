@@ -2,6 +2,10 @@ from src.processSensitivity import ProcessSensitivity
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 
+"""
+Demo of how to process files from Monte Carlo simulations.
+"""
+
 p = ProcessSensitivity('../../data/monte_carlo_results/sensitivityTests/mass_energy_sensitivity_500.txt')
 
 # Plot results

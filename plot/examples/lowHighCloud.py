@@ -18,7 +18,7 @@ high.generate_data()
 fig, ax = plt.subplots(nrows=2)
 
 ax[0].plot(low.cloud_cover[:, 0], low.cloud_cover[:, 1], 'C0', label='Low Cloud')
-ax[0].plot([0, 165], [25, 25], '--r', label='Mean')
+ax[0].plot([0, 165], [30, 30], '--r', label='Mean')
 ax[0].set_ylabel('Cloud Cover (%)')
 ax[0].legend()
 ax[0].set_ylim([-5, 105])

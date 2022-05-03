@@ -1,0 +1,47 @@
+from src.simulation import Simulation
+from src.monteCarlo import MonteCarlo
+from src.generatePaths import GeneratePaths
+import pandas as pd
+import numpy as np
+import datetime
+
+latitude = 70
+longitude = -155
+time_zone = 'America/Anchorage'
+
+cloud_data = [
+    pd.read_csv('../../../data/cloud_data/barrow_april/barrow_13_40_24.csv'),
+]
+
+start_hour = 0
+duration = 2
+
+path = GeneratePaths(
+    points=np.array(([0, 50000], [0, 0])),
+)
+
+sim = Simulation(
+    latitude=latitude,
+    longitude=longitude,
+    time_zone=time_zone,
+    start_hour=start_hour,
+    duration=duration,
+    cloud_data=cloud_data,
+    path=path,
+    mission_type='target',
+    date=datetime.date(2022, 4, 4),
+)
+
+file_name = '../../../data/monte_carlo_results/timeOnTarget/barrow_target_start_hour_100.txt'
+no_sims = 100
+
+other_variables = [['flight_model.start_time', [0, 120], 'float']]
+
+monte_carlo = MonteCarlo(
+    simulation=sim,
+    samples=no_sims,
+    file_path=file_name,
+    other_variables=other_variables,
+)
+
+monte_carlo.run()

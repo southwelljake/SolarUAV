@@ -4,51 +4,54 @@ import pandas as pd
 from src.generatePaths import GeneratePaths
 import datetime
 
-path = GeneratePaths(
-    shape='s',
-    start_point=[0, 50000],
-    scanning_range=1000,
-    scanning_width=50000,
-    scanning_area=25000*10**6,
-    direction='n',
-)
+area = [2500, 5000, 7500]
 
-# London
-latitude = 50
-longitude = 0
-time_zone = 'GMT'
+for a in area:
+    path = GeneratePaths(
+        shape='s',
+        start_point=[0, 50000],
+        scanning_range=1000,
+        scanning_width=50000,
+        scanning_area=a*10**6,
+        direction='n',
+    )
 
-start_hour = 0
-duration = 3
+    # London
+    latitude = 50
+    longitude = 0
+    time_zone = 'GMT'
 
-# Recorded Cloud Data from London
-file = [
-        # Day 1
-        pd.read_csv('../../../data/cloud_data/london_april/london_13_40_26.csv'),
-]
+    start_hour = 0
+    duration = 3
 
-sim = Simulation(
-    latitude=latitude,
-    longitude=longitude,
-    time_zone=time_zone,
-    start_hour=start_hour,
-    duration=duration,
-    date=datetime.date(2022, 4, 4),
-    mission_type='p2p',
-    cloud_data=file,
-    path=path,
-)
+    # Recorded Cloud Data from London
+    file = [
+            # Day 1
+            pd.read_csv('../../../data/cloud_data/london_april/london_13_40_26.csv'),
+    ]
 
-file_name = '../../../data/monte_carlo_results/scanArea/spiralNorth_A250.txt'
-no_sims = 100
+    sim = Simulation(
+        latitude=latitude,
+        longitude=longitude,
+        time_zone=time_zone,
+        start_hour=start_hour,
+        duration=duration,
+        date=datetime.date(2022, 4, 4),
+        mission_type='p2p',
+        cloud_data=file,
+        path=path,
+    )
 
-other_variables = [['flight_model.yaw.path.width', [5000, 100000], 'int']]
+    file_name = '../../../data/monte_carlo_results/scanArea/spiral_north_A' + str(a) + '.txt'
+    no_sims = 100
 
-monte_carlo = MonteCarlo(
-    simulation=sim,
-    samples=no_sims,
-    file_path=file_name,
-    other_variables=other_variables,
-)
+    other_variables = [['flight_model.yaw.path.width', [5000, 100000], 'int']]
 
-monte_carlo.run()
+    monte_carlo = MonteCarlo(
+        simulation=sim,
+        samples=no_sims,
+        file_path=file_name,
+        other_variables=other_variables,
+    )
+
+    monte_carlo.run()

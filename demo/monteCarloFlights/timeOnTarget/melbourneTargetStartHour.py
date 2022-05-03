@@ -33,8 +33,8 @@ sim = Simulation(
     date=datetime.date(2022, 4, 4),
 )
 
-file_name = '../../../data/monte_carlo_results/timeOnTarget/melbourne_target_start_hour_100.txt'
-no_sims = 100
+file_name = '../../../data/monte_carlo_results/timeOnTarget/melbourne_target_start_hour_200.txt'
+no_sims = 200
 
 other_variables = [['flight_model.start_time', [0, 120], 'float']]
 

@@ -4,6 +4,10 @@ from src.cloudCover import CloudCover
 import datetime
 import numpy as np
 
+"""
+Demo of collecting a cloud forecast using pvlib.
+"""
+
 # London
 latitude = 50
 longitude = 0

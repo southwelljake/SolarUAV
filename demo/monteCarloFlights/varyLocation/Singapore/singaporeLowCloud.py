@@ -44,7 +44,7 @@ for m in months:
     )
 
     file_name = '../../../../data/monte_carlo_results/varyLocation/Singapore/singapore_low_cloud_' + str(m) + '.txt'
-    no_sims = 10
+    no_sims = 25
 
     monte_carlo = MonteCarlo(
         simulation=sim,
