@@ -161,7 +161,7 @@ class FlightModel:
         Function to determine when to abort a mission.
         """
 
-        if self.yaw.abort_mission and self.yaw.abort_time is None:
+        if self.yaw.abort_mission:
             # Function to calculate required roll angle to follow desired flight path
             # Allow an hour to land
             time_to_land = 3600
@@ -201,13 +201,6 @@ class FlightModel:
                     if self.yaw.mission_type == 'p2p':
                         self.yaw.calculate_distance_travelled(state_var)
                         self.yaw.point_index = len(self.yaw.points) - 1
-
-        elif self.yaw.abort_mission and self.yaw.abort_time is not None:
-            if self.start_time + t / 3600 > self.yaw.abort_time and not self.yaw.returning:
-                self.yaw.returning = True
-                if self.yaw.mission_type == 'p2p':
-                    self.yaw.calculate_distance_travelled(state_var)
-                    self.yaw.point_index = len(self.yaw.points) - 1
 
     def calculate_propeller_power(self, state_var):
         """

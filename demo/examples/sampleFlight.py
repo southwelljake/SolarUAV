@@ -65,8 +65,8 @@ sim = Simulation(
     # cloud_data=[pd.read_csv('../../data/general_cloud_data/blank_cloud_data.csv')],
     cloud_data=cloud_data,
     path=path,
-    # mission_type='p2p',
-    mission_type='target',
+    mission_type='p2p',
+    # mission_type='target',
     abort_mission=True,
     date=datetime.date(2022, 4, 4),
 )
